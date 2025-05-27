@@ -8,7 +8,23 @@ from pathlib import Path
 
 import os
 from dotenv import load_dotenv
+from pydantic import BaseModel, Field
+from typing import List, Optional, Literal
 
+
+# Pydantic classes to force structure
+class FormField(BaseModel):
+    id: str = Field(..., description="Snake_case field identifier")
+    question: str = Field(..., description="Full question text")
+    type: Literal["text", "radio", "checkbox", "dropdown", "scale", "boolean"] = Field(..., description="Field type")
+    options: Optional[List[str]] = Field(None, description="Available choices for radio/checkbox/dropdown")
+    section: str = Field(..., description="Inferred section name")
+    chunk_index: int = Field(..., description="Source chunk number")
+    chunk_type: str = Field(..., description="Type of chunk this came from")
+
+class ChunkExtraction(BaseModel):
+    """Response format for each chunk - guarantees structure"""
+    fields: List[FormField] = Field(default_factory=list, description="List of form fields found")
 
 
 #Iterative chunk processing with llm calls'
@@ -49,7 +65,7 @@ def process_chunk_with_llm(chunk, chunk_index):
     try:
         # Make api request
         response = openai.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4.1",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.1
         )
@@ -105,7 +121,9 @@ def pdf_to_json(pdf_path):
     if not parsed_doc:
         results = parse_documents([pdf_path])
         parsed_doc = results[0]
-    
+        save_parsed_doc(parsed_doc, "Wellness_Form.pdf")
+
+    # Initial Form
     form_json = {
         "document_metadata": {
             "source_file": pdf_path,
@@ -123,6 +141,10 @@ def pdf_to_json(pdf_path):
 
         # Process chunk
         chunk_fields = process_chunk_with_llm(chunk, i+1)
+
+        print(chunk_fields)
+
+        return
         
         if chunk_fields:
             print(f"  Found {len(chunk_fields)} fields in chunk {i+1}")
@@ -147,16 +169,15 @@ def pdf_to_json(pdf_path):
     return form_json
 
 def main():
-    # Load keu
+    # Load key
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    
     pdf_path = "Wellness_Form.pdf"
     
     try:
         # Convert PDF to JSON
         result_json = pdf_to_json(pdf_path)
-        
+        '''
         # Save the complete JSON
         output_file = "wellness_form_fields.json"
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -178,10 +199,11 @@ def main():
         print(f"Simplified version saved to: {simple_output}")
         
         return result_json
-        
+        '''
     except Exception as e:
         print(f"Error processing PDF: {e}")
         return None
+    
 
 if __name__ == "__main__":
     main()
