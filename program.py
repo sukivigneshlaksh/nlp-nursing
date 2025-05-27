@@ -19,11 +19,11 @@ class FormField(BaseModel):
     type: Literal["text", "radio", "checkbox", "dropdown", "scale", "boolean"] = Field(..., description="Field type")
     options: Optional[List[str]] = Field(None, description="Available choices for radio/checkbox/dropdown")
     section: str = Field(..., description="Inferred section name")
+    # Not sure if this is needed but will leave in for now
     chunk_index: int = Field(..., description="Source chunk number")
     chunk_type: str = Field(..., description="Type of chunk this came from")
 
 class ChunkExtraction(BaseModel):
-    """Response format for each chunk - guarantees structure"""
     fields: List[FormField] = Field(default_factory=list, description="List of form fields found")
 
 
@@ -65,7 +65,7 @@ def process_chunk_with_llm(chunk, chunk_index):
     try:
         # Make api request
         response = openai.chat.completions.create(
-            model="gpt-4.1",
+            model="gpt-4.1", # consider different versions
             messages=[{"role": "user", "content": prompt}],
             temperature=0.1
         )
@@ -86,7 +86,7 @@ def process_chunk_with_llm(chunk, chunk_index):
         print(f"Error processing chunk {chunk_index}: {e}")
         return []
 
-# This part just avoids us from having to make unecessary api requests
+# Avoids unecessary api requests
 def save_parsed_doc(parsed_doc, pdf_path):
     cache_dir = Path("cache")
     cache_dir.mkdir(exist_ok=True)
@@ -94,7 +94,7 @@ def save_parsed_doc(parsed_doc, pdf_path):
     # Get name with .pdf
     pdf_name = Path(pdf_path).stem
 
-    # Save within cache as 
+    # Save within cache
     cache_file = cache_dir / f"{pdf_name}_parsed.pkl"
     
     # Saves file
@@ -137,14 +137,14 @@ def pdf_to_json(pdf_path):
     
     # Iterate through chunks
     for i, chunk in enumerate(parsed_doc.chunks):
+        if i == 5:
+            break
+
         print(f"Processing chunk {i+1}/{len(parsed_doc.chunks)}...")
 
         # Process chunk
         chunk_fields = process_chunk_with_llm(chunk, i+1)
 
-        print(chunk_fields)
-
-        return
         
         if chunk_fields:
             print(f"  Found {len(chunk_fields)} fields in chunk {i+1}")
@@ -177,7 +177,6 @@ def main():
     try:
         # Convert PDF to JSON
         result_json = pdf_to_json(pdf_path)
-        '''
         # Save the complete JSON
         output_file = "wellness_form_fields.json"
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -199,7 +198,7 @@ def main():
         print(f"Simplified version saved to: {simple_output}")
         
         return result_json
-        '''
+    
     except Exception as e:
         print(f"Error processing PDF: {e}")
         return None
