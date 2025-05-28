@@ -67,7 +67,24 @@ def process_chunk_with_llm(chunk, chunk_index):
         # Make api request
         response = openai.chat.completions.create(
             model="gpt-4.1", # consider different versions
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {
+                    "role": "system", 
+                    "content": """You are an expert medical form field extractor with 10+ years experience analyzing healthcare documents. 
+
+                    Your expertise:
+                    - Identifying form fields vs headers/instructions
+                    - Determining correct field types (radio, checkbox, text, boolean)
+                    - Creating descriptive field IDs
+                    - Extracting exact answer options
+
+                    Always return valid, parseable JSON. Never include explanations outside the JSON structure."""
+                                    },
+                                    {
+                                        "role": "user", 
+                                        "content": prompt
+                                    }
+                                ],
             temperature=0.1
         )
         
@@ -97,7 +114,7 @@ def save_parsed_doc(parsed_doc, pdf_path):
 
     # Save within cache
     cache_file = cache_dir / f"{pdf_name}_parsed.pkl"
-    
+
     # Saves file
     with open(cache_file, 'wb') as f:
         pickle.dump(parsed_doc, f)
@@ -139,9 +156,6 @@ def pdf_to_json(pdf_path):
     
     # Iterate through chunks
     for i, chunk in enumerate(parsed_doc.chunks):
-        if i == 20:
-            break
-
         print(f"Processing chunk {i+1}/{len(parsed_doc.chunks)}...")
 
         # Process chunk
@@ -154,7 +168,6 @@ def pdf_to_json(pdf_path):
     # Add summary information
     form_json["summary"] = {
         "total_fields": len(form_json["all_fields"]),
-        "field_types": {}
     }
     
     return form_json
