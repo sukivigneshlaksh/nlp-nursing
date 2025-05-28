@@ -18,7 +18,6 @@ class FormField(BaseModel):
     question: str = Field(..., description="Full question text")
     type: Literal["text", "radio", "checkbox", "dropdown", "scale", "boolean"] = Field(..., description="Field type")
     options: Optional[List[str]] = Field(None, description="Available choices for radio/checkbox/dropdown")
-    section: str = Field(..., description="Inferred section name")
     # Not sure if this is needed but will leave in for now
     chunk_index: int = Field(..., description="Source chunk number")
     chunk_type: str = Field(..., description="Type of chunk this came from")
@@ -27,7 +26,7 @@ class ChunkExtraction(BaseModel):
     fields: List[FormField] = Field(default_factory=list, description="List of form fields found")
 
 
-#Iterative chunk processing with llm calls'
+# Iterative chunk processing with llm calls'
 def process_chunk_with_llm(chunk, chunk_index):
         
     prompt = f"""
@@ -44,7 +43,6 @@ def process_chunk_with_llm(chunk, chunk_index):
       "question": "Full question text",
       "type": "text|radio|checkbox|dropdown|scale|boolean",
       "options": ["array of choices if applicable"],
-      "section": "inferred section name",
       "chunk_index": {chunk_index},
       "chunk_type": "{chunk.chunk_type.value}"
     }}
@@ -91,7 +89,7 @@ def save_parsed_doc(parsed_doc, pdf_path):
     cache_dir = Path("cache")
     cache_dir.mkdir(exist_ok=True)
     
-    # Get name with .pdf
+    # Get name without .pdf
     pdf_name = Path(pdf_path).stem
 
     # Save within cache
@@ -129,7 +127,6 @@ def pdf_to_json(pdf_path):
             "source_file": pdf_path,
             "total_chunks": len(parsed_doc.chunks),
         },
-        "sections": {},
         "all_fields": []
     }
     
@@ -137,7 +134,7 @@ def pdf_to_json(pdf_path):
     
     # Iterate through chunks
     for i, chunk in enumerate(parsed_doc.chunks):
-        if i == 5:
+        if i == 20:
             break
 
         print(f"Processing chunk {i+1}/{len(parsed_doc.chunks)}...")
@@ -151,18 +148,10 @@ def pdf_to_json(pdf_path):
             
             # Add new fields
             form_json["all_fields"].extend(chunk_fields)
-            
-            # Add to section group
-            for field in chunk_fields:
-                section = field.get("section", "unknown")
-                if section not in form_json["sections"]:
-                    form_json["sections"][section] = []
-                form_json["sections"][section].append(field)
     
     # Add summary information
     form_json["summary"] = {
         "total_fields": len(form_json["all_fields"]),
-        "sections_found": len(form_json["sections"]),
         "field_types": {}
     }
     
@@ -172,11 +161,12 @@ def main():
     # Load key
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    pdf_path = "Wellness_Form.pdf"
     
+    pdf_path = "Wellness_Form.pdf"
     try:
         # Convert PDF to JSON
         result_json = pdf_to_json(pdf_path)
+         
         # Save the complete JSON
         output_file = "wellness_form_fields.json"
         with open(output_file, 'w', encoding='utf-8') as f:
