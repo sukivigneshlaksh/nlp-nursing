@@ -8,7 +8,7 @@ from pathlib import Path
 
 import os
 from dotenv import load_dotenv
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 from typing import List, Optional, Literal
 
 
@@ -28,24 +28,26 @@ class ChunkExtraction(BaseModel):
 
 # Iterative chunk processing with llm calls'
 def process_chunk_with_llm(chunk, chunk_index):
-        
     prompt = f"""
     Analyze this chunk from a medical form and extract any form fields/questions.
-    Return ONLY valid JSON array of fields found, or empty array [] if no fields exist.
+    Return ONLY valid JSON in this exact format:
+
+    {{
+      "fields": [
+        {{
+          "id": "descriptive_field_name",
+          "question": "Full question text",
+          "type": "text|radio|checkbox|dropdown|scale|boolean",
+          "options": ["array of choices if applicable, null if not needed"],
+          "chunk_index": {chunk_index},
+          "chunk_type": "{chunk.chunk_type.value}"
+        }}
+      ]
+    }}
 
     Chunk Type: {chunk.chunk_type.value}
     Chunk Text:
     {chunk.text}
-
-    For each field found, use this format:
-    {{
-      "id": "descriptive_field_name",
-      "question": "Full question text",
-      "type": "text|radio|checkbox|dropdown|scale|boolean",
-      "options": ["array of choices if applicable"],
-      "chunk_index": {chunk_index},
-      "chunk_type": "{chunk.chunk_type.value}"
-    }}
 
     Rules:
     - Only extract actual form fields/questions
@@ -55,9 +57,10 @@ def process_chunk_with_llm(chunk, chunk_index):
     - For Yes/No questions use type "boolean"
     - For rating scales use type "scale"
     - Use snake_case for field IDs
-    - Return empty array [] if no fields found
+    - Set options to null for text/boolean/scale fields
+    - Return {{"fields": []}} if no fields found
 
-    Return only the JSON array, no explanations:
+    Return only the JSON object:
     """
     
     try:
@@ -72,17 +75,17 @@ def process_chunk_with_llm(chunk, chunk_index):
         content = response.choices[0].message.content.strip()
         
         # Try to parse JSON
-        fields = json.loads(content)
+        raw_data = json.loads(content)
+        chunk_extraction = ChunkExtraction(**raw_data)
+        return chunk_extraction
         
-        # Ensure it's a list
-        if not isinstance(fields, list):
-            return []
-
-        return fields
-        
+    # We return empty chunk
+    except ValidationError as e:
+        print(f"Pydantic validation error for chunk {chunk_index}: {e}")
+        return ChunkExtraction()
     except (json.JSONDecodeError, Exception) as e:
         print(f"Error processing chunk {chunk_index}: {e}")
-        return []
+        return ChunkExtraction()
 
 # Avoids unecessary api requests
 def save_parsed_doc(parsed_doc, pdf_path):
@@ -113,13 +116,15 @@ def load_parsed_doc(pdf_path):
 
 def pdf_to_json(pdf_path):
     # Check if in cache
-    parsed_doc = load_parsed_doc("Wellness_Form.pdf")
+    # Save to JSON or something else
+    # Find production ready saving version
+    parsed_doc = load_parsed_doc(pdf_path)
 
     # Otherwise generate code
     if not parsed_doc:
         results = parse_documents([pdf_path])
         parsed_doc = results[0]
-        save_parsed_doc(parsed_doc, "Wellness_Form.pdf")
+        save_parsed_doc(parsed_doc, pdf_path)
 
     # Initial Form
     form_json = {
@@ -140,14 +145,11 @@ def pdf_to_json(pdf_path):
         print(f"Processing chunk {i+1}/{len(parsed_doc.chunks)}...")
 
         # Process chunk
-        chunk_fields = process_chunk_with_llm(chunk, i+1)
-
-        
-        if chunk_fields:
-            print(f"  Found {len(chunk_fields)} fields in chunk {i+1}")
-            
-            # Add new fields
-            form_json["all_fields"].extend(chunk_fields)
+        chunk_extraction = process_chunk_with_llm(chunk, i+1)
+        if chunk_extraction.fields:
+            print(f"  Found {len(chunk_extraction.fields)} fields in chunk {i+1}")
+            field_dicts = [field.model_dump() for field in chunk_extraction.fields]
+            form_json["all_fields"].extend(field_dicts)
     
     # Add summary information
     form_json["summary"] = {
