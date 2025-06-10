@@ -1,0 +1,81 @@
+Sleep Apnea CPAP Certification Visit Transcript
+
+Recording Date: November 8, 2024
+Duration: 12:34
+Participants: Person 1, Person 2
+
+RECORDING BEGINS - 2:15 PM
+
+Person 1: Good afternoon. I have your sleep study results here and we need to go through your CPAP certification today. Let me get some basic information first. Today is November 8th, 2024. Can you confirm your full name and date of birth?
+
+Person 2: Robert James Chen, date of birth March 22nd, 1968.
+
+Person 1: And your address and phone number for our records?
+
+Person 2: 1247 Pine Street, Seattle, Washington 98101. Phone number is 206-555-7832.
+
+Person 1: Your Medicare number?
+
+Person 2: It's 1EG4-TE5-MK72.
+
+Person 1: Perfect. So you're here for obstructive sleep apnea, correct? ICD-9 code 327.23.
+
+Person 2: Yes, that's right.
+
+Person 1: When did we first meet for your initial face-to-face evaluation?
+
+Person 2: That was September 15th, 2024.
+
+Person 1: And your sleep study date?
+
+Person 2: October 3rd, 2024.
+
+Person 1: Was that done here at University Sleep Center, our facility-based lab?
+
+Person 2: Yes, I spent the whole night there with all the wires attached.
+
+Person 1: Your AHI, your Apnea-Hypopnea Index from that study was 42 events per hour, which is severe sleep apnea. Do you have excessive daytime sleepiness?
+
+Person 2: Oh yes, definitely. I fall asleep at my desk, driving, watching TV. It's been really bad.
+
+Person 1: Any mood issues, concentration problems, high blood pressure?
+
+Person 2: Yes to all of that. My blood pressure has been high and my wife says I'm more irritable. Hard to focus at work.
+
+Person 1: We're prescribing a CPAP machine, not bilevel, so that question doesn't apply. Your estimated length of need?
+
+Person 2: How long do I need this?
+
+Person 1: This is a lifetime condition, so I'm putting 99 months, which means lifetime.
+
+Person 1: Your height and weight from today's visit?
+
+Person 2: I'm 5 foot 10 inches, so 70 inches. Weight was 215 pounds.
+
+Person 1: The supplier is Northwest Medical Supply. Their address is 890 Broadway Avenue, Seattle, Washington 98122. Phone 206-555-4400. Their NPI number is 1234567890.
+
+Person 2: Where will I be using this?
+
+Person 1: At your home, so place of service code is 12.
+
+Person 1: The HCPCS codes for your equipment are E0601 for the CPAP machine, A7030 for the full face mask, A7034 for the nasal mask, and A7037 for the tubing.
+
+Person 2: When do I come back to see you?
+
+Person 1: I want to see you for follow-up on January 10th, 2025, so put that down as your follow-up face-to-face evaluation date.
+
+Person 2: What if I need adjustments before then?
+
+Person 1: Call if you have problems, but this gives us time to see how well you're using it. The machine will track your usage and we'll download the data when you come back.
+
+Person 1: Any questions about using the CPAP every night?
+
+Person 2: I'm worried I won't be able to sleep with it.
+
+Person 1: Most patients adjust within a few weeks. The supplier will train you on proper use and fitting. You need to use it at least 4 hours per night for at least 70% of nights to meet Medicare requirements.
+
+Person 2: Understood.
+
+Person 1: My NPI number is 9876543210. My office number is 206-555-6789 if the supplier needs to reach me.
+
+RECORDING ENDS - 2:27 PM

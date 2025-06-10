@@ -1,0 +1,919 @@
+{
+  "document_metadata": {
+    "source_file": "Wellness_Form.pdf",
+    "total_chunks": 62
+  },
+  "all_fields": [
+    {
+      "id": "todays_date",
+      "question": "TODAY’S DATE:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 4,
+      "chunk_type": "text"
+    },
+    {
+      "id": "last_name",
+      "question": "Last Name:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 4,
+      "chunk_type": "text"
+    },
+    {
+      "id": "first_name",
+      "question": "First Name:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 4,
+      "chunk_type": "text"
+    },
+    {
+      "id": "middle_initial",
+      "question": "MI:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 4,
+      "chunk_type": "text"
+    },
+    {
+      "id": "birthdate",
+      "question": "BIRTHDATE:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 4,
+      "chunk_type": "text"
+    },
+    {
+      "id": "care_providers_outside_uw_medicine",
+      "question": "Please list care providers who are outside UW Medicine (including specialists, eye doctor, naturopaths, etc.):",
+      "type": "text",
+      "options": null,
+      "chunk_index": 6,
+      "chunk_type": "text"
+    },
+    {
+      "id": "overall_health_rating_past_4_weeks",
+      "question": "How do you rate your overall health the past 4 weeks?",
+      "type": "scale",
+      "options": [
+        "Excellent",
+        "Good",
+        "Fair",
+        "Poor"
+      ],
+      "chunk_index": 7,
+      "chunk_type": "text"
+    },
+    {
+      "id": "manage_overall_health_problems",
+      "question": "Can you manage your overall health problems?",
+      "type": "boolean",
+      "options": null,
+      "chunk_index": 7,
+      "chunk_type": "text"
+    },
+    {
+      "id": "need_help_with_personal_care_needs",
+      "question": "Because of any health problems, do you need the help of another person with your personal care needs such as eating, bathing, dressing, or getting around the house?",
+      "type": "boolean",
+      "options": null,
+      "chunk_index": 7,
+      "chunk_type": "text"
+    },
+    {
+      "id": "emotional_support_frequency",
+      "question": "Do you often get the emotional support you need?",
+      "type": "scale",
+      "options": [
+        "Always",
+        "Usually",
+        "Sometimes",
+        "Rarely",
+        "Never"
+      ],
+      "chunk_index": 7,
+      "chunk_type": "text"
+    },
+    {
+      "id": "feelings_distress_social_interference",
+      "question": "Feelings that caused you distress or interfered with your ability to get along socially with family or friends?",
+      "type": "scale",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 15,
+      "chunk_type": "table"
+    },
+    {
+      "id": "stress_over_health_finances_relationships_work",
+      "question": "Feeling stress over health, finances, relationships or work?",
+      "type": "scale",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 15,
+      "chunk_type": "table"
+    },
+    {
+      "id": "body_pain",
+      "question": "Body pain?",
+      "type": "scale",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 15,
+      "chunk_type": "table"
+    },
+    {
+      "id": "fatigue",
+      "question": "Fatigue?",
+      "type": "scale",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 15,
+      "chunk_type": "table"
+    },
+    {
+      "id": "exercise_days_last_7",
+      "question": "In the past 7 days, how many days did you exercise?",
+      "type": "radio",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "chunk_index": 16,
+      "chunk_type": "text"
+    },
+    {
+      "id": "exercise_duration",
+      "question": "On days when you exercised, for how long did you exercise (in minutes)?",
+      "type": "radio",
+      "options": [
+        "_______ minutes (please provide estimate of minutes, 0-120+)",
+        "Does not apply"
+      ],
+      "chunk_index": 16,
+      "chunk_type": "text"
+    },
+    {
+      "id": "exercise_intensity",
+      "question": "How intense was your typical exercise?",
+      "type": "radio",
+      "options": [
+        "Light (like stretching or slow walking)",
+        "Moderate (like a brisk walk)",
+        "Heavy (like jogging or swimming)",
+        "Very heavy (like fast running or stair climbing)",
+        "I am currently not exercising"
+      ],
+      "chunk_index": 16,
+      "chunk_type": "text"
+    },
+    {
+      "id": "fruit_vegetable_servings_frequency",
+      "question": "In the past 7 days, how often did you eat 3 or more servings of fruits and vegetables in a day?",
+      "type": "radio",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 16,
+      "chunk_type": "text"
+    },
+    {
+      "id": "frequency_high_fiber_whole_grain",
+      "question": "In the past 7 days, how often did you eat 3 or more servings of high fiber or whole grain foods in a day?",
+      "type": "radio",
+      "options": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day"
+      ],
+      "chunk_index": 17,
+      "chunk_type": "text"
+    },
+    {
+      "id": "mouth_teeth_condition",
+      "question": "How would you describe the condition of your mouth and teeth, including false teeth or dentures?",
+      "type": "radio",
+      "options": [
+        "Excellent",
+        "Very Good",
+        "Good",
+        "Fair",
+        "Poor"
+      ],
+      "chunk_index": 18,
+      "chunk_type": "text"
+    },
+    {
+      "id": "trouble_hearing_people_speak",
+      "question": "Do you find yourself having trouble hearing people speak?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 24,
+      "chunk_type": "text"
+    },
+    {
+      "id": "wear_hearing_aid_device",
+      "question": "Do you wear a hearing aid/device?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 24,
+      "chunk_type": "text"
+    },
+    {
+      "id": "always_use_seat_belt_in_car",
+      "question": "Do you always use your seat belt in the car?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 24,
+      "chunk_type": "text"
+    },
+    {
+      "id": "have_fire_extinguisher_in_home",
+      "question": "Do you have a fire extinguisher in your home?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 24,
+      "chunk_type": "text"
+    },
+    {
+      "id": "have_smoke_detector",
+      "question": "Do you have a smoke detector?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 24,
+      "chunk_type": "text"
+    },
+    {
+      "id": "preparing_food_and_eating",
+      "question": "20) Preparing food and eating",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 28,
+      "chunk_type": "table"
+    },
+    {
+      "id": "bathing_yourself",
+      "question": "21) Bathing yourself",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 28,
+      "chunk_type": "table"
+    },
+    {
+      "id": "getting_dressed",
+      "question": "22) Getting dressed",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 28,
+      "chunk_type": "table"
+    },
+    {
+      "id": "using_the_toilet",
+      "question": "23) Using the toilet",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 28,
+      "chunk_type": "table"
+    },
+    {
+      "id": "moving_around_from_place_to_place",
+      "question": "24) Moving around from place to place",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 28,
+      "chunk_type": "table"
+    },
+    {
+      "id": "assistive_aids_devices",
+      "question": "Please check any aids or devices that you usually use for any of the above activities (check all that apply):",
+      "type": "checkbox",
+      "options": [
+        "Cane",
+        "Walker",
+        "Wheelchair",
+        "Crutches",
+        "Special or built up chair",
+        "Built up or special utensils",
+        "Devices used for dressing (button hook, zipper pull, etc.)",
+        "None of the above"
+      ],
+      "chunk_index": 29,
+      "chunk_type": "text"
+    },
+    {
+      "id": "fallen_or_near_fall_past_year",
+      "question": "In the past year have you fallen or had a near fall?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 30,
+      "chunk_type": "text"
+    },
+    {
+      "id": "afraid_of_falling",
+      "question": "Are you afraid of falling?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 30,
+      "chunk_type": "text"
+    },
+    {
+      "id": "issues_with_balance_or_feeling_unsteady",
+      "question": "Do you have issues with balance or feeling unsteady?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 30,
+      "chunk_type": "text"
+    },
+    {
+      "id": "feel_safe_in_home_environment",
+      "question": "Do you feel safe in your home environment?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 30,
+      "chunk_type": "text"
+    },
+    {
+      "id": "home_trip_slip_hazard",
+      "question": "Is there anything in your home that might make you trip or slip, and fall?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 36,
+      "chunk_type": "text"
+    },
+    {
+      "id": "leak_urine_or_stool",
+      "question": "Do you ever leak urine or stool?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 36,
+      "chunk_type": "text"
+    },
+    {
+      "id": "wear_incontinence_protection",
+      "question": "Do you wear a liner, pad, or special underwear because of leakage?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 36,
+      "chunk_type": "text"
+    },
+    {
+      "id": "shopping_ability",
+      "question": "33) Shopping",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "telephone_use_ability",
+      "question": "34) Using the telephone",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "housekeeping_ability",
+      "question": "35) Housekeeping",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "laundry_ability",
+      "question": "36) Laundry",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "transportation_ability",
+      "question": "37) Driving or using transportation",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "finances_management_ability",
+      "question": "38) Managing your own finances",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "medication_management_ability",
+      "question": "39) Taking your own medications",
+      "type": "radio",
+      "options": [
+        "I can do this by myself",
+        "I need some help to do it",
+        "I cannot do this; another person needs to do it for me"
+      ],
+      "chunk_index": 38,
+      "chunk_type": "table"
+    },
+    {
+      "id": "experienced_memory_issues",
+      "question": "Have you experienced any memory issues or problems with thinking?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 39,
+      "chunk_type": "text"
+    },
+    {
+      "id": "memory_concerns_by_others",
+      "question": "Have any concerns about your memory been raised by family members, friends, caretakers, or others?",
+      "type": "boolean",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "chunk_index": 39,
+      "chunk_type": "text"
+    },
+    {
+      "id": "pneumococcal_vaccine_where_completed",
+      "question": "Pneumococcal vaccines (e.g. Prevnar, Pneumovax) - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "pneumococcal_vaccine_when_completed",
+      "question": "Pneumococcal vaccines (e.g. Prevnar, Pneumovax) - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "influenza_vaccine_where_completed",
+      "question": "Influenza Vaccine - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "influenza_vaccine_when_completed",
+      "question": "Influenza Vaccine - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "hepatitis_b_vaccine_where_completed",
+      "question": "Hepatitis B Vaccine - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "hepatitis_b_vaccine_when_completed",
+      "question": "Hepatitis B Vaccine - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "mammogram_screening_where_completed",
+      "question": "Mammogram Screening (Women) - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "mammogram_screening_when_completed",
+      "question": "Mammogram Screening (Women) - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "mammogram_screening_results_normal",
+      "question": "Mammogram Screening (Women) - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "pap_smear_where_completed",
+      "question": "Pap Smear (Women) - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "pap_smear_when_completed",
+      "question": "Pap Smear (Women) - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "pap_smear_results_normal",
+      "question": "Pap Smear (Women) - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "colorectal_cancer_screening_where_completed",
+      "question": "Colorectal Cancer Screening - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "colorectal_cancer_screening_when_completed",
+      "question": "Colorectal Cancer Screening - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "colorectal_cancer_screening_results_normal",
+      "question": "Colorectal Cancer Screening - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "diabetes_screening_where_completed",
+      "question": "Diabetes screening (e.g. glucose or blood sugar testing) - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "diabetes_screening_when_completed",
+      "question": "Diabetes screening (e.g. glucose or blood sugar testing) - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "diabetes_screening_results_normal",
+      "question": "Diabetes screening (e.g. glucose or blood sugar testing) - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "cholesterol_panel_where_completed",
+      "question": "Cholesterol panel - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "cholesterol_panel_when_completed",
+      "question": "Cholesterol panel - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "cholesterol_panel_results_normal",
+      "question": "Cholesterol panel - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "bone_density_screening_where_completed",
+      "question": "Bone Density Screening - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "bone_density_screening_when_completed",
+      "question": "Bone Density Screening - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "bone_density_screening_results_normal",
+      "question": "Bone Density Screening - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "eye_exam_where_completed",
+      "question": "Eye exam - Where completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "eye_exam_when_completed",
+      "question": "Eye exam - When completed",
+      "type": "text",
+      "options": null,
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "eye_exam_results_normal",
+      "question": "Eye exam - Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 47,
+      "chunk_type": "text"
+    },
+    {
+      "id": "aaa_screening_where_completed",
+      "question": "Where completed:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 53,
+      "chunk_type": "text"
+    },
+    {
+      "id": "aaa_screening_when_completed",
+      "question": "When completed:",
+      "type": "text",
+      "options": null,
+      "chunk_index": 53,
+      "chunk_type": "text"
+    },
+    {
+      "id": "aaa_screening_results_normal",
+      "question": "Results normal?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Unsure"
+      ],
+      "chunk_index": 53,
+      "chunk_type": "text"
+    },
+    {
+      "id": "polst_form_in_place",
+      "question": "Do you currently have this in place? POLST form (Physician orders for life-sustaining treatment)",
+      "type": "radio",
+      "options": [
+        "Yes remember",
+        "No",
+        "Don't know / don't"
+      ],
+      "chunk_index": 55,
+      "chunk_type": "text"
+    },
+    {
+      "id": "living_will_in_place",
+      "question": "Do you currently have this in place? Living will (documents that make your health care wishes know, also called Advance Directive)",
+      "type": "radio",
+      "options": [
+        "Yes remember",
+        "No",
+        "Don't know / don't"
+      ],
+      "chunk_index": 55,
+      "chunk_type": "text"
+    },
+    {
+      "id": "durable_power_of_attorney_medical_in_place",
+      "question": "Do you currently have this in place? Durable Power of Attorney for Medical Affairs (someone to make medical decisions for you in the event that you are unable to)",
+      "type": "radio",
+      "options": [
+        "Yes remember",
+        "No",
+        "Don't know / don't"
+      ],
+      "chunk_index": 55,
+      "chunk_type": "text"
+    },
+    {
+      "id": "discuss_advance_care_planning",
+      "question": "Do you want to discuss advance care planning at your wellness visit?",
+      "type": "radio",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "chunk_index": 56,
+      "chunk_type": "text"
+    },
+    {
+      "id": "provider_signature",
+      "question": "PROVIDER SIGNATURE",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    },
+    {
+      "id": "provider_print_name",
+      "question": "PRINT NAME",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    },
+    {
+      "id": "provider_pager",
+      "question": "PAGER",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    },
+    {
+      "id": "provider_npi",
+      "question": "NPI",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    },
+    {
+      "id": "provider_date",
+      "question": "DATE",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    },
+    {
+      "id": "provider_time",
+      "question": "TIME",
+      "type": "text",
+      "options": null,
+      "chunk_index": 57,
+      "chunk_type": "table"
+    }
+  ],
+  "summary": {
+    "total_fields": 87
+  }
+}

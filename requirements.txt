@@ -1,0 +1,7 @@
+pydantic-ai
+google-generativeai
+google-cloud-aiplatform
+python-dotenv
+PyMuPDF
+pydantic
+Pillow

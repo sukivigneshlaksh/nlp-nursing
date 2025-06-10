@@ -1,0 +1,749 @@
+{
+  "document_metadata": {
+    "source_file": "pdf/CMS_Form.pdf",
+    "total_chunks": 35
+  },
+  "chunks": {
+    "chunk_0": {
+      "chunk_type": "marginalia",
+      "fields": []
+    },
+    "chunk_1": {
+      "chunk_type": "marginalia",
+      "fields": []
+    },
+    "chunk_2": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_3": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_4": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "initial_certification_date",
+          "question": "INITIAL ___/___/___",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        },
+        {
+          "id": "recertification_date",
+          "question": "RECERTIFICATION ___/___/___",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_telephone",
+          "question": "(___) ___-____",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_hicn",
+          "question": "HICN ________________________",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        },
+        {
+          "id": "supplier_telephone",
+          "question": "(___) ___-____",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        },
+        {
+          "id": "supplier_nsc_or_npi",
+          "question": "NSC or NPI # ________________________",
+          "type": "text",
+          "options": null,
+          "chunk_index": 4,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_5": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "place_of_service",
+          "question": "PLACE OF SERVICE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "facility_name_address",
+          "question": "NAME and ADDRESS of FACILITY if applicable (See Reverse)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "hcpcs_code_1",
+          "question": "HCPCS CODE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "hcpcs_code_2",
+          "question": "HCPCS CODE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "hcpcs_code_3",
+          "question": "HCPCS CODE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "hcpcs_code_4",
+          "question": "HCPCS CODE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_dob",
+          "question": "PT DOB ____/____/____",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_sex",
+          "question": "Sex _____ (M/F)",
+          "type": "radio",
+          "options": [
+            "M",
+            "F"
+          ],
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_height",
+          "question": "HT.________(in.)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_weight",
+          "question": "WT.______(lbs.)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_name_address",
+          "question": "PHYSICIAN NAME, ADDRESS (Printed or Typed)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_npi_or_nsc",
+          "question": "PHYSICIAN'S NSC or NPI #",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_telephone",
+          "question": "PHYSICIAN'S TELEPHONE #",
+          "type": "text",
+          "options": null,
+          "chunk_index": 5,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_6": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "est_length_of_need_months",
+          "question": "EST. LENGTH OF NEED (# OF MONTHS): 1–99 (99=LIFETIME)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 6,
+          "chunk_type": "text"
+        },
+        {
+          "id": "diagnosis_code_1",
+          "question": "DIAGNOSIS CODE (ICD-9) 1",
+          "type": "text",
+          "options": null,
+          "chunk_index": 6,
+          "chunk_type": "text"
+        },
+        {
+          "id": "diagnosis_code_2",
+          "question": "DIAGNOSIS CODE (ICD-9) 2",
+          "type": "text",
+          "options": null,
+          "chunk_index": 6,
+          "chunk_type": "text"
+        },
+        {
+          "id": "diagnosis_code_3",
+          "question": "DIAGNOSIS CODE (ICD-9) 3",
+          "type": "text",
+          "options": null,
+          "chunk_index": 6,
+          "chunk_type": "text"
+        },
+        {
+          "id": "diagnosis_code_4",
+          "question": "DIAGNOSIS CODE (ICD-9) 4",
+          "type": "text",
+          "options": null,
+          "chunk_index": 6,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_7": {
+      "chunk_type": "table",
+      "fields": [
+        {
+          "id": "device_ordered_for_obstructive_sleep_apnea",
+          "question": "Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)?",
+          "type": "boolean",
+          "options": [
+            "Y",
+            "N"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "initial_face_to_face_evaluation_date",
+          "question": "Enter date of initial face-to-face evaluation",
+          "type": "text",
+          "options": null,
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "sleep_test_date",
+          "question": "Enter date of sleep test (If test spans multiple days, enter date of first day of test)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "sleep_test_conducted_in_facility_lab",
+          "question": "Was the patient's sleep test conducted in a facility-based lab?",
+          "type": "boolean",
+          "options": [
+            "Y",
+            "N"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "patient_ahi_or_rdi",
+          "question": "What is the patient's Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?",
+          "type": "text",
+          "options": null,
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "documented_evidence_of_comorbid_conditions",
+          "question": "Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke.",
+          "type": "boolean",
+          "options": [
+            "Y",
+            "N"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "cpap_tried_and_found_ineffective",
+          "question": "If a bilevel device is ordered, has a CPAP device been tried and found ineffective?",
+          "type": "radio",
+          "options": [
+            "Y",
+            "N",
+            "D"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "follow_up_face_to_face_evaluation_date",
+          "question": "Enter date of follow-up face-to-face evaluation",
+          "type": "text",
+          "options": null,
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "pap_usage_documentation",
+          "question": "Is there a report documenting that the patient used PAP ≥ 4 hours per night on at least 70% of nights in a 30 consecutive day period?",
+          "type": "boolean",
+          "options": [
+            "Y",
+            "N"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        },
+        {
+          "id": "pap_symptom_improvement",
+          "question": "Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?",
+          "type": "boolean",
+          "options": [
+            "Y",
+            "N"
+          ],
+          "chunk_index": 7,
+          "chunk_type": "table"
+        }
+      ]
+    },
+    "chunk_8": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "section_b_responder_name",
+          "question": "NAME",
+          "type": "text",
+          "options": null,
+          "chunk_index": 8,
+          "chunk_type": "text"
+        },
+        {
+          "id": "section_b_responder_title",
+          "question": "TITLE",
+          "type": "text",
+          "options": null,
+          "chunk_index": 8,
+          "chunk_type": "text"
+        },
+        {
+          "id": "section_b_responder_employer",
+          "question": "EMPLOYER",
+          "type": "text",
+          "options": null,
+          "chunk_index": 8,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_9": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_10": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "physician_attestation_signature",
+          "question": "Physician’s Signature",
+          "type": "text",
+          "options": null,
+          "chunk_index": 10,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_attestation_date",
+          "question": "Date",
+          "type": "text",
+          "options": null,
+          "chunk_index": 10,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_11": {
+      "chunk_type": "marginalia",
+      "fields": []
+    },
+    "chunk_12": {
+      "chunk_type": "marginalia",
+      "fields": []
+    },
+    "chunk_13": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_14": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "initial_date",
+          "question": "Date needed initially in the space marked “INITIAL” (MM/DD/YY)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 14,
+          "chunk_type": "text"
+        },
+        {
+          "id": "revised_date",
+          "question": "Recertification date in the space marked “REVISED” (MM/DD/YY)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 14,
+          "chunk_type": "text"
+        },
+        {
+          "id": "recertification_date",
+          "question": "Recertification date in the space marked “RECERTIFICATION” (MM/DD/YY)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 14,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_15": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "patient_name",
+          "question": "Patient’s name",
+          "type": "text",
+          "options": null,
+          "chunk_index": 15,
+          "chunk_type": "text"
+        },
+        {
+          "id": "permanent_legal_address",
+          "question": "Permanent legal address",
+          "type": "text",
+          "options": null,
+          "chunk_index": 15,
+          "chunk_type": "text"
+        },
+        {
+          "id": "telephone_number",
+          "question": "Telephone number",
+          "type": "text",
+          "options": null,
+          "chunk_index": 15,
+          "chunk_type": "text"
+        },
+        {
+          "id": "health_insurance_claim_number_hicn",
+          "question": "Health insurance claim number (HICN) as it appears on the Medicare card and on the claim form",
+          "type": "text",
+          "options": null,
+          "chunk_index": 15,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_16": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "supplier_company_name",
+          "question": "Name of your company (supplier name)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 16,
+          "chunk_type": "text"
+        },
+        {
+          "id": "supplier_address",
+          "question": "Address",
+          "type": "text",
+          "options": null,
+          "chunk_index": 16,
+          "chunk_type": "text"
+        },
+        {
+          "id": "supplier_telephone_number",
+          "question": "Telephone number",
+          "type": "text",
+          "options": null,
+          "chunk_index": 16,
+          "chunk_type": "text"
+        },
+        {
+          "id": "supplier_npi_number",
+          "question": "National Provider Identification (NPI) number assigned by the National Supplier Clearinghouse (NSC)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 16,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_17": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "place_of_service",
+          "question": "Place of Service: Indicate the place in which the item is being used, i.e., patient’s home is 12, skilled nursing facility (SNF) is 31, End Stage Renal Disease (ESRD) facility is 65, etc. Refer to the DME MAC supplier manual for a complete list.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 17,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_18": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "facility_name_and_address",
+          "question": "If the place of service is a facility, indicate the name and complete address of the facility.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 18,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_19": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "hcpcs_procedure_codes",
+          "question": "List all HCPCS procedure codes for items ordered that require a CMN.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 19,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_20": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "patient_dob",
+          "question": "Patient’s date of birth (MM/DD/YY)",
+          "type": "text",
+          "options": null,
+          "chunk_index": 20,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_sex",
+          "question": "Sex (male or female)",
+          "type": "radio",
+          "options": [
+            "male",
+            "female"
+          ],
+          "chunk_index": 20,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_height_inches",
+          "question": "Height in inches",
+          "type": "text",
+          "options": null,
+          "chunk_index": 20,
+          "chunk_type": "text"
+        },
+        {
+          "id": "patient_weight_pounds",
+          "question": "Weight in pounds",
+          "type": "text",
+          "options": null,
+          "chunk_index": 20,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_21": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "physician_name",
+          "question": "Physician Name",
+          "type": "text",
+          "options": null,
+          "chunk_index": 21,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_address",
+          "question": "Physician Address",
+          "type": "text",
+          "options": null,
+          "chunk_index": 21,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_22": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "ordering_physician_npi",
+          "question": "Accurately indicate the ordering physician’s National Provider Identification number (NPI).",
+          "type": "text",
+          "options": null,
+          "chunk_index": 22,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_23": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "physician_telephone_no",
+          "question": "PHYSICIAN’S TELEPHONE NO: Indicate the telephone number where the physician can be contacted (preferably where records would be accessible pertaining to this patient) if more information is needed.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 23,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_24": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_25": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "estimated_length_of_need_months",
+          "question": "Indicate the estimated length of need (the length of time the physician expects the patient to require use of the ordered item) by filling in the appropriate number of months. If the physician expects that the patient will require the item for the duration of his/her life, then enter 99.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 25,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_26": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "primary_icd9_code",
+          "question": "List the ICD9 code that represents the primary reason for ordering this item.",
+          "type": "text",
+          "options": null,
+          "chunk_index": 26,
+          "chunk_type": "text"
+        },
+        {
+          "id": "additional_icd9_code_1",
+          "question": "List any additional ICD9 code to further describe the medical need for the item (code 1 of up to 3).",
+          "type": "text",
+          "options": null,
+          "chunk_index": 26,
+          "chunk_type": "text"
+        },
+        {
+          "id": "additional_icd9_code_2",
+          "question": "List any additional ICD9 code to further describe the medical need for the item (code 2 of up to 3).",
+          "type": "text",
+          "options": null,
+          "chunk_index": 26,
+          "chunk_type": "text"
+        },
+        {
+          "id": "additional_icd9_code_3",
+          "question": "List any additional ICD9 code to further describe the medical need for the item (code 3 of up to 3).",
+          "type": "text",
+          "options": null,
+          "chunk_index": 26,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_27": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_28": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "name_of_person_answering_section_b",
+          "question": "NAME OF PERSON ANSWERING SECTION B QUESTIONS",
+          "type": "text",
+          "options": null,
+          "chunk_index": 28,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_29": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_30": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_31": {
+      "chunk_type": "text",
+      "fields": [
+        {
+          "id": "physician_signature",
+          "question": "Physician Signature",
+          "type": "text",
+          "options": null,
+          "chunk_index": 31,
+          "chunk_type": "text"
+        },
+        {
+          "id": "physician_signature_date",
+          "question": "Date",
+          "type": "text",
+          "options": null,
+          "chunk_index": 31,
+          "chunk_type": "text"
+        }
+      ]
+    },
+    "chunk_32": {
+      "chunk_type": "text",
+      "fields": []
+    },
+    "chunk_33": {
+      "chunk_type": "marginalia",
+      "fields": []
+    },
+    "chunk_34": {
+      "chunk_type": "marginalia",
+      "fields": []
+    }
+  },
+  "summary": {
+    "total_fields": 69,
+    "chunks_with_fields": 20
+  }
+}
