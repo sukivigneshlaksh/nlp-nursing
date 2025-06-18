@@ -1,0 +1,21 @@
+What should I work on?
+
+
+I can:
+    - Improve inference speed.
+    - Find better models or pdf information.
+    - Try with different PDFs.
+    - Incorporate into pipeline? What does this entail?
+
+
+Latency difference
+
+Next steps:
+    - Streaming integration
+    - Real time generation
+
+Do without person 1 and person 2. See on different types of outputs.
+
+
+ 
+
