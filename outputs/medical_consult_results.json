@@ -1,0 +1,32 @@
+{
+  "form_type": "Medical Consult",
+  "extracted_data": {
+    "version_date": null,
+    "reason_for_consultation": "Evaluation of chest pain and abnormal EKG findings.",
+    "findings_and_history": "Patient Maria Rodriguez presented with chest tightness for the past three days, especially when walking upstairs. The pain feels like pressure in the center of her chest and goes away with rest. Sometimes the pain radiates to her left arm. She was referred from the emergency department after presenting with chest pain. EKG showed ST depression in leads V4-V6. Initial troponin level was 0.08 and increased to 0.12. On exam, the patient is comfortable at rest, HR 78 bpm, BP 145/90, normal heart sounds, no murmurs, lungs are clear.",
+    "diagnosis": "Non-ST elevation myocardial infarction (NSTEMI).",
+    "recommendations_and_plan": "Start dual antiplatelet therapy with aspirin and clopidogrel. Initiate atorvastatin for cholesterol management. Initiate metoprolol for blood pressure control. Order cardiac catheterization for tomorrow morning. Refer to cardiac rehabilitation program after discharge. Continue monitoring in cardiac care unit. Coordinate care with interventional cardiology team.",
+    "service_details": {
+      "was_telehealth_service": "No",
+      "time_spent_activities": {
+        "reviewing_results_outside_labs": true,
+        "obtaining_reviewing_separate_history": true,
+        "performing_exam_eval": true,
+        "counseling_educating_patient_family": true,
+        "ordering_meds_tests_procedures": true,
+        "referring_communicating_providers": true,
+        "documenting_clinical_info_ehr": null,
+        "care_coordination": true,
+        "other_activities": null
+      },
+      "date_of_service": "2025-06-20",
+      "duration_minutes": 45
+    },
+    "internal_review": {
+      "date_of_review": null,
+      "reviewed_by": "Dr. Martinez",
+      "internal_review_status": "Pending"
+    }
+  },
+  "quality_evaluation": "**Score:** 96/100\n\n---\n\n**Key Strengths:**\n\n1. **High Accuracy and Completeness:**  \n   The extracted data closely mirrors the original transcript, capturing all essential clinical details including patient symptoms, abnormal findings, diagnostic work-up, examination, diagnosis, and management plan.\n\n2. **Clinical Relevance:**  \n   All extraction fields align with clinically meaningful content: reason for consultation, findings/history, diagnosis, and recommendations are summarized accurately and succinctly. Key numerical and qualitative findings (e.g., vital signs and troponin results) are included.\n\n3. **Thorough Service Documentation:**  \n   The extraction of service details—such as time spent, service not being telehealth, and explicit tasks performed—demonstrates completeness and supports billing and compliance needs.\n\n---\n\n**Areas for Improvement:**\n\n1. **Minor Omission/Generalization:**  \n   Some less prominent details from the transcript, such as exact patient and physician dialogue (e.g., the patient's specific concerns/questions or emotional state, such as \"I'm scared, but I'm glad you caught this\"), are summarized or omitted in the extraction. While not strictly clinical, these can be valuable for holistic or narrative documentation.\n\n2. **Small Metadata Gaps:**  \n   Fields such as \"version_date\" and \"date_of_review\" are set to null, and \"documenting_clinical_info_ehr\" is null. While not missing from the transcript, marking them as not applicable or explicitly stating \"not"
+}

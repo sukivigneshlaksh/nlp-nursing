@@ -1,0 +1,68 @@
+{
+  "form_type": "Vibra IRF History & Physical",
+  "extracted_data": {
+    "date_of_service": "2025-06-20",
+    "late_entry": null,
+    "version_date": null,
+    "history": {
+      "chief_complaint": "Stroke recovery and need for intensive therapy to regain strength and ability to walk.",
+      "history_of_present_illness": "Patient suffered a stroke three weeks ago while at home, resulting in left-sided weakness. She was hospitalized for two weeks for acute treatment and is now admitted for rehabilitation.",
+      "past_medical_history": "History of high blood pressure, diabetes, high cholesterol, and myocardial infarction (heart attack) five years ago.",
+      "past_surgical_history": "Gallbladder removal in 2018, right knee replacement in 2020.",
+      "allergies": "Allergic to penicillin (rash).",
+      "medications": "Metformin for diabetes, lisinopril for blood pressure, atorvastatin for cholesterol, aspirin, and a blood thinner (started after stroke).",
+      "diet": "Diabetic diet, low sodium foods.",
+      "code_status": "Full Code",
+      "social_functional_history": "Lives with husband in a two-story house, independent with all activities before stroke, worked part-time as a librarian, enjoyed gardening.",
+      "family_history": "Father had a stroke at 75, mother had diabetes, brother has high blood pressure.",
+      "family_history_noncontributory": null
+    },
+    "review_of_systems": null,
+    "vital_signs": {
+      "temperature_f": 98.2,
+      "temperature_site": "Oral",
+      "temperature_comment": null,
+      "pulse_bpm": 82,
+      "pulse_position": "Sitting",
+      "pulse_site": "Radial",
+      "pulse_type": "Regular",
+      "pulse_comment": null,
+      "respirations_per_minute": 16,
+      "ventilator_type": null,
+      "respirations_comment": null,
+      "systolic_bp": 138,
+      "diastolic_bp": 84,
+      "bp_position": "Sitting",
+      "bp_side": "Right",
+      "bp_comment": null,
+      "oxygen_saturation_percent": 98,
+      "oxygen_type": "Room Air",
+      "oxygen_amount": null,
+      "oxygen_unit": null,
+      "oxygen_route": null,
+      "oxygen_comment": null,
+      "weight_kg": 72.0,
+      "weight_scale": "Standing Scale",
+      "weight_comment": null
+    },
+    "physical_examination": "Alert and oriented. Speech is clear. Weakness present on left side. Otherwise normal exam. No significant pain except mild shoulder stiffness.",
+    "lab_diagnostic": {
+      "lab_results": null,
+      "diagnostic_findings": "MRI shows ischemic stroke in right middle cerebral artery territory with good recovery potential."
+    },
+    "assessment_plan": {
+      "assessment_plan": "Right middle cerebral artery (MCA) stroke with left sided weakness. Excellent candidate for intensive rehabilitation. Therapy team to begin sessions this afternoon.",
+      "medical_prognosis": "Good",
+      "estimated_length_of_stay": "2-3 weeks",
+      "has_pain_complaint": "No",
+      "pain_management_reviewed": true,
+      "admission_criteria_met": true,
+      "concurs_with_pas": true
+    },
+    "addendum": null,
+    "physician_addendum": null,
+    "resident_addendum": null,
+    "scribe_attestation": null
+  },
+  "quality_evaluation": "**Score:** 98\n\n**Key Strengths:**\n\n1. **Accuracy**: The extracted data is highly accurate and closely aligns with the details documented in the original transcript, including dates, significant history (medical, surgical, social, family), allergies, medications, diet, and code status.\n2. **Completeness**: Nearly all clinically relevant information from the H&P interview is captured, including detailed vital signs (with position, site, type), social/functional history, and rehab candidacy.\n3. **Clinical Relevance**: Essential elements for inpatient rehab (diagnosis, prognosis, stroke specifics, functional status, pain, code status) are fully documented, supporting both care planning and clinical communication.\n\n**Areas for Improvement:**\n\n1. **Minor Omissions and Specificity**:  \n   - The \"Physical Examination\" summary could be slightly more detailed (e.g., \"alert and oriented, speech clear but weakness on left side\"), to mirror the transcript: it notes \"otherwise normal exam\", but the narrative only says \"some weakness on your left side\" and doesn't explicitly state \"otherwise normal\".\n   - The \"pain\" field in the assessment states \"No\", but the transcript mentions \"No significant pain... maybe some stiffness in my left shoulder,\" suggesting mild pain/stiffness not fully reflected in structured data.\n\n2. **Review of Systems**:  \n   - The \"review_of_systems\" field is null despite relevant negatives (e.g., \"my breathing"
+}

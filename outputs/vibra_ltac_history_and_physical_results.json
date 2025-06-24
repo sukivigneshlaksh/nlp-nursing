@@ -1,0 +1,299 @@
+{
+  "form_type": "Vibra LTAC History & Physical",
+  "extracted_data": {
+    "date_of_service": "June 20, 2025",
+    "late_entry": null,
+    "version_date": null,
+    "reason_for_admission": "Ventilator weaning and management of complex medical conditions including COPD, diabetes, heart failure, pressure ulcer, and infection.",
+    "transferring_provider": "Metro General Hospital",
+    "consulting_provider": null,
+    "chief_complaint": "Difficulty breathing, requiring mechanical ventilation, ongoing infection, and non-healing pressure ulcer.",
+    "history_of_present_illness": "Mr. Davis is a patient with a history of COPD, diabetes, and heart failure who was originally hospitalized for severe pneumonia, resulting in respiratory failure and need for mechanical ventilation for 18 days. He developed a stage 3 sacral pressure ulcer, poorly controlled blood glucose, signs of heart failure with edema, and acute on chronic kidney disease. He remains on the ventilator with ongoing efforts at weaning.",
+    "primary_admission_criteria": {
+      "vent_wean": true,
+      "respiratory_complex": true,
+      "infectious_disease": true,
+      "wound_skin": true,
+      "medically_complex": true,
+      "cardio_vascular_peripheral": true,
+      "other": null
+    },
+    "actively_treated_comorbidities": {
+      "copd_rr_greater_24": true,
+      "alterations_skin_integrity": true,
+      "diabetes_unstable_glucose": true,
+      "chf_symptomatic": true,
+      "functional_impairment": true,
+      "respiratory_insufficiency": true,
+      "malnutrition": null,
+      "vent_dependent_nippv": true,
+      "new_onset_infection": true,
+      "hepatic_insufficiency": null,
+      "wound": true,
+      "dvt": null,
+      "renal_insufficiency": true,
+      "immunocompromised": null,
+      "other": null
+    },
+    "diabetes_details": {
+      "diabetes_types": [
+        "Uncontrolled"
+      ]
+    },
+    "functional_details": {
+      "hemiplegia_left": null,
+      "hemiplegia_right": true,
+      "quadriplegia": null,
+      "functional_quadriplegia": null,
+      "dysphagia": null,
+      "aphasia": null
+    },
+    "wound_details": {
+      "locations": [
+        "sacrum"
+      ],
+      "wound_types": [
+        "Pressure",
+        "Full Thickness"
+      ],
+      "other_wound_details": "Stage 3 pressure ulcer requiring complex care."
+    },
+    "cardiac_details": {
+      "heart_failure_types": [
+        "Systolic",
+        "Acute on Chronic"
+      ],
+      "cardiomyopathy": null,
+      "pericarditis": null,
+      "atrial_flutter": null,
+      "atrial_fibrillation": null,
+      "pericardial_effusion": null
+    },
+    "respiratory_details": {
+      "acute_respiratory_failure": true,
+      "chronic_respiratory_failure": true,
+      "pleural_effusion": null,
+      "acute_pulmonary_edema": null,
+      "copd": true,
+      "pneumonia": true,
+      "aspiration_pneumonia": null,
+      "cpap_bipap": null,
+      "trach_et_tube": null
+    },
+    "neurological_details": {
+      "encephalopathy": null,
+      "acute_metabolic_toxicity": null,
+      "cerebral_edema": null,
+      "anoxia": null,
+      "coma": null
+    },
+    "gi_nutrition_details": {
+      "severe_malnutrition": null,
+      "cachexia": null,
+      "gastroenteritis": null,
+      "diverticulitis": null,
+      "peritonitis": null,
+      "ileus": null,
+      "post_op": null,
+      "acute_pancreatitis": null,
+      "chronic_pancreatitis": null
+    },
+    "infection_details": {
+      "mrsa": null,
+      "vre": null,
+      "hbv": null,
+      "sepsis": null,
+      "osteomyelitis": null,
+      "cellulitis": null,
+      "organisms": null,
+      "sites": [
+        "lungs (pneumonia)"
+      ]
+    },
+    "electrolyte_details": {
+      "hyponatremia": true,
+      "hypernatremia": null,
+      "hypokalemia": null,
+      "hyperkalemia": true
+    },
+    "renal_urologic_details": {
+      "esrd": null,
+      "uti": null,
+      "ostomy": null,
+      "acute_renal_failure": null,
+      "chronic_renal_failure": true,
+      "chronic_renal_failure_stage": "3"
+    },
+    "surgical_procedures": [
+      {
+        "surgery": "Appendectomy",
+        "date": "2010",
+        "comments": "No complications."
+      },
+      {
+        "surgery": "Cholecystectomy",
+        "date": "2018",
+        "comments": "No complications."
+      }
+    ],
+    "past_medical_history": "COPD, Diabetes, Systolic heart failure, Chronic kidney disease stage 3, prior right-sided stroke.",
+    "past_surgical_history": "Appendectomy (2010), Cholecystectomy (2018).",
+    "allergies": "Penicillin (hives), Morphine (nausea).",
+    "medications": "Insulin, furosemide, lisinopril, antibiotics.",
+    "diet": "Diabetic, low-sodium.",
+    "code_status": "Full Code",
+    "social_history": "Lives with wife in a ranch-style house.",
+    "family_history": null,
+    "habits": "Former smoker (quit 2 years ago, smoked 40 years). Previously drank beer on weekends, stopped after diabetes diagnosis.",
+    "local_pcp": "Dr. Peterson, Family Medicine Associates",
+    "review_of_systems": {
+      "general": "Shortness of breath; reduced appetite; no fever.",
+      "neck": null,
+      "eyes": "No vision changes.",
+      "hent": "No headaches.",
+      "respiratory": "Shortness of breath, some respiratory distress off ventilator.",
+      "cardiovascular": "No current chest pain. Peripheral edema in legs.",
+      "gastrointestinal": "Reduced appetite, bowel movements regular.",
+      "genitourinary": "No urinary complaints; catheter functioning.",
+      "musculoskeletal": "Right-sided weakness.",
+      "skin": "Pressure ulcer on sacrum.",
+      "endocrine": "Uncontrolled blood glucose.",
+      "neurological": "No headaches; right arm/leg weakness due to prior stroke.",
+      "extremities": "Bilateral leg swelling.",
+      "psychiatric": null,
+      "hematologic_lymphatic": null,
+      "other": null,
+      "additional_comments": null
+    },
+    "vital_signs": {
+      "temperature_f": 99.2,
+      "temperature_site": "Oral",
+      "temperature_comment": null,
+      "pulse_bpm": 95,
+      "pulse_position": "Sitting",
+      "pulse_site": null,
+      "pulse_type": "Regular",
+      "pulse_comment": null,
+      "respirations_per_minute": 16,
+      "ventilator_type": "Mechanical",
+      "respirations_comment": "Some spontaneous breathing.",
+      "systolic_bp": 150,
+      "diastolic_bp": 90,
+      "bp_position": null,
+      "bp_side": "Left",
+      "bp_comment": "BP elevated.",
+      "oxygen_saturation_percent": 96,
+      "oxygen_type": "Ventilator",
+      "oxygen_amount": 40.0,
+      "oxygen_unit": "%",
+      "oxygen_route": null,
+      "oxygen_comment": null,
+      "blood_glucose_mg_dl": 245,
+      "glucose_comment": "Morning glucose."
+    },
+    "physical_examination": {
+      "general": "Alert and cooperative, signs of respiratory distress off ventilator.",
+      "neck": null,
+      "eyes": null,
+      "hent": null,
+      "respiratory": "Decreased breath sounds at bases, crackles.",
+      "cardiovascular": "Regular rhythm, systolic murmur, 2+ pitting edema bilateral legs.",
+      "gastrointestinal": "Soft, distended abdomen.",
+      "genitourinary": null,
+      "musculoskeletal": null,
+      "skin": "Stage 3 pressure ulcer on sacrum.",
+      "endocrine": null,
+      "neurological": "Right arm and leg weaker than left.",
+      "extremities": "2+ pitting edema in both legs.",
+      "psychiatric": null,
+      "hematologic_lymphatic": null,
+      "other": null,
+      "additional_comments": null
+    },
+    "lab_results": {
+      "dates": [
+        "yesterday",
+        "today",
+        "recent"
+      ],
+      "sodium": [
+        "128"
+      ],
+      "potassium": [
+        "5.2"
+      ],
+      "chloride": null,
+      "co2": null,
+      "bun": [
+        "45"
+      ],
+      "creatinine": [
+        "2.1"
+      ],
+      "glucose": [
+        "180-350",
+        "245"
+      ],
+      "calcium": null,
+      "phosphorus": null,
+      "magnesium": null,
+      "wbc": [
+        "12,000"
+      ],
+      "rbc": null,
+      "hemoglobin": [
+        "8.5"
+      ],
+      "hematocrit": null,
+      "platelets": null,
+      "pt_inr": null,
+      "ptt": null,
+      "ast": null,
+      "alt": null,
+      "alkaline_phosphate": null,
+      "albumin": null,
+      "total_protein": null,
+      "total_bilirubin": null,
+      "crp": null,
+      "esr": null,
+      "tsh": null,
+      "bnp": null,
+      "hba1c": null,
+      "ammonia": null,
+      "other_labs": null
+    },
+    "additional_labs": null,
+    "urinalysis": null,
+    "cultures": null,
+    "imaging_studies": [
+      {
+        "study_type": "Chest X-ray",
+        "results_dates_notes": "Bilateral infiltrates, improving."
+      },
+      {
+        "study_type": "Echocardiogram",
+        "results_dates_notes": "Ejection fraction 30%."
+      }
+    ],
+    "procedures_lines": null,
+    "lines_devices": null,
+    "impression_plan": "Multiple complex conditions requiring ventilator weaning, wound care, management of heart failure, diabetes, COPD, CKD, and ongoing infection. Monitor labs, support wound healing, manage high risk for complications, start weaning protocol, coordinate multidisciplinary care.",
+    "medical_prognosis": "Fair",
+    "estimated_length_of_stay": "3-4 weeks",
+    "discharge_plan": "Goal to discharge home with wife. Discharge planning to start on admission.",
+    "pain_assessment": {
+      "has_pain_complaint": "Yes",
+      "pain_score": 4,
+      "pain_description": "Discomfort from stage 3 pressure sore on sacrum.",
+      "pain_management_regimen": "Medications and position changes to relieve pain and promote wound healing.",
+      "pain_management_goals": null,
+      "pain_plan_reviewed": true
+    },
+    "admission_criteria_met": true,
+    "addendum": null,
+    "physician_addendum": null,
+    "resident_addendum": null,
+    "scribe_attestation": null
+  },
+  "quality_evaluation": "**Score:** 97/100\n\n---\n\n**Key Strengths:**\n\n1. **Excellent Accuracy and Clinical Relevance:**  \n   - The extracted data closely mirrors the original transcript content, including granular details about reason for admission, comorbidities, specific lab values, physical exam findings, and care plan.  \n   - Essential clinical details (ventilator weaning, respiratory failure, wound status, diabetes control, cardiac and renal function) are captured accurately.\n\n2. **Comprehensive Data Mapping:**  \n   - Structured fields for complex issues (e.g., comorbidities, wound specifics, ventilator status, electrolyte abnormalities) are well represented and patient history, allergies, medication list, surgical history, and social aspects are all included.\n\n3. **Relevance to Acute and LTAC Setting:**  \n   - All fields critical to LTAC admission criteria are represented (vent weaning, wound stage, hemodynamics, lab abnormalities, estimated LOS, prognosis, and discharge planning) and align with standard clinical documentation needs.\n\n---\n\n**Areas for Improvement:**\n\n1. **Minor Omissions and Granularity:**  \n   - A few small details from the transcript are missing or only implicit:\n     - The precise timeline/sequence for some findings (e.g., lab changes over days could be more granular or explicit about trends).\n     - Some review of systems elements captured together (e.g., \"no fever\" in general, but only \"temperature\" noted in vitals).\n\n2. **"
+}

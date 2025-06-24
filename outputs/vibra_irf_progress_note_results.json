@@ -1,0 +1,73 @@
+{
+  "form_type": "Vibra IRF Progress Note",
+  "extracted_data": {
+    "date_of_service": "2025-06-20",
+    "late_entry": null,
+    "version_date": null,
+    "subjective": "Patient feels more confident with walking; left leg still weak but improving; had some hip pain this morning, now better.",
+    "review_of_systems": null,
+    "medications": "No problems with medications. Pain medication helps without causing undue drowsiness.",
+    "vital_signs": {
+      "temperature_f": 98.4,
+      "temperature_site": "Oral",
+      "temperature_comment": null,
+      "pulse_bpm": 76,
+      "pulse_position": "Sitting",
+      "pulse_site": "Radial",
+      "pulse_type": "Regular",
+      "pulse_comment": null,
+      "systolic_bp": 128,
+      "diastolic_bp": 82,
+      "bp_position": "Sitting",
+      "bp_side": "Right",
+      "bp_comment": null,
+      "respirations_per_minute": 18,
+      "ventilator_type": null,
+      "respirations_comment": null,
+      "oxygen_saturation_percent": 97,
+      "oxygen_type": "Room Air",
+      "oxygen_amount": null,
+      "oxygen_unit": null,
+      "oxygen_route": null,
+      "oxygen_comment": null,
+      "weight_kg": 68.0,
+      "weight_scale": "Standing Scale",
+      "weight_comment": null
+    },
+    "physical_examination": null,
+    "current_functional_status": {
+      "pt_functional_progress": null,
+      "ot_functional_progress": null,
+      "st_functional_progress": null,
+      "functional_activities": {
+        "eating": "Independent with utensils; able to feed self completely.",
+        "oral_hygiene": null,
+        "toileting_hygiene": null,
+        "toilet_transfer": "Minimal assistance; needs someone nearby for safety.",
+        "shower_bathe_self": "Can shower with supervision.",
+        "upper_body_dressing": "Independent.",
+        "lower_body_dressing": "Moderate assistance required for pants due to hip.",
+        "footwear": null,
+        "sit_to_lying": null,
+        "lying_to_sitting": null,
+        "sit_to_stand": "Supervision only; feels more stable getting up.",
+        "chair_bed_transfer": null,
+        "walk_10_feet": null,
+        "walk_50_feet_two_turns": "Able to walk 50 feet with two turns using walker.",
+        "walk_150_feet": null,
+        "one_step_curb": null,
+        "four_steps": null
+      }
+    },
+    "lab_diagnostic": {
+      "lab_results": null,
+      "diagnostic_findings": "Recent X-ray shows good healing of the hip fracture."
+    },
+    "assessment_plan": "Making excellent progress with mobility and self-care. Continue physical therapy daily. Add occupational therapy for advanced ADL training. Likely one to two more weeks before ready for discharge to home with outpatient therapy. Speech therapy to evaluate swallowing due to some reported liquid dysphagia.",
+    "addendum": null,
+    "physician_addendum": null,
+    "resident_addendum": null,
+    "scribe_attestation": null
+  },
+  "quality_evaluation": "**Score:** 95\n\n---\n\n### Key Strengths\n\n1. **Accuracy of Objective Clinical Data:** All vital signs (temperature, pulse, blood pressure, respirations, oxygen saturation, weight) are correctly and granularly extracted, including measurement sites and patient positioning.\n2. **Functional Status Detailing:** The extraction accurately reflects the patient’s independence level and assistance requirements across multiple activities, matching the nuances in the transcript (e.g., minimal assistance with toilet transfers, moderate assistance with lower body dressing, independent with eating, etc.).\n3. **Assessment & Plan Completeness:** Key elements of the assessment and plan (progress in mobility/self-care, continuation and adjustments to therapy, speech therapy consult, and discharge timing estimate) are preserved and clearly summarized.\n\n---\n\n### Areas for Improvement\n\n1. **Occupational Therapy Integration:** The extracted data under “current_functional_status” briefly captures \"Can shower with supervision\" but does not explicitly mention \"working on meal preparation skills\" or the stated improvement in fine motor skills, both clinically relevant to discharge planning and functional assessment.\n2. **Speech Therapy Details:** While the need for speech therapy is mentioned in the plan, the reason (“reported liquid dysphagia”/“difficulty with liquids yesterday”) could be more explicit or referenced in the subjective history or as a discrete item under speech therapy.\n\n---\n\n**Overall, the extraction is highly accurate and clinically relevant, with only minor omissions in detailed occupational therapy progress and explicit mention of dysphagia symptoms.**"
+}
