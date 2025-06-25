@@ -153,3 +153,47 @@ PATIENT: My blood sugar has been running 200-300 despite diet and exercise. Dr. 
 PHARMACY TECHNICIAN: Dr. Martinez will need to sign this form, and we should have a decision within 24 hours.
 PATIENT: Perfect, I really hope this gets approved.
 """
+
+PRIOR_AUTH_CLINICAL_WEIGHTS = {
+    # Critical - patient safety
+    "member_info.name": 2.5,
+    "member_info.member_id": 2.5,
+    "member_info.allergies": 3.0,
+    "medication_info.medication_name": 3.0,
+    "medication_info.strength": 2.5,
+    "medication_info.directions_for_use": 2.5,
+    "clinical_info.diagnosis": 2.5,
+    "clinical_info.medication_failures": 2.5,
+    "clinical_info.contraindications_intolerances": 3.0,
+    
+    # Important - clinical decisions
+    "member_info.date_of_birth": 2.0,
+    "prescriber_info.provider_name": 2.0,
+    "prescriber_info.npi_number": 2.0,
+    "prescriber_info.specialty": 1.5,
+    "medication_type": 2.0,
+    "medication_info.quantity": 2.0,
+    "medication_info.medication_administered": 1.5,
+    "clinical_info.icd10_codes": 2.0,
+    "clinical_info.lab_test_results": 2.0,
+    "currently_hospitalized": 1.5,
+    "member_pregnant": 2.0,
+    
+    # Supporting - administrative
+    "member_info.street_address": 1.0,
+    "member_info.city": 1.0,
+    "member_info.state": 1.0,
+    "member_info.zip_code": 1.0,
+    "member_info.phone": 1.0,
+    "prescriber_info.office_phone": 1.0,
+    "prescriber_info.office_fax": 1.0,
+    "prescriber_info.office_street_address": 1.0,
+    "prescriber_info.office_city": 1.0,
+    "prescriber_info.office_state": 1.0,
+    "prescriber_info.office_zip_code": 1.0,
+    "therapy_start_date": 1.0,
+    "discharge_date": 1.0,
+    "due_date": 1.5,
+    "clinical_info.additional_information": 1.0,
+    "provider_signature_date": 0.5
+}

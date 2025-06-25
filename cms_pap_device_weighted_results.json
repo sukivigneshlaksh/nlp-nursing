@@ -1,0 +1,165 @@
+{
+  "form_type": "CMS PAP Device",
+  "extracted_data": {
+    "certification_type": "Initial",
+    "certification_date": "2025-06-18",
+    "patient_info": {
+      "name": "Robert J. Williams",
+      "address": "1234 Main Street, Columbus, Ohio 43215",
+      "telephone": "614-555-0123",
+      "hicn": "1EG4-TE5-MK72",
+      "date_of_birth": "1965-03-15",
+      "sex": "M",
+      "height_inches": 70,
+      "weight_pounds": 210
+    },
+    "supplier_info": null,
+    "physician_info": {
+      "name": "Dr. Peterson",
+      "address": "Sleep Medicine Associates, 567 Medical Drive, Columbus, Ohio 43220",
+      "nsc_or_npi": null,
+      "telephone": "614-555-7890"
+    },
+    "place_of_service": null,
+    "facility_name": null,
+    "hcpcs_codes": null,
+    "estimated_length_of_need": 99,
+    "diagnosis_codes": [
+      "327.23",
+      "401.9"
+    ],
+    "clinical_questions": {
+      "obstructive_sleep_apnea_treatment": "Y",
+      "initial_face_to_face_date": "2025-05-20",
+      "sleep_test_date": "2025-06-01",
+      "facility_based_sleep_test": "Y",
+      "ahi_or_rdi_value": "35",
+      "documented_symptoms": "Y",
+      "bilevel_cpap_ineffective": "D",
+      "followup_face_to_face_date": null,
+      "pap_usage_compliance": null,
+      "symptom_improvement": null
+    },
+    "person_answering": null,
+    "equipment_description": "ResMed AirSense 10 CPAP machine with heated humidifier and full face mask",
+    "physician_signature_date": null
+  },
+  "evaluation": {
+    "overall_weighted_score": 100.0,
+    "field_evaluations": {
+      "diagnosis_codes": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": "327.23, 401.9",
+        "confidence": "high"
+      },
+      "patient_info.name": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": "Robert J. Williams",
+        "confidence": "high"
+      },
+      "patient_info.hicn": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": "1EG4-TE5-MK72",
+        "confidence": "high"
+      },
+      "patient_info.date_of_birth": {
+        "score": 100,
+        "weight": 1.5,
+        "weighted_score": 150.0,
+        "value": "1965-03-15",
+        "confidence": "high"
+      },
+      "physician_info.name": {
+        "score": 100,
+        "weight": 1.5,
+        "weighted_score": 150.0,
+        "value": "Dr. Peterson",
+        "confidence": "high"
+      },
+      "certification_type": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "Initial",
+        "confidence": "high"
+      },
+      "certification_date": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "2025-06-18",
+        "confidence": "high"
+      },
+      "estimated_length_of_need": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": 99,
+        "confidence": "high"
+      },
+      "equipment_description": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "ResMed AirSense 10 CPAP machine with heated humidifier and full face mask",
+        "confidence": "high"
+      },
+      "patient_info.address": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "1234 Main Street, Columbus, Ohio 43215",
+        "confidence": "high"
+      },
+      "patient_info.telephone": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "614-555-0123",
+        "confidence": "high"
+      },
+      "patient_info.sex": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "M",
+        "confidence": "high"
+      },
+      "patient_info.height_inches": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": 70,
+        "confidence": "high"
+      },
+      "patient_info.weight_pounds": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": 210,
+        "confidence": "high"
+      },
+      "physician_info.address": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "Sleep Medicine Associates, 567 Medical Drive, Columbus, Ohio 43220",
+        "confidence": "high"
+      },
+      "physician_info.telephone": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "614-555-7890",
+        "confidence": "high"
+      }
+    },
+    "review_recommended": false
+  }
+}

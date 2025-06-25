@@ -1,0 +1,124 @@
+{
+  "form_type": "Medical History",
+  "extracted_data": {
+    "name": "John Michael Smith",
+    "age": 45,
+    "form_date": "June 18, 2025",
+    "county_of_residence": "Franklin County",
+    "major_medical_problems": [
+      "high blood pressure",
+      "Type 2 diabetes",
+      "heart attack two years ago"
+    ],
+    "current_doctor": "Dr. Sarah Johnson at Columbus Family Medicine",
+    "current_medications": [
+      {
+        "name": "Metformin",
+        "purpose": "diabetes"
+      },
+      {
+        "name": "Lisinopril",
+        "purpose": "blood pressure"
+      },
+      {
+        "name": "Atorvastatin",
+        "purpose": "cholesterol"
+      }
+    ],
+    "hospitalizations": [
+      {
+        "hospital": "Ohio State Medical Center",
+        "date_text": "March 2024",
+        "reason": "heart attack"
+      },
+      {
+        "hospital": "Mount Carmel",
+        "date_text": "January 2023",
+        "reason": "pneumonia"
+      }
+    ],
+    "surgeries": [
+      {
+        "procedure": "gallbladder surgery",
+        "date_text": "September 15, 2022"
+      },
+      {
+        "procedure": "knee arthroscopy",
+        "date_text": "June 10, 2020"
+      },
+      {
+        "procedure": "appendectomy",
+        "date_text": "March 8, 2005"
+      }
+    ]
+  },
+  "evaluation": {
+    "overall_weighted_score": 100.0,
+    "field_evaluations": {
+      "name": {
+        "score": 100,
+        "weight": 2.5,
+        "weighted_score": 250.0,
+        "value": "John Michael Smith",
+        "confidence": "high"
+      },
+      "major_medical_problems": {
+        "score": 100,
+        "weight": 3.0,
+        "weighted_score": 300.0,
+        "value": "high blood pressure, Type 2 diabetes, heart attack two years ago",
+        "confidence": "high"
+      },
+      "current_medications": {
+        "score": 100,
+        "weight": 3.0,
+        "weighted_score": 300.0,
+        "value": "{'name': 'Metformin', 'purpose': 'diabetes'}, {'name': 'Lisinopril', 'purpose': 'blood pressure'}, {'name': 'Atorvastatin', 'purpose': 'cholesterol'}",
+        "confidence": "high"
+      },
+      "age": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": 45,
+        "confidence": "high"
+      },
+      "current_doctor": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": "Dr. Sarah Johnson at Columbus Family Medicine",
+        "confidence": "high"
+      },
+      "hospitalizations": {
+        "score": 100,
+        "weight": 2.5,
+        "weighted_score": 250.0,
+        "value": "{'hospital': 'Ohio State Medical Center', 'date_text': 'March 2024', 'reason': 'heart attack'}, {'hospital': 'Mount Carmel', 'date_text': 'January 2023', 'reason': 'pneumonia'}",
+        "confidence": "high"
+      },
+      "surgeries": {
+        "score": 100,
+        "weight": 2.0,
+        "weighted_score": 200.0,
+        "value": "{'procedure': 'gallbladder surgery', 'date_text': 'September 15, 2022'}, {'procedure': 'knee arthroscopy', 'date_text': 'June 10, 2020'}, {'procedure': 'appendectomy', 'date_text': 'March 8, 2005'}",
+        "confidence": "high"
+      },
+      "form_date": {
+        "score": 100,
+        "weight": 1.0,
+        "weighted_score": 100.0,
+        "value": "June 18, 2025",
+        "confidence": "high"
+      },
+      "county_of_residence": {
+        "score": 100,
+        "weight": 0.5,
+        "weighted_score": 50.0,
+        "value": "Franklin County",
+        "confidence": "high"
+      }
+    },
+    "review_recommended": false
+  }
+}

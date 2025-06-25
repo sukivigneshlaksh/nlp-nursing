@@ -70,3 +70,59 @@ PATIENT: I had gallbladder surgery in 2022, and knee arthroscopy in 2020. Oh, an
 NURSE: Can you give me the exact dates for those surgeries?
 PATIENT: The gallbladder was September 15, 2022. The knee surgery was June 10, 2020. The appendectomy was sometime in March 2005, I think March 8th.
 """
+
+MEDICAL_HISTORY_CLINICAL_WEIGHTS = {
+   # Critical fields - patient safety and identification
+   "name": 2.5,  # Patient identification
+   "major_medical_problems": 3.0,  # Critical for clinical decisions
+   "current_medications": 3.0,  # Drug interactions, allergies, contraindications
+   
+   # Important fields - clinical decision impact
+   "age": 2.0,  # Affects treatment protocols
+   "current_doctor": 2.0,  # Care coordination
+   "hospitalizations": 2.5,  # Recent acute care history
+   "surgeries": 2.0,  # Surgical history affects future care
+   
+   # Supporting fields - administrative/documentation
+   "form_date": 1.0,  # Documentation timing
+   "county_of_residence": 0.5,  # Administrative only
+   
+   # Nested medication fields (if evaluating individual medications)
+   "current_medications.name": 3.0,  # Drug name critical
+   "current_medications.purpose": 2.0,  # Important for understanding therapy
+   
+   # Nested hospitalization fields
+   "hospitalizations.hospital": 1.5,  # Care coordination
+   "hospitalizations.date_text": 2.0,  # Timing important for recent events
+   "hospitalizations.reason": 2.5,  # Critical clinical information
+   
+   # Nested surgery fields
+   "surgeries.procedure": 2.0,  # Important surgical history
+   "surgeries.date_text": 1.5,  # Timing relevant but less critical than recent hospitalizations
+}
+
+MEDICAL_HISTORY_CLINICAL_WEIGHTS = {
+   # Critical - patient safety
+   "name": 2.5,
+   "major_medical_problems": 3.0,
+   "current_medications": 3.0,
+   
+   # Important - clinical decisions
+   "age": 2.0,
+   "current_doctor": 2.0,
+   "hospitalizations": 2.5,
+   "surgeries": 2.0,
+   
+   # Supporting - documentation
+   "form_date": 1.0,
+   "county_of_residence": 0.5,
+   
+   # Nested fields
+   "current_medications.name": 3.0,
+   "current_medications.purpose": 2.0,
+   "hospitalizations.hospital": 1.5,
+   "hospitalizations.date_text": 2.0,
+   "hospitalizations.reason": 2.5,
+   "surgeries.procedure": 2.0,
+   "surgeries.date_text": 1.5,
+}

@@ -1,0 +1,6 @@
+Demo:
+    - Show the integrated evaluation update?
+    - Should I incorporate consensus voting (use multiple llms to decide on output)?
+    - Should I have another agent suggest improvements?
+Should the form field be enums instead and match with the larger json for the care step / pain assesment form?
+    - 

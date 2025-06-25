@@ -327,3 +327,74 @@ PATIENT: Yes, my daughter has that.
 NURSE: Would you like to discuss advance care planning today?
 PATIENT: Not sure. Maybe we could talk about it briefly.
 """
+
+WELLNESS_VISIT_CLINICAL_WEIGHTS = {
+    # Critical - patient identification
+    "basic_info.name": 2.5,
+    "basic_info.birthdate": 2.0,
+    "basic_info.todays_date": 1.0,
+    
+    # Important - health status
+    "self_assessment.overall_health_rating": 2.0,
+    "self_assessment.can_manage_health_problems": 2.0,
+    "self_assessment.needs_help_personal_care": 2.5,
+    "function_mobility.fallen_or_near_fall": 2.5,
+    "function_mobility.afraid_of_falling": 2.0,
+    "function_mobility.balance_issues": 2.5,
+    "memory_assessment.memory_issues": 2.5,
+    "memory_assessment.concerns_raised_by_others": 2.0,
+    
+    # Important - functional status
+    "function_mobility.bathing": 2.0,
+    "function_mobility.getting_dressed": 2.0,
+    "function_mobility.using_toilet": 2.0,
+    "function_mobility.preparing_food_eating": 2.0,
+    "function_mobility.moving_around": 2.0,
+    "function_mobility.taking_medications": 2.5,
+    "function_mobility.managing_finances": 1.5,
+    "function_mobility.driving_transportation": 1.5,
+    
+    # Health habits - moderate importance
+    "health_habits.exercise_days_per_week": 1.5,
+    "health_habits.exercise_minutes": 1.5,
+    "health_habits.exercise_intensity": 1.5,
+    "health_habits.fruits_vegetables_frequency": 1.5,
+    "health_habits.hearing_trouble": 2.0,
+    "health_habits.uses_seatbelt": 1.0,
+    
+    # Preventive services - important
+    "preventive_services.mammogram": 2.0,
+    "preventive_services.colorectal_screening": 2.0,
+    "preventive_services.diabetes_screening": 2.0,
+    "preventive_services.cholesterol_panel": 2.0,
+    "preventive_services.bone_density": 2.0,
+    "preventive_services.eye_exam": 1.5,
+    
+    # Advance care planning - important
+    "advance_care_planning.has_living_will": 2.0,
+    "advance_care_planning.has_power_of_attorney": 2.0,
+    "advance_care_planning.has_polst": 1.5,
+    "advance_care_planning.wants_to_discuss": 1.0,
+    
+    # Supporting information
+    "care_providers.outside_providers": 1.0,
+    "self_assessment.emotional_support": 1.5,
+    "psychosocial_health.distressing_feelings": 1.5,
+    "psychosocial_health.stress_levels": 1.5,
+    "psychosocial_health.body_pain": 1.5,
+    "psychosocial_health.fatigue": 1.5,
+    "health_habits.high_fiber_frequency": 1.0,
+    "health_habits.mouth_teeth_condition": 1.0,
+    "health_habits.wears_hearing_aid": 1.5,
+    "health_habits.has_fire_extinguisher": 1.0,
+    "health_habits.has_smoke_detector": 1.0,
+    "function_mobility.assistive_devices": 1.5,
+    "function_mobility.feels_safe_at_home": 1.5,
+    "function_mobility.trip_slip_hazards": 1.5,
+    "function_mobility.leaks_urine_stool": 1.5,
+    "function_mobility.wears_protective_liner": 1.0,
+    "function_mobility.shopping": 1.5,
+    "function_mobility.using_telephone": 1.0,
+    "function_mobility.housekeeping": 1.0,
+    "function_mobility.laundry": 1.0
+}

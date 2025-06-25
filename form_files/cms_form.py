@@ -150,3 +150,55 @@ PATIENT: That matches what Dr. Peterson told me.
 MEDICAL ASSISTANT: Dr. Peterson will review and sign this form to certify the medical necessity.
 PATIENT: Perfect, when can I get the machine?
 """
+
+CMS_PAP_CLINICAL_WEIGHTS = {
+   # Critical - Medicare approval
+   "obstructive_sleep_apnea_treatment": 3.0,
+   "ahi_or_rdi_value": 3.0,
+   "facility_based_sleep_test": 2.5,
+   "documented_symptoms": 2.5,
+   
+   # Important - clinical decisions
+   "initial_face_to_face_date": 2.0,
+   "sleep_test_date": 2.0,
+   "diagnosis_codes": 2.0,
+   "hcpcs_codes": 2.0,
+   
+   # Patient identification
+   "patient_info.name": 2.0,
+   "patient_info.hicn": 2.0,
+   "patient_info.date_of_birth": 1.5,
+   
+   # Provider information
+   "physician_info.name": 1.5,
+   "physician_info.nsc_or_npi": 1.5,
+   "supplier_info.name": 1.5,
+   "supplier_info.nsc_or_npi": 1.5,
+   
+   # Follow-up requirements
+   "pap_usage_compliance": 2.5,
+   "symptom_improvement": 2.0,
+   "followup_face_to_face_date": 1.5,
+   
+   # Supporting
+   "certification_type": 1.0,
+   "certification_date": 1.0,
+   "estimated_length_of_need": 1.0,
+   "equipment_description": 1.0,
+   "patient_info.address": 1.0,
+   "patient_info.telephone": 1.0,
+   "patient_info.sex": 1.0,
+   "patient_info.height_inches": 1.0,
+   "patient_info.weight_pounds": 1.0,
+   "physician_info.address": 1.0,
+   "physician_info.telephone": 1.0,
+   "supplier_info.address": 1.0,
+   "supplier_info.telephone": 1.0,
+   "place_of_service": 1.0,
+   "facility_name": 1.0,
+   "bilevel_cpap_ineffective": 1.0,
+   "person_answering.name": 0.5,
+   "person_answering.title": 0.5,
+   "person_answering.employer": 0.5,
+   "physician_signature_date": 0.5
+}
