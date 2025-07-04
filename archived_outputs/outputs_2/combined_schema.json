@@ -1,0 +1,165 @@
+{
+  "type": "object",
+  "properties": {
+    "group_0_name": {
+      "type": "string",
+      "description": "Name",
+      "maxLength": 50
+    },
+    "group_0_age": {
+      "type": "integer",
+      "description": "Age",
+      "minimum": 0,
+      "maximum": 150
+    },
+    "group_0_date": {
+      "type": "string",
+      "description": "Date",
+      "format": "date"
+    },
+    "group_0_county_of_residence": {
+      "type": "string",
+      "description": "County of Residence",
+      "maxLength": 100
+    },
+    "group_0_list_major_medical_problems": {
+      "type": "string",
+      "description": "List Major Medical Problems",
+      "maxLength": 500
+    },
+    "group_0_current_doctor": {
+      "type": "string",
+      "description": "Current Doctor",
+      "maxLength": 100
+    },
+    "group_1_current_medications_1": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 1"
+    },
+    "group_1_current_medications_2": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 2"
+    },
+    "group_1_current_medications_3": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 3"
+    },
+    "group_1_current_medications_4": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 4"
+    },
+    "group_1_current_medications_5": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 5"
+    },
+    "group_1_current_medications_6": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Current Medication 6"
+    },
+    "group_1_purpose_1": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 1"
+    },
+    "group_1_purpose_2": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 2"
+    },
+    "group_1_purpose_3": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 3"
+    },
+    "group_1_purpose_4": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 4"
+    },
+    "group_1_purpose_5": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 5"
+    },
+    "group_1_purpose_6": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Purpose 6"
+    },
+    "group_2_hospitalizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "hospital": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "date": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 255
+          }
+        },
+        "required": [
+          "hospital",
+          "date",
+          "reason"
+        ]
+      },
+      "maxItems": 3
+    },
+    "group_3_surgery_1": {
+      "type": "string",
+      "description": "Surgery 1",
+      "maxLength": 100
+    },
+    "group_3_surgery_1_date": {
+      "type": "string",
+      "description": "Surgery 1 Date",
+      "maxLength": 100
+    },
+    "group_3_surgery_2": {
+      "type": "string",
+      "description": "Surgery 2",
+      "maxLength": 100
+    },
+    "group_3_surgery_2_date": {
+      "type": "string",
+      "description": "Surgery 2 Date",
+      "maxLength": 100
+    },
+    "group_3_surgery_3": {
+      "type": "string",
+      "description": "Surgery 3",
+      "maxLength": 100
+    },
+    "group_3_surgery_3_date": {
+      "type": "string",
+      "description": "Surgery 3 Date",
+      "maxLength": 100
+    },
+    "group_3_surgery_4": {
+      "type": "string",
+      "description": "Surgery 4",
+      "maxLength": 100
+    },
+    "group_3_surgery_4_date": {
+      "type": "string",
+      "description": "Surgery 4 Date",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "group_2_hospitalizations"
+  ]
+}

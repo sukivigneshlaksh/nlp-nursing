@@ -1,0 +1,93 @@
+[
+  {
+    "text": "DEPARTMENT OF HEALTH AND HUMAN SERVICES  \nCENTERS FOR MEDICARE & MEDICAID SERVICES",
+    "chunk_id": "a3cb1748-7446-44e4-87d7-a0b0aeff7ebb",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.marginalia_a3cb1748-7446-44e4-87d7-a0b0aeff7ebb_0.png"
+    ]
+  },
+  {
+    "text": "Form Approved  \nOMB No. OMB 0938-0679",
+    "chunk_id": "3510f220-7cf5-45ce-b27c-089d9b3d7c7e",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.marginalia_3510f220-7cf5-45ce-b27c-089d9b3d7c7e_0.png"
+    ]
+  },
+  {
+    "text": "CERTIFICATE OF MEDICAL NECESSITY",
+    "chunk_id": "17c638de-a58f-4053-b624-54b04dfa9a43",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_17c638de-a58f-4053-b624-54b04dfa9a43_0.png"
+    ]
+  },
+  {
+    "text": "DME 03.03",
+    "chunk_id": "20d29730-650f-44d5-b27e-1d0e12df82b0",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_20d29730-650f-44d5-b27e-1d0e12df82b0_0.png"
+    ]
+  },
+  {
+    "text": "CMS-10269: POSITIVE AIRWAY PRESSURE (PAP) DEVICES FOR OBSTRUCTIVE SLEEP APNEA\n\nSECTION A:  \nCertification Type/Date: INITIAL ___/___/___    RECERTIFICATION ___/___/___\n\nPATIENT NAME, ADDRESS, TELEPHONE and HICN\n\n(___) ___-____    HICN ________________________\n\nSUPPLIER NAME, ADDRESS, TELEPHONE and NSC or NPI #\n\n(___) ___-____    NSC or NPI # ________________________",
+    "chunk_id": "d8b742b0-6794-4388-a77a-c367db22cf3c",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_d8b742b0-6794-4388-a77a-c367db22cf3c_0.png"
+    ]
+  },
+  {
+    "text": "PLACE OF SERVICE ____________________________\n\nNAME and ADDRESS of FACILITY if applicable (See Reverse)\n\nHCPCS CODE\n_____________\n_____________\n_____________\n_____________\n\nPT DOB ___/___/___ ;  Sex _____ (M/F) ;  HT.________(in.) ;  WT.______(lbs.)\n\nPHYSICIAN NAME, ADDRESS (Printed or Typed)\n\nPHYSICIAN'S NSC or NPI #: ____________________________________________\n\nPHYSICIAN'S TELEPHONE #: (___ ___ ___) ___-___-____",
+    "chunk_id": "c3642e2b-937b-44f5-967b-3617a2cdd3f3",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_c3642e2b-937b-44f5-967b-3617a2cdd3f3_0.png"
+    ]
+  },
+  {
+    "text": "SECTION B: Information in this section may not be completed by the supplier of the items/supplies.\n\nEST. LENGTH OF NEED (# OF MONTHS): ______ 1\u201399 (99=LIFETIME)\n\nDIAGNOSIS CODES (ICD-9): ______ ______ ______ ______",
+    "chunk_id": "d8a82e45-f0fe-447e-8e01-4db78fd39a8a",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_d8a82e45-f0fe-447e-8e01-4db78fd39a8a_0.png"
+    ]
+  },
+  {
+    "text": "<table><thead><tr><th>ANSWERS</th><th>ANSWER QUESTIONS 1-7 FOR INITIAL EVALUATION<br>ANSWER QUESTIONS 8-10 FOR FOLLOW-UP EVALUATION (RECERTIFICATION)<br>(Check Y for Yes, N for No, D for Does Not Apply)</th></tr></thead><tbody><tr><td>\u25a1 Y   \u25a1 N</td><td>1.   Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)?<br>If YES, continue to Questions 2-5; If NO, Proceed to Section D</td></tr><tr><td>___/___/___</td><td>2.   Enter date of initial face-to-face evaluation</td></tr><tr><td>___/___/___</td><td>3.   Enter date of sleep test (If test spans multiple days, enter date of first day of test)</td></tr><tr><td>\u25a1 Y   \u25a1 N</td><td>4.   Was the patient's sleep test conducted in a facility-based lab?</td></tr><tr><td>___________</td><td>5.   What is the patient's Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?</td></tr><tr><td>\u25a1 Y   \u25a1 N</td><td>6.   Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke.</td></tr><tr><td>\u25a1 Y   \u25a1 N   \u25a1 D</td><td>7.   If a bilevel device is ordered, has a CPAP device been tried and found ineffective?</td></tr><tr><td>___/___/___</td><td>8.   Enter date of follow-up face-to-face evaluation.</td></tr><tr><td>\u25a1 Y   \u25a1 N</td><td>9.   Is there a report documenting that the patient used PAP \u2265 4 hours per night on at least 70% of nights in a 30 consecutive day period?</td></tr><tr><td>\u25a1 Y   \u25a1 N</td><td>10.  Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?</td></tr></tbody></table>",
+    "chunk_id": "4cabb780-9753-4ce5-b5ce-00be7f5d85a7",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.table_4cabb780-9753-4ce5-b5ce-00be7f5d85a7_0.png"
+    ]
+  },
+  {
+    "text": "NAME OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN (Please Print):\n\nNAME: _________________________________  TITLE: ___________________________  EMPLOYER: _________________________________",
+    "chunk_id": "e39f2db9-0716-419a-aa17-a1d1d3fe7544",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_e39f2db9-0716-419a-aa17-a1d1d3fe7544_0.png"
+    ]
+  },
+  {
+    "text": "SECTION C: Narrative Description of Equipment and Cost\n\n(1) Narrative description of all items, accessories and options ordered; (2) Supplier\u2019s charge; and (3) Medicare Fee Schedule Allowance for each item, accessory, and option. (See instructions on back)",
+    "chunk_id": "54d26c4e-2ce1-4377-99c0-034186ca2612",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_54d26c4e-2ce1-4377-99c0-034186ca2612_0.png"
+    ]
+  },
+  {
+    "text": "SECTION D: Physician Attestation and Signature/Date\n\nI certify that I am the physician identified in Section A of this form. I have received Sections A, B and C of the Certificate of Medical Necessity (including charges for items ordered). Any statement on my letterhead attached hereto, has been reviewed and signed by me. I certify that the medical necessity information in Section B is true, accurate and complete, to the best of my knowledge, and I understand that any falsification, omission, or concealment of material fact in that section may subject me to civil or criminal liability.\n\nPHYSICIAN\u2019S SIGNATURE _______________________________  DATE ____/____/____ (SIGNATURE AND DATE STAMPS ARE NOT ACCEPTABLE)",
+    "chunk_id": "5dccb83f-9009-4287-99ea-5a549bccbf6d",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.text_5dccb83f-9009-4287-99ea-5a549bccbf6d_0.png"
+    ]
+  },
+  {
+    "text": "Form CMS-10269 (12/09)",
+    "chunk_id": "4e7a064f-bcf2-443b-a297-6772c5ed6a66",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.marginalia_4e7a064f-bcf2-443b-a297-6772c5ed6a66_0.png"
+    ]
+  },
+  {
+    "text": "1",
+    "chunk_id": "d0ef35ea-121f-4f59-a1dd-3b32387a92bf",
+    "image_paths": [
+      "outputs_2/groundings/CMS_Form_20250702_234104/page_0/ChunkType.marginalia_d0ef35ea-121f-4f59-a1dd-3b32387a92bf_0.png"
+    ]
+  }
+]

@@ -1,0 +1,861 @@
+{
+  "grouped_indices": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7,
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "json_schemas": [
+    {
+      "group_index": 0,
+      "chunk_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    {
+      "group_index": 1,
+      "chunk_indices": [
+        4,
+        5
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "certification_type": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ]
+            }
+          },
+          "initial_date": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "recertification_date": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "patient_name_address_telephone": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "patient_telephone": {
+            "type": "string",
+            "maxLength": 14
+          },
+          "patient_hicn": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "supplier_name_address_telephone": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "supplier_telephone": {
+            "type": "string",
+            "maxLength": 14
+          },
+          "supplier_nsc_or_npi": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "place_of_service": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "facility_name_address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "hcpcs_code_1": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_2": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_3": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_4": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "patient_dob": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "patient_sex": {
+            "enum": [
+              "M",
+              "F"
+            ]
+          },
+          "patient_height": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "patient_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "physician_name_address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "physician_nsc_or_npi": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "physician_telephone": {
+            "type": "string",
+            "maxLength": 14
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "group_index": 2,
+      "chunk_indices": [
+        6,
+        7,
+        8
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "est_length_of_need": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 99,
+            "description": "EST. LENGTH OF NEED (# OF MONTHS): 1-99 (99=LIFETIME)"
+          },
+          "diagnosis_codes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 10
+            },
+            "maxItems": 4,
+            "description": "DIAGNOSIS CODES (ICD-9)"
+          },
+          "initial_eval_q1": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "1. Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)? If YES, continue to Questions 2-5; If NO, Proceed to Section D"
+          },
+          "initial_eval_q2_date": {
+            "type": "string",
+            "description": "2. Enter date of initial face-to-face evaluation"
+          },
+          "initial_eval_q3_date": {
+            "type": "string",
+            "description": "3. Enter date of sleep test (If test spans multiple days, enter date of first day of test)"
+          },
+          "initial_eval_q4": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "4. Was the patient's sleep test conducted in a facility-based lab?"
+          },
+          "initial_eval_q5": {
+            "type": "string",
+            "description": "5. What is the patient's Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?"
+          },
+          "initial_eval_q6": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "6. Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke."
+          },
+          "initial_eval_q7": {
+            "enum": [
+              "Y",
+              "N",
+              "D"
+            ],
+            "description": "7. If a bilevel device is ordered, has a CPAP device been tried and found ineffective?"
+          },
+          "followup_eval_q8_date": {
+            "type": "string",
+            "description": "8. Enter date of follow-up face-to-face evaluation."
+          },
+          "followup_eval_q9": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "9. Is there a report documenting that the patient used PAP \u2265 4 hours per night on at least 70% of nights in a 30 consecutive day period?"
+          },
+          "followup_eval_q10": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "10. Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "NAME OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "TITLE OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          },
+          "employer": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "EMPLOYER OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "group_index": 3,
+      "chunk_indices": [
+        9
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "narrative_description": {
+            "type": "string",
+            "description": "Narrative description of all items, accessories and options ordered"
+          },
+          "supplier_charge": {
+            "type": "number",
+            "description": "Supplier's charge for each item, accessory, and option"
+          },
+          "medicare_fee_schedule_allowance": {
+            "type": "number",
+            "description": "Medicare Fee Schedule Allowance for each item, accessory, and option"
+          }
+        },
+        "required": [
+          "narrative_description",
+          "supplier_charge",
+          "medicare_fee_schedule_allowance"
+        ]
+      }
+    },
+    {
+      "group_index": 4,
+      "chunk_indices": [
+        10
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "physician_signature": {
+            "type": "string",
+            "description": "Physician's Signature"
+          },
+          "date": {
+            "type": "string",
+            "description": "Date"
+          }
+        },
+        "required": [
+          "physician_signature",
+          "date"
+        ]
+      }
+    },
+    {
+      "group_index": 5,
+      "chunk_indices": [
+        11,
+        12
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  ],
+  "filled_schemas": [
+    {
+      "group_index": 0,
+      "chunk_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "filled_data": {
+        "type": "object",
+        "properties": {
+          "patient_name": {
+            "type": "string",
+            "value": "Robert Chen"
+          },
+          "patient_dob": {
+            "type": "string",
+            "value": "02/08/1968"
+          },
+          "patient_address": {
+            "type": "string",
+            "value": "842 Elm Street, Kansas City, Missouri 64111"
+          },
+          "patient_phone": {
+            "type": "string",
+            "value": "816-555-3421"
+          },
+          "patient_medicare": {
+            "type": "string",
+            "value": "123-45-6789A"
+          },
+          "patient_height": {
+            "type": "integer",
+            "value": 70
+          },
+          "patient_weight": {
+            "type": "integer",
+            "value": 185
+          },
+          "patient_sex": {
+            "type": "string",
+            "value": "Male"
+          },
+          "doctor_name": {
+            "type": "string",
+            "value": "Dr. Maria Rodriguez"
+          },
+          "doctor_specialty": {
+            "type": "string",
+            "value": "Sleep Medicine"
+          },
+          "doctor_npi": {
+            "type": "string",
+            "value": "1234567890"
+          },
+          "doctor_phone": {
+            "type": "string",
+            "value": "816-555-7890"
+          },
+          "sleep_study_date": {
+            "type": "string",
+            "value": "12/18/2024"
+          },
+          "ahi": {
+            "type": "integer",
+            "value": 42
+          },
+          "cpap_hcpcs_code": {
+            "type": "string",
+            "value": "E0601"
+          },
+          "humidifier_hcpcs_code": {
+            "type": "string",
+            "value": "E0562"
+          },
+          "diagnosis_code": {
+            "type": "string",
+            "value": "327.23"
+          },
+          "initial_evaluation_date": {
+            "type": "string",
+            "value": "01/15/2025"
+          },
+          "cpap_duration": {
+            "type": "string",
+            "value": "99 months"
+          },
+          "dme_npi": {
+            "type": "string",
+            "value": "9876543210"
+          },
+          "dme_name": {
+            "type": "string",
+            "value": "MedEquip Solutions"
+          },
+          "follow_up_date": {
+            "type": "string",
+            "value": "03/01/2025"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "group_index": 1,
+      "chunk_indices": [
+        4,
+        5
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "certification_type": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ]
+            }
+          },
+          "initial_date": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "recertification_date": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "patient_name_address_telephone": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "patient_telephone": {
+            "type": "string",
+            "maxLength": 14
+          },
+          "patient_hicn": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "supplier_name_address_telephone": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "supplier_telephone": {
+            "type": "string",
+            "maxLength": 14
+          },
+          "supplier_nsc_or_npi": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "place_of_service": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "facility_name_address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "hcpcs_code_1": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_2": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_3": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "hcpcs_code_4": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "patient_dob": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "patient_sex": {
+            "enum": [
+              "M",
+              "F"
+            ]
+          },
+          "patient_height": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "patient_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+          },
+          "physician_name_address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "physician_nsc_or_npi": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "physician_telephone": {
+            "type": "string",
+            "maxLength": 14
+          }
+        },
+        "required": []
+      },
+      "filled_data": {
+        "certification_type": [
+          "INITIAL"
+        ],
+        "initial_date": "01/15/2025",
+        "recertification_date": null,
+        "patient_name_address_telephone": "Robert Chen, 842 Elm Street, Kansas City, Missouri 64111, 816-555-3421",
+        "patient_telephone": "816-555-3421",
+        "patient_hicn": "123-45-6789A",
+        "supplier_name_address_telephone": null,
+        "supplier_telephone": null,
+        "supplier_nsc_or_npi": "9876543210",
+        "place_of_service": "facility-based lab",
+        "facility_name_address": null,
+        "hcpcs_code_1": "E0601",
+        "hcpcs_code_2": "E0562",
+        "hcpcs_code_3": null,
+        "hcpcs_code_4": null,
+        "patient_dob": "02/08/1968",
+        "patient_sex": "M",
+        "patient_height": 70,
+        "patient_weight": 185,
+        "physician_name_address": null,
+        "physician_nsc_or_npi": "1234567890",
+        "physician_telephone": "816-555-7890"
+      }
+    },
+    {
+      "group_index": 2,
+      "chunk_indices": [
+        6,
+        7,
+        8
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "est_length_of_need": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 99,
+            "description": "EST. LENGTH OF NEED (# OF MONTHS): 1-99 (99=LIFETIME)"
+          },
+          "diagnosis_codes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 10
+            },
+            "maxItems": 4,
+            "description": "DIAGNOSIS CODES (ICD-9)"
+          },
+          "initial_eval_q1": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "1. Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)? If YES, continue to Questions 2-5; If NO, Proceed to Section D"
+          },
+          "initial_eval_q2_date": {
+            "type": "string",
+            "description": "2. Enter date of initial face-to-face evaluation"
+          },
+          "initial_eval_q3_date": {
+            "type": "string",
+            "description": "3. Enter date of sleep test (If test spans multiple days, enter date of first day of test)"
+          },
+          "initial_eval_q4": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "4. Was the patient's sleep test conducted in a facility-based lab?"
+          },
+          "initial_eval_q5": {
+            "type": "string",
+            "description": "5. What is the patient's Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?"
+          },
+          "initial_eval_q6": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "6. Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke."
+          },
+          "initial_eval_q7": {
+            "enum": [
+              "Y",
+              "N",
+              "D"
+            ],
+            "description": "7. If a bilevel device is ordered, has a CPAP device been tried and found ineffective?"
+          },
+          "followup_eval_q8_date": {
+            "type": "string",
+            "description": "8. Enter date of follow-up face-to-face evaluation."
+          },
+          "followup_eval_q9": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "9. Is there a report documenting that the patient used PAP \u2265 4 hours per night on at least 70% of nights in a 30 consecutive day period?"
+          },
+          "followup_eval_q10": {
+            "enum": [
+              "Y",
+              "N"
+            ],
+            "description": "10. Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "NAME OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "TITLE OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          },
+          "employer": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "EMPLOYER OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN"
+          }
+        },
+        "required": []
+      },
+      "filled_data": {
+        "est_length_of_need": 99,
+        "diagnosis_codes": [
+          "327.23"
+        ],
+        "initial_eval_q1": "Y",
+        "initial_eval_q2_date": "01/15/2025",
+        "initial_eval_q3_date": "12/18/2024",
+        "initial_eval_q4": "Y",
+        "initial_eval_q5": "42",
+        "initial_eval_q6": "Y",
+        "initial_eval_q7": "D",
+        "followup_eval_q8_date": "03/01/2025",
+        "followup_eval_q9": null,
+        "followup_eval_q10": null,
+        "name": null,
+        "title": null,
+        "employer": null
+      }
+    },
+    {
+      "group_index": 3,
+      "chunk_indices": [
+        9
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "narrative_description": {
+            "type": "string",
+            "description": "Narrative description of all items, accessories and options ordered"
+          },
+          "supplier_charge": {
+            "type": "number",
+            "description": "Supplier's charge for each item, accessory, and option"
+          },
+          "medicare_fee_schedule_allowance": {
+            "type": "number",
+            "description": "Medicare Fee Schedule Allowance for each item, accessory, and option"
+          }
+        },
+        "required": [
+          "narrative_description",
+          "supplier_charge",
+          "medicare_fee_schedule_allowance"
+        ]
+      },
+      "filled_data": {
+        "narrative_description": "CPAP machine, HCPCS code E0601, with humidifier E0562",
+        "supplier_charge": null,
+        "medicare_fee_schedule_allowance": null
+      }
+    },
+    {
+      "group_index": 4,
+      "chunk_indices": [
+        10
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "physician_signature": {
+            "type": "string",
+            "description": "Physician's Signature"
+          },
+          "date": {
+            "type": "string",
+            "description": "Date"
+          }
+        },
+        "required": [
+          "physician_signature",
+          "date"
+        ]
+      },
+      "filled_data": {
+        "physician_signature": null,
+        "date": "01/15/2025"
+      }
+    },
+    {
+      "group_index": 5,
+      "chunk_indices": [
+        11,
+        12
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "filled_data": {
+        "type": "object",
+        "properties": {
+          "patient_name": {
+            "type": "string",
+            "value": "Robert Chen"
+          },
+          "patient_dob": {
+            "type": "string",
+            "value": "02/08/1968"
+          },
+          "patient_address": {
+            "type": "string",
+            "value": "842 Elm Street, Kansas City, Missouri 64111"
+          },
+          "patient_phone": {
+            "type": "string",
+            "value": "816-555-3421"
+          },
+          "patient_medicare": {
+            "type": "string",
+            "value": "123-45-6789A"
+          },
+          "patient_height": {
+            "type": "integer",
+            "value": 70
+          },
+          "patient_weight": {
+            "type": "integer",
+            "value": 185
+          },
+          "patient_sex": {
+            "type": "string",
+            "value": "Male"
+          },
+          "doctor_name": {
+            "type": "string",
+            "value": "Dr. Maria Rodriguez"
+          },
+          "doctor_specialty": {
+            "type": "string",
+            "value": "Sleep Medicine"
+          },
+          "doctor_npi": {
+            "type": "string",
+            "value": "1234567890"
+          },
+          "doctor_phone": {
+            "type": "string",
+            "value": "816-555-7890"
+          },
+          "sleep_study_date": {
+            "type": "string",
+            "value": "12/18/2024"
+          },
+          "ahi": {
+            "type": "integer",
+            "value": 42
+          },
+          "cpap_hcpcs_code": {
+            "type": "string",
+            "value": "E0601"
+          },
+          "humidifier_hcpcs_code": {
+            "type": "string",
+            "value": "E0562"
+          },
+          "diagnosis_code": {
+            "type": "string",
+            "value": "327.23"
+          },
+          "cpap_duration": {
+            "type": "string",
+            "value": "99 months"
+          },
+          "initial_evaluation_date": {
+            "type": "string",
+            "value": "01/15/2025"
+          },
+          "cpap_usage_requirement": {
+            "type": "string",
+            "value": "4+ hours per night, 70% of nights over 30 days"
+          },
+          "dme_name": {
+            "type": "string",
+            "value": "MedEquip Solutions"
+          },
+          "dme_npi": {
+            "type": "string",
+            "value": "9876543210"
+          },
+          "follow_up_date": {
+            "type": "string",
+            "value": "03/01/2025"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+  "total_groups": 6,
+  "total_chunks": 13
+}
