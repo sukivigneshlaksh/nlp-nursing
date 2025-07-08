@@ -1,0 +1,241 @@
+{
+  "form_analysis": {
+    "page_count": 2,
+    "chunk_count": 2,
+    "complexity": "simple",
+    "estimated_processing_time": 10.0,
+    "recommended_strategy": "simple",
+    "form_type": "cms_form",
+    "key_sections": []
+  },
+  "processing_result": {
+    "success": true,
+    "processing_time": 11.063572883605957,
+    "strategy_used": "complex",
+    "confidence_score": 0.5
+  },
+  "section_results": [
+    {
+      "section_id": 0,
+      "chunk_indices": [
+        0
+      ],
+      "status": "success",
+      "json_model": {
+        "sectionTitle": "Patient Information Section",
+        "fields": [
+          {
+            "label": "First Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "label": "Middle Name",
+            "type": "text"
+          },
+          {
+            "label": "Last Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "label": "Date of Birth",
+            "type": "date",
+            "required": true
+          },
+          {
+            "label": "Gender",
+            "type": "select",
+            "options": [
+              "Male",
+              "Female",
+              "Other",
+              "Prefer not to say"
+            ],
+            "required": true
+          },
+          {
+            "label": "Address",
+            "type": "text",
+            "required": true
+          },
+          {
+            "label": "Phone Number",
+            "type": "tel",
+            "required": true
+          },
+          {
+            "label": "Email Address",
+            "type": "email"
+          },
+          {
+            "label": "Emergency Contact Name",
+            "type": "text"
+          },
+          {
+            "label": "Emergency Contact Phone",
+            "type": "tel"
+          },
+          {
+            "label": "Emergency Contact Relationship",
+            "type": "text"
+          }
+        ]
+      },
+      "filled_data": {
+        "sectionTitle": "Patient Information Section",
+        "fields": [
+          {
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "value": "Robert"
+          },
+          {
+            "label": "Middle Name",
+            "type": "text",
+            "value": null
+          },
+          {
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "value": "Chen"
+          },
+          {
+            "label": "Date of Birth",
+            "type": "date",
+            "required": true,
+            "value": "02/08/1968"
+          },
+          {
+            "label": "Gender",
+            "type": "select",
+            "options": [
+              "Male",
+              "Female",
+              "Other",
+              "Prefer not to say"
+            ],
+            "required": true,
+            "value": "Male"
+          },
+          {
+            "label": "Address",
+            "type": "text",
+            "required": true,
+            "value": "842 Elm Street, Kansas City, Missouri 64111"
+          },
+          {
+            "label": "Phone Number",
+            "type": "tel",
+            "required": true,
+            "value": "816-555-3421"
+          },
+          {
+            "label": "Email Address",
+            "type": "email",
+            "value": null
+          },
+          {
+            "label": "Emergency Contact Name",
+            "type": "text",
+            "value": null
+          },
+          {
+            "label": "Emergency Contact Phone",
+            "type": "tel",
+            "value": null
+          },
+          {
+            "label": "Emergency Contact Relationship",
+            "type": "text",
+            "value": null
+          }
+        ]
+      }
+    },
+    {
+      "section_id": 1,
+      "chunk_indices": [
+        1
+      ],
+      "status": "failed",
+      "error": "Expecting ',' delimiter: line 3 column 20 (char 66)"
+    }
+  ],
+  "filled_form": {
+    "section_0": {
+      "sectionTitle": "Patient Information Section",
+      "fields": [
+        {
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "value": "Robert"
+        },
+        {
+          "label": "Middle Name",
+          "type": "text",
+          "value": null
+        },
+        {
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "value": "Chen"
+        },
+        {
+          "label": "Date of Birth",
+          "type": "date",
+          "required": true,
+          "value": "02/08/1968"
+        },
+        {
+          "label": "Gender",
+          "type": "select",
+          "options": [
+            "Male",
+            "Female",
+            "Other",
+            "Prefer not to say"
+          ],
+          "required": true,
+          "value": "Male"
+        },
+        {
+          "label": "Address",
+          "type": "text",
+          "required": true,
+          "value": "842 Elm Street, Kansas City, Missouri 64111"
+        },
+        {
+          "label": "Phone Number",
+          "type": "tel",
+          "required": true,
+          "value": "816-555-3421"
+        },
+        {
+          "label": "Email Address",
+          "type": "email",
+          "value": null
+        },
+        {
+          "label": "Emergency Contact Name",
+          "type": "text",
+          "value": null
+        },
+        {
+          "label": "Emergency Contact Phone",
+          "type": "tel",
+          "value": null
+        },
+        {
+          "label": "Emergency Contact Relationship",
+          "type": "text",
+          "value": null
+        }
+      ]
+    }
+  }
+}

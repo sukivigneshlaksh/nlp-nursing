@@ -1,0 +1,23 @@
+MEDICAL FORM PROCESSING REPORT
+Generated: 2025-07-04T19:18:03.891432
+Processing Time: 11.06 seconds
+Strategy Used: COMPLEX
+Success: True
+
+FORM ANALYSIS
+=============
+Page Count: 2
+Complexity: simple
+Form Type: cms_form
+Chunk Count: 2
+
+PROCESSING RESULTS
+==================
+Total Sections: 2
+Successful Sections: 1
+Failed Sections: 1
+
+FINAL FORM
+==========
+Total Fields: 1
+Sections: ['section_0']

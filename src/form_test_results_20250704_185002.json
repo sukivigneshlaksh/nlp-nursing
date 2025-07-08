@@ -1,0 +1,165 @@
+{
+  "total_tests": 15,
+  "passed_tests": 15,
+  "failed_tests": 0,
+  "success_rate": 1.0,
+  "total_time": 0.00030493736267089844,
+  "test_suites": {
+    "transcript_quality": {
+      "simple_form": {
+        "word_count": 349,
+        "line_count": 32,
+        "has_provider": true,
+        "has_patient": true,
+        "has_dialogue": true,
+        "field_coverage": {
+          "name": true,
+          "age": false,
+          "county": true,
+          "medical problems": true,
+          "medications": true
+        },
+        "coverage_rate": 0.8,
+        "quality_score": 1.0,
+        "passed": true
+      },
+      "cms_form": {
+        "word_count": 564,
+        "line_count": 67,
+        "has_provider": true,
+        "has_patient": true,
+        "has_dialogue": true,
+        "field_coverage": {
+          "patient": true,
+          "physician": true,
+          "sleep": true,
+          "cpap": true
+        },
+        "coverage_rate": 1.0,
+        "quality_score": 1.0,
+        "passed": true
+      },
+      "prior_auth_form": {
+        "word_count": 424,
+        "line_count": 52,
+        "has_provider": true,
+        "has_patient": true,
+        "has_dialogue": true,
+        "field_coverage": {
+          "member": true,
+          "prescriber": false,
+          "medication": true,
+          "diagnosis": true
+        },
+        "coverage_rate": 0.75,
+        "quality_score": 1.0,
+        "passed": true
+      },
+      "pain_assessment": {
+        "word_count": 585,
+        "line_count": 53,
+        "has_provider": true,
+        "has_patient": true,
+        "has_dialogue": true,
+        "field_coverage": {
+          "pain": true,
+          "location": true,
+          "scale": true,
+          "medication": true
+        },
+        "coverage_rate": 1.0,
+        "quality_score": 1.0,
+        "passed": true
+      },
+      "wellness_form": {
+        "word_count": 687,
+        "line_count": 76,
+        "has_provider": true,
+        "has_patient": true,
+        "has_dialogue": true,
+        "field_coverage": {
+          "health": true,
+          "activities": true,
+          "memory": true,
+          "preventive": true
+        },
+        "coverage_rate": 1.0,
+        "quality_score": 1.0,
+        "passed": true
+      }
+    },
+    "routing_logic": {
+      "simple_form": {
+        "expected_complexity": "simple",
+        "actual_strategy": "simple",
+        "expected_strategy": "simple",
+        "correct_routing": true
+      },
+      "cms_form": {
+        "expected_complexity": "moderate",
+        "actual_strategy": "complex",
+        "expected_strategy": "complex",
+        "correct_routing": true
+      },
+      "prior_auth_form": {
+        "expected_complexity": "moderate",
+        "actual_strategy": "complex",
+        "expected_strategy": "complex",
+        "correct_routing": true
+      },
+      "pain_assessment": {
+        "expected_complexity": "moderate",
+        "actual_strategy": "complex",
+        "expected_strategy": "complex",
+        "correct_routing": true
+      },
+      "wellness_form": {
+        "expected_complexity": "complex",
+        "actual_strategy": "complex",
+        "expected_strategy": "complex",
+        "correct_routing": true
+      }
+    },
+    "form_compatibility": {
+      "simple_form": {
+        "transcript_valid": true,
+        "json_serializable": true,
+        "path_valid": true,
+        "compatibility_score": 1.0,
+        "passed": true
+      },
+      "cms_form": {
+        "transcript_valid": true,
+        "json_serializable": true,
+        "path_valid": true,
+        "compatibility_score": 1.0,
+        "passed": true
+      },
+      "prior_auth_form": {
+        "transcript_valid": true,
+        "json_serializable": true,
+        "path_valid": true,
+        "compatibility_score": 1.0,
+        "passed": true
+      },
+      "pain_assessment": {
+        "transcript_valid": true,
+        "json_serializable": true,
+        "path_valid": true,
+        "compatibility_score": 1.0,
+        "passed": true
+      },
+      "wellness_form": {
+        "transcript_valid": true,
+        "json_serializable": true,
+        "path_valid": true,
+        "compatibility_score": 1.0,
+        "passed": true
+      }
+    },
+    "end_to_end": {
+      "skipped": true,
+      "reason": "API testing not enabled"
+    }
+  }
+}

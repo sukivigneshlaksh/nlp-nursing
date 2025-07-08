@@ -1,0 +1,74 @@
+{
+  "section_0": {
+    "sectionTitle": "Patient Information Section",
+    "fields": [
+      {
+        "label": "First Name",
+        "type": "text",
+        "required": true,
+        "value": "Robert"
+      },
+      {
+        "label": "Middle Name",
+        "type": "text",
+        "value": null
+      },
+      {
+        "label": "Last Name",
+        "type": "text",
+        "required": true,
+        "value": "Chen"
+      },
+      {
+        "label": "Date of Birth",
+        "type": "date",
+        "required": true,
+        "value": "02/08/1968"
+      },
+      {
+        "label": "Gender",
+        "type": "select",
+        "options": [
+          "Male",
+          "Female",
+          "Other",
+          "Prefer not to say"
+        ],
+        "required": true,
+        "value": "Male"
+      },
+      {
+        "label": "Address",
+        "type": "text",
+        "required": true,
+        "value": "842 Elm Street, Kansas City, Missouri 64111"
+      },
+      {
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true,
+        "value": "816-555-3421"
+      },
+      {
+        "label": "Email Address",
+        "type": "email",
+        "value": null
+      },
+      {
+        "label": "Emergency Contact Name",
+        "type": "text",
+        "value": null
+      },
+      {
+        "label": "Emergency Contact Phone",
+        "type": "tel",
+        "value": null
+      },
+      {
+        "label": "Emergency Contact Relationship",
+        "type": "text",
+        "value": null
+      }
+    ]
+  }
+}
