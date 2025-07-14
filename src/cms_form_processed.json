@@ -1,0 +1,956 @@
+{
+  "form_name": "cms_form",
+  "pdf_path": "../data/pdf/CMS_Form.pdf",
+  "total_chunks": 8,
+  "section_count": 2,
+  "sections_hashmap": {
+    "0": {
+      "section_id": 0,
+      "chunk_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "text": "DEPARTMENT OF HEALTH AND HUMAN SERVICES  \nCENTERS FOR MEDICARE & MEDICAID SERVICES",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 1,
+          "text": "Form Approved  \nOMB No. OMB 0938-0679",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 2,
+          "text": "CERTIFICATE OF MEDICAL NECESSITY",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 3,
+          "text": "DME 03.03",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 4,
+          "text": "CMS-10269: POSITIVE AIRWAY PRESSURE (PAP) DEVICES FOR OBSTRUCTIVE SLEEP APNEA\n\nSECTION A:  \nCertification Type/Date: INITIAL ___/___/___   RECERTIFICATION ___/___/___\n\nPATIENT NAME, ADDRESS, TELEPHONE and HICN:  \n(______)______-_________  HICN ___________________________\n\nSUPPLIER NAME, ADDRESS, TELEPHONE and NSC or NPI #:  \n(______)______-_________  NSC or NPI # ___________________\n\nPLACE OF SERVICE: ___________________________\n\nNAME and ADDRESS of FACILITY if applicable (See Reverse):  \n___________________________________________  \n___________________________________________  \n___________________________________________\n\nHCPCS CODE:  \n________________________  \n________________________  \n________________________\n\nPT DOB ___/___/___ ; Sex ___ (M/F) ; HT._____(in.); WT._____(lbs.)\n\nPHYSICIAN NAME, ADDRESS (Printed or Typed):  \n___________________________________________  \n___________________________________________  \n___________________________________________\n\nPHYSICIAN\u2019S NSC or NPI #: ___________________________  \nPHYSICIAN\u2019S TELEPHONE #: (______)______-_________\n\nSECTION B: Information in this section may not be completed by the supplier of the items/supplies.\n\nEST. LENGTH OF NEED (# OF MONTHS): _______ 1\u201399 (99=LIFETIME)  \nDIAGNOSIS CODES (ICD-9): ___________________________\n\nANSWERS\n\nANSWER QUESTIONS 1\u20137 FOR INITIAL EVALUATION  \nANSWER QUESTIONS 8\u201310 FOR FOLLOW-UP EVALUATION (RECERTIFICATION)  \n(Check Y for Yes, N for No, D for Does Not Apply)\n\n[ ] Y  [ ] N   1. Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)?  \nIf YES, continue to Questions 2\u20135; If NO, Proceed to Section D\n\n___/___/___   2. Enter date of initial face-to-face evaluation\n\n___/___/___   3. Enter date of sleep test (If test spans multiple days, enter date of first day of test)\n\n[ ] Y  [ ] N   4. Was the patient\u2019s sleep test conducted in a facility-based lab?\n\n5. What is the patient\u2019s Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?  \n___________________________________________\n\n[ ] Y  [ ] N   6. Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke.\n\n[ ] Y  [ ] N  [ ] D   7. If a bilevel device is ordered, has a CPAP device been tried and found ineffective?\n\n___/___/___   8. Enter date of follow-up face-to-face evaluation.\n\n[ ] Y  [ ] N   9. Is there a report documenting that the patient used PAP \u2265 4 hours per night on at least 70% of nights in a 30 consecutive day period?\n\n[ ] Y  [ ] N   10. Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?\n\nNAME OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN (Please Print):  \nNAME: ___________________________  \nTITLE: ___________________________  \nEMPLOYER: ___________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 6,
+          "text": "Form CMS-10269 (12/09)",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 7,
+          "text": "1",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 0,
+        "form_structure": {
+          "section_id": 0,
+          "section_type": "patient_demographics_and_medical_information",
+          "fields": [
+            {
+              "field_name": "certification_type",
+              "field_type": "radio",
+              "label": "Certification Type",
+              "options": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "certification_date",
+              "field_type": "date",
+              "label": "Certification Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_telephone",
+              "field_type": "telephone",
+              "label": "Patient Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_address",
+              "field_type": "text_area",
+              "label": "Patient Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_hicn",
+              "field_type": "text_input",
+              "label": "Patient HICN",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_name",
+              "field_type": "text_input",
+              "label": "Supplier Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_address",
+              "field_type": "text_area",
+              "label": "Supplier Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_telephone",
+              "field_type": "telephone",
+              "label": "Supplier Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Supplier NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "place_of_service",
+              "field_type": "text_input",
+              "label": "Place of Service",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "facility_name_address",
+              "field_type": "text_area",
+              "label": "Name and Address of Facility (if applicable)",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "hcpcs_code",
+              "field_type": "text_input",
+              "label": "HCPCS Code",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_dob",
+              "field_type": "date",
+              "label": "Patient DOB",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_sex",
+              "field_type": "radio",
+              "label": "Sex",
+              "options": [
+                "M",
+                "F"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_height",
+              "field_type": "number_input",
+              "label": "Height (in.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_weight",
+              "field_type": "number_input",
+              "label": "Weight (lbs.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_name_address",
+              "field_type": "text_area",
+              "label": "Physician Name, Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Physician's NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_telephone",
+              "field_type": "telephone",
+              "label": "Physician's Telephone #",
+              "required": true,
+              "value": null
+            }
+          ],
+          "fill_error": "Failed to fill form"
+        },
+        "filled_form": {
+          "section_id": 0,
+          "section_type": "patient_demographics_and_medical_information",
+          "fields": [
+            {
+              "field_name": "certification_type",
+              "field_type": "radio",
+              "label": "Certification Type",
+              "options": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "certification_date",
+              "field_type": "date",
+              "label": "Certification Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_telephone",
+              "field_type": "telephone",
+              "label": "Patient Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_address",
+              "field_type": "text_area",
+              "label": "Patient Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_hicn",
+              "field_type": "text_input",
+              "label": "Patient HICN",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_name",
+              "field_type": "text_input",
+              "label": "Supplier Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_address",
+              "field_type": "text_area",
+              "label": "Supplier Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_telephone",
+              "field_type": "telephone",
+              "label": "Supplier Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Supplier NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "place_of_service",
+              "field_type": "text_input",
+              "label": "Place of Service",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "facility_name_address",
+              "field_type": "text_area",
+              "label": "Name and Address of Facility (if applicable)",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "hcpcs_code",
+              "field_type": "text_input",
+              "label": "HCPCS Code",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_dob",
+              "field_type": "date",
+              "label": "Patient DOB",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_sex",
+              "field_type": "radio",
+              "label": "Sex",
+              "options": [
+                "M",
+                "F"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_height",
+              "field_type": "number_input",
+              "label": "Height (in.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_weight",
+              "field_type": "number_input",
+              "label": "Weight (lbs.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_name_address",
+              "field_type": "text_area",
+              "label": "Physician Name, Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Physician's NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_telephone",
+              "field_type": "telephone",
+              "label": "Physician's Telephone #",
+              "required": true,
+              "value": null
+            }
+          ],
+          "fill_error": "Failed to fill form"
+        },
+        "thread_id": "ThreadPoolExecutor-2_0",
+        "processing_complete": true
+      }
+    },
+    "1": {
+      "section_id": 1,
+      "chunk_indices": [
+        5
+      ],
+      "chunks": [
+        {
+          "chunk_id": 5,
+          "text": "SECTION C: Narrative Description of Equipment and Cost\n\n(1) Narrative description of all items, accessories and options ordered; (2) Supplier\u2019s charge; and (3) Medicare Fee Schedule Allowance for each item, accessory, and option. (See instructions on back)\n\nSECTION D: Physician Attestation and Signature/Date\n\nI certify that I am the physician identified in Section A of this form. I have received Sections A, B and C of the Certificate of Medical Necessity (including charges for items ordered). Any statement on my letterhead attached hereto, has been reviewed and signed by me. I certify that the medical necessity information in Section B is true, accurate and complete, to the best of my knowledge, and I understand that any falsification, omission, or concealment of material fact in that section may subject me to civil or criminal liability.\n\nPHYSICIAN\u2019S SIGNATURE ________________________________   DATE ____/____/_____ (SIGNATURE AND DATE STAMPS ARE NOT ACCEPTABLE)",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 1,
+        "form_structure": {
+          "section_id": 1,
+          "section_type": "equipment_and_cost_narrative_physician_attestation",
+          "fields": [
+            {
+              "field_name": "equipment_narrative",
+              "field_type": "textarea",
+              "label": "Narrative description of all items, accessories and options ordered",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_charge",
+              "field_type": "number",
+              "label": "Supplier's Charge",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medicare_fee_schedule_allowance",
+              "field_type": "number",
+              "label": "Medicare Fee Schedule Allowance",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_signature",
+              "field_type": "signature",
+              "label": "Physician's Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_attestation_date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 1,
+          "section_type": "equipment_and_cost_narrative_physician_attestation",
+          "fields": [
+            {
+              "field_name": "equipment_narrative",
+              "field_type": "textarea",
+              "label": "Narrative description of all items, accessories and options ordered",
+              "required": true,
+              "value": "ResMed AirSense 11 CPAP machine with heated humidifier and nasal mask"
+            },
+            {
+              "field_name": "supplier_charge",
+              "field_type": "number",
+              "label": "Supplier's Charge",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medicare_fee_schedule_allowance",
+              "field_type": "number",
+              "label": "Medicare Fee Schedule Allowance",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_signature",
+              "field_type": "signature",
+              "label": "Physician's Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_attestation_date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": "January 15, 2025"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-2_1",
+        "processing_complete": true
+      }
+    }
+  },
+  "disjoint_sections": [
+    {
+      "section_id": 0,
+      "chunk_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "text": "DEPARTMENT OF HEALTH AND HUMAN SERVICES  \nCENTERS FOR MEDICARE & MEDICAID SERVICES",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 1,
+          "text": "Form Approved  \nOMB No. OMB 0938-0679",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 2,
+          "text": "CERTIFICATE OF MEDICAL NECESSITY",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 3,
+          "text": "DME 03.03",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 4,
+          "text": "CMS-10269: POSITIVE AIRWAY PRESSURE (PAP) DEVICES FOR OBSTRUCTIVE SLEEP APNEA\n\nSECTION A:  \nCertification Type/Date: INITIAL ___/___/___   RECERTIFICATION ___/___/___\n\nPATIENT NAME, ADDRESS, TELEPHONE and HICN:  \n(______)______-_________  HICN ___________________________\n\nSUPPLIER NAME, ADDRESS, TELEPHONE and NSC or NPI #:  \n(______)______-_________  NSC or NPI # ___________________\n\nPLACE OF SERVICE: ___________________________\n\nNAME and ADDRESS of FACILITY if applicable (See Reverse):  \n___________________________________________  \n___________________________________________  \n___________________________________________\n\nHCPCS CODE:  \n________________________  \n________________________  \n________________________\n\nPT DOB ___/___/___ ; Sex ___ (M/F) ; HT._____(in.); WT._____(lbs.)\n\nPHYSICIAN NAME, ADDRESS (Printed or Typed):  \n___________________________________________  \n___________________________________________  \n___________________________________________\n\nPHYSICIAN\u2019S NSC or NPI #: ___________________________  \nPHYSICIAN\u2019S TELEPHONE #: (______)______-_________\n\nSECTION B: Information in this section may not be completed by the supplier of the items/supplies.\n\nEST. LENGTH OF NEED (# OF MONTHS): _______ 1\u201399 (99=LIFETIME)  \nDIAGNOSIS CODES (ICD-9): ___________________________\n\nANSWERS\n\nANSWER QUESTIONS 1\u20137 FOR INITIAL EVALUATION  \nANSWER QUESTIONS 8\u201310 FOR FOLLOW-UP EVALUATION (RECERTIFICATION)  \n(Check Y for Yes, N for No, D for Does Not Apply)\n\n[ ] Y  [ ] N   1. Is the device being ordered for the treatment of obstructive sleep apnea (ICD-9 diagnosis code 327.23)?  \nIf YES, continue to Questions 2\u20135; If NO, Proceed to Section D\n\n___/___/___   2. Enter date of initial face-to-face evaluation\n\n___/___/___   3. Enter date of sleep test (If test spans multiple days, enter date of first day of test)\n\n[ ] Y  [ ] N   4. Was the patient\u2019s sleep test conducted in a facility-based lab?\n\n5. What is the patient\u2019s Apnea-Hypopnea Index (AHI) or Respiratory Disturbance Index (RDI)?  \n___________________________________________\n\n[ ] Y  [ ] N   6. Does the patient have documented evidence of at least one of the following? Excessive daytime sleepiness, impaired cognition, mood disorders, insomnia, hypertension, ischemic heart disease or history of stroke.\n\n[ ] Y  [ ] N  [ ] D   7. If a bilevel device is ordered, has a CPAP device been tried and found ineffective?\n\n___/___/___   8. Enter date of follow-up face-to-face evaluation.\n\n[ ] Y  [ ] N   9. Is there a report documenting that the patient used PAP \u2265 4 hours per night on at least 70% of nights in a 30 consecutive day period?\n\n[ ] Y  [ ] N   10. Did the patient demonstrate improvement in symptoms of obstructive sleep apnea with the use of PAP?\n\nNAME OF PERSON ANSWERING SECTION B QUESTIONS, IF OTHER THAN PHYSICIAN (Please Print):  \nNAME: ___________________________  \nTITLE: ___________________________  \nEMPLOYER: ___________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        },
+        {
+          "chunk_id": 6,
+          "text": "Form CMS-10269 (12/09)",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        },
+        {
+          "chunk_id": 7,
+          "text": "1",
+          "chunk_type": "ChunkType.marginalia",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 0,
+        "form_structure": {
+          "section_id": 0,
+          "section_type": "patient_demographics_and_medical_information",
+          "fields": [
+            {
+              "field_name": "certification_type",
+              "field_type": "radio",
+              "label": "Certification Type",
+              "options": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "certification_date",
+              "field_type": "date",
+              "label": "Certification Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_telephone",
+              "field_type": "telephone",
+              "label": "Patient Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_address",
+              "field_type": "text_area",
+              "label": "Patient Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_hicn",
+              "field_type": "text_input",
+              "label": "Patient HICN",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_name",
+              "field_type": "text_input",
+              "label": "Supplier Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_address",
+              "field_type": "text_area",
+              "label": "Supplier Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_telephone",
+              "field_type": "telephone",
+              "label": "Supplier Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Supplier NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "place_of_service",
+              "field_type": "text_input",
+              "label": "Place of Service",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "facility_name_address",
+              "field_type": "text_area",
+              "label": "Name and Address of Facility (if applicable)",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "hcpcs_code",
+              "field_type": "text_input",
+              "label": "HCPCS Code",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_dob",
+              "field_type": "date",
+              "label": "Patient DOB",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_sex",
+              "field_type": "radio",
+              "label": "Sex",
+              "options": [
+                "M",
+                "F"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_height",
+              "field_type": "number_input",
+              "label": "Height (in.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_weight",
+              "field_type": "number_input",
+              "label": "Weight (lbs.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_name_address",
+              "field_type": "text_area",
+              "label": "Physician Name, Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Physician's NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_telephone",
+              "field_type": "telephone",
+              "label": "Physician's Telephone #",
+              "required": true,
+              "value": null
+            }
+          ],
+          "fill_error": "Failed to fill form"
+        },
+        "filled_form": {
+          "section_id": 0,
+          "section_type": "patient_demographics_and_medical_information",
+          "fields": [
+            {
+              "field_name": "certification_type",
+              "field_type": "radio",
+              "label": "Certification Type",
+              "options": [
+                "INITIAL",
+                "RECERTIFICATION"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "certification_date",
+              "field_type": "date",
+              "label": "Certification Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_telephone",
+              "field_type": "telephone",
+              "label": "Patient Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_address",
+              "field_type": "text_area",
+              "label": "Patient Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_hicn",
+              "field_type": "text_input",
+              "label": "Patient HICN",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_name",
+              "field_type": "text_input",
+              "label": "Supplier Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_address",
+              "field_type": "text_area",
+              "label": "Supplier Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_telephone",
+              "field_type": "telephone",
+              "label": "Supplier Telephone",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Supplier NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "place_of_service",
+              "field_type": "text_input",
+              "label": "Place of Service",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "facility_name_address",
+              "field_type": "text_area",
+              "label": "Name and Address of Facility (if applicable)",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "hcpcs_code",
+              "field_type": "text_input",
+              "label": "HCPCS Code",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_dob",
+              "field_type": "date",
+              "label": "Patient DOB",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_sex",
+              "field_type": "radio",
+              "label": "Sex",
+              "options": [
+                "M",
+                "F"
+              ],
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_height",
+              "field_type": "number_input",
+              "label": "Height (in.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_weight",
+              "field_type": "number_input",
+              "label": "Weight (lbs.)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_name_address",
+              "field_type": "text_area",
+              "label": "Physician Name, Address",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_nsc_or_npi",
+              "field_type": "text_input",
+              "label": "Physician's NSC or NPI #",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_telephone",
+              "field_type": "telephone",
+              "label": "Physician's Telephone #",
+              "required": true,
+              "value": null
+            }
+          ],
+          "fill_error": "Failed to fill form"
+        },
+        "thread_id": "ThreadPoolExecutor-2_0",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 1,
+      "chunk_indices": [
+        5
+      ],
+      "chunks": [
+        {
+          "chunk_id": 5,
+          "text": "SECTION C: Narrative Description of Equipment and Cost\n\n(1) Narrative description of all items, accessories and options ordered; (2) Supplier\u2019s charge; and (3) Medicare Fee Schedule Allowance for each item, accessory, and option. (See instructions on back)\n\nSECTION D: Physician Attestation and Signature/Date\n\nI certify that I am the physician identified in Section A of this form. I have received Sections A, B and C of the Certificate of Medical Necessity (including charges for items ordered). Any statement on my letterhead attached hereto, has been reviewed and signed by me. I certify that the medical necessity information in Section B is true, accurate and complete, to the best of my knowledge, and I understand that any falsification, omission, or concealment of material fact in that section may subject me to civil or criminal liability.\n\nPHYSICIAN\u2019S SIGNATURE ________________________________   DATE ____/____/_____ (SIGNATURE AND DATE STAMPS ARE NOT ACCEPTABLE)",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 1,
+        "form_structure": {
+          "section_id": 1,
+          "section_type": "equipment_and_cost_narrative_physician_attestation",
+          "fields": [
+            {
+              "field_name": "equipment_narrative",
+              "field_type": "textarea",
+              "label": "Narrative description of all items, accessories and options ordered",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supplier_charge",
+              "field_type": "number",
+              "label": "Supplier's Charge",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medicare_fee_schedule_allowance",
+              "field_type": "number",
+              "label": "Medicare Fee Schedule Allowance",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_signature",
+              "field_type": "signature",
+              "label": "Physician's Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_attestation_date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 1,
+          "section_type": "equipment_and_cost_narrative_physician_attestation",
+          "fields": [
+            {
+              "field_name": "equipment_narrative",
+              "field_type": "textarea",
+              "label": "Narrative description of all items, accessories and options ordered",
+              "required": true,
+              "value": "ResMed AirSense 11 CPAP machine with heated humidifier and nasal mask"
+            },
+            {
+              "field_name": "supplier_charge",
+              "field_type": "number",
+              "label": "Supplier's Charge",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medicare_fee_schedule_allowance",
+              "field_type": "number",
+              "label": "Medicare Fee Schedule Allowance",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_signature",
+              "field_type": "signature",
+              "label": "Physician's Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "physician_attestation_date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": "January 15, 2025"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-2_1",
+        "processing_complete": true
+      }
+    }
+  ],
+  "transcript": "\nCMS CERTIFICATE OF MEDICAL NECESSITY - PAP DEVICE\nDate: January 15, 2025\nLocation: Sleep Medicine Associates\nProvider: Dr. Michael Chen, MD - Sleep Medicine\nAdministrative Assistant: Jennifer Kim\n\nASSISTANT: Good afternoon, Mr. Thompson. I need to complete your CMS Certificate of Medical Necessity for your CPAP machine. This form is required by Medicare to approve coverage.\n\nASSISTANT: This is an initial certification, correct? You haven't had a CPAP machine before?\nPATIENT: That's right, this is my first time needing one.\n\nASSISTANT: Let me confirm your information. Your full name is Robert James Thompson?\nPATIENT: Yes, that's correct.\n\nASSISTANT: Your address is 456 Oak Street, Sacramento, California 95814?\nPATIENT: Yes, that's right.\n\nASSISTANT: And your phone number is 916-555-0234?\nPATIENT: Yes.\n\nASSISTANT: Your Medicare number is 1EG4-TE5-MK89?\nPATIENT: Let me check my card... yes, that looks right.\n\nASSISTANT: Date of birth March 22, 1958, making you 66 years old?\nPATIENT: Correct.\n\nASSISTANT: You're male, height 6 feet 1 inch, weight 195 pounds?\nPATIENT: Yes, though I think I've lost a few pounds recently.\n\nASSISTANT: Dr. Chen is your sleep medicine physician here at Sleep Medicine Associates, 789 Medical Plaza, Sacramento, CA 95825, phone 916-555-7890. His NPI number is 1234567890.\nPATIENT: Yes, Dr. Chen has been great.\n\nASSISTANT: Your equipment will be supplied by MedEquip Solutions, 321 Supply Avenue, Sacramento, CA 95820, phone 916-555-5555, NPI 9876543210.\nPATIENT: That's what Dr. Chen recommended.\n\nASSISTANT: Now for the clinical questions. Is this device being ordered for treatment of obstructive sleep apnea?\nPATIENT: Yes, that's what Dr. Chen diagnosed me with after my sleep study.\n\nASSISTANT: Your initial face-to-face evaluation with Dr. Chen was on December 10, 2024?\nPATIENT: Yes, that was my first appointment after my family doctor referred me.\n\nASSISTANT: Your sleep study was conducted on January 5, 2025?\nPATIENT: Yes, I spent the night at the sleep center here.\n\nASSISTANT: Was your sleep test conducted in a facility-based lab rather than at home?\nPATIENT: Yes, I came here to the sleep center and stayed overnight with all the wires and monitors.\n\nASSISTANT: Your sleep study showed an AHI - that's Apnea-Hypopnea Index - of 28 events per hour?\nPATIENT: Dr. Chen explained that to me. He said 28 was moderate to severe sleep apnea.\n\nASSISTANT: Do you have documented symptoms like excessive daytime sleepiness, mood disorders, high blood pressure, heart disease, or history of stroke?\nPATIENT: Yes, I have high blood pressure, and I'm constantly tired during the day. My wife says I'm more irritable lately, and I sometimes fall asleep watching TV or reading.\n\nASSISTANT: Since we're prescribing a standard CPAP machine and not a BiPAP, the question about trying CPAP first doesn't apply.\nPATIENT: Dr. Chen said we'd start with the CPAP.\n\nASSISTANT: The equipment being prescribed is a ResMed AirSense 11 CPAP machine with heated humidifier and nasal mask, HCPCS codes E0601 for the machine and E0562 for the humidifier.\nPATIENT: That sounds right.\n\nASSISTANT: The estimated length of need is lifetime, which we code as 99 months for Medicare.\nPATIENT: Dr. Chen said this would be permanent.\n\nASSISTANT: The diagnosis codes are 327.23 for obstructive sleep apnea and 401.9 for essential hypertension.\nPATIENT: That matches what Dr. Chen told me.\n\nASSISTANT: Dr. Chen will review this form and sign it today to certify the medical necessity. Your machine should be delivered within a week.\nPATIENT: Perfect, I'm ready to start sleeping better.\n",
+  "processing_timestamp": "{\"timestamp\": \"2025-01-15T10:00:00Z\"}"
+}

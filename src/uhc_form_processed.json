@@ -1,0 +1,1896 @@
+{
+  "form_name": "uhc_form",
+  "pdf_path": "../data/pdf/UHC_form.pdf",
+  "total_chunks": 8,
+  "section_count": 8,
+  "sections_hashmap": {
+    "0": {
+      "section_id": 0,
+      "chunk_indices": [
+        0
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "text": "logo: UnitedHealthcare Community Plan\n\nCompany Name & Tagline : \n  \u2022 The logo displays the company name \"UnitedHealthcare\" in blue serif font.\n  \u2022 The tagline \"Community Plan\" appears below in smaller, gray sans-serif font.\n\nGraphic Elements : \n  \u2022 To the left of the text, there is a stylized shield or ribbon icon with blue and gray vertical stripes.\n\nLayout & Dimensions : \n  \u2022 The icon is positioned to the left of the text.\n  \u2022 \"UnitedHealthcare\" is on the top line, with \"Community Plan\" right-aligned below it.\n\nAnalysis : \n  \u2022 The logo uses blue and gray to convey professionalism and trust, with the shield/ribbon suggesting protection or support.",
+          "chunk_type": "ChunkType.figure",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 0,
+        "form_structure": {
+          "section_id": 0,
+          "section_type": "header",
+          "fields": [
+            {
+              "field_name": "logo_image",
+              "field_type": "image",
+              "label": "Logo Image",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "company_name",
+              "field_type": "text",
+              "label": "Company Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "tagline",
+              "field_type": "text",
+              "label": "Tagline",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_image",
+              "field_type": "image",
+              "label": "Icon Image",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_position",
+              "field_type": "text",
+              "label": "Icon Position",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_font",
+              "field_type": "text",
+              "label": "Company Name Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_font",
+              "field_type": "text",
+              "label": "Tagline Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_color",
+              "field_type": "color",
+              "label": "Company Name Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_color",
+              "field_type": "color",
+              "label": "Tagline Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_color",
+              "field_type": "color",
+              "label": "Icon Color(s)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 0,
+          "section_type": "header",
+          "fields": [
+            {
+              "field_name": "logo_image",
+              "field_type": "image",
+              "label": "Logo Image",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "company_name",
+              "field_type": "text",
+              "label": "Company Name",
+              "required": true,
+              "value": "Endocrinology Specialists"
+            },
+            {
+              "field_name": "tagline",
+              "field_type": "text",
+              "label": "Tagline",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_image",
+              "field_type": "image",
+              "label": "Icon Image",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_position",
+              "field_type": "text",
+              "label": "Icon Position",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_font",
+              "field_type": "text",
+              "label": "Company Name Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_font",
+              "field_type": "text",
+              "label": "Tagline Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_color",
+              "field_type": "color",
+              "label": "Company Name Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_color",
+              "field_type": "color",
+              "label": "Tagline Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_color",
+              "field_type": "color",
+              "label": "Icon Color(s)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    "1": {
+      "section_id": 1,
+      "chunk_indices": [
+        1
+      ],
+      "chunks": [
+        {
+          "chunk_id": 1,
+          "text": "Prior Authorization Request Form",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 1,
+        "form_structure": {
+          "section_id": 1,
+          "section_type": "prior_authorization",
+          "fields": [
+            {
+              "field_name": "request_date",
+              "field_type": "date",
+              "label": "Request Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_id",
+              "field_type": "text_input",
+              "label": "Patient ID",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date_of_birth",
+              "field_type": "date",
+              "label": "Date of Birth",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "insurance_provider",
+              "field_type": "text_input",
+              "label": "Insurance Provider",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "policy_number",
+              "field_type": "text_input",
+              "label": "Policy Number",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "prescribing_physician",
+              "field_type": "text_input",
+              "label": "Prescribing Physician",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "dosage",
+              "field_type": "text_input",
+              "label": "Dosage",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "frequency",
+              "field_type": "text_input",
+              "label": "Frequency",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number_input",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "reason_for_request",
+              "field_type": "textarea",
+              "label": "Reason for Request",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 1,
+          "section_type": "prior_authorization",
+          "fields": [
+            {
+              "field_name": "request_date",
+              "field_type": "date",
+              "label": "Request Date",
+              "required": true,
+              "value": "January 15, 2025"
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": "Linda Sue Patterson"
+            },
+            {
+              "field_name": "patient_id",
+              "field_type": "text_input",
+              "label": "Patient ID",
+              "required": true,
+              "value": "ABC123456789"
+            },
+            {
+              "field_name": "date_of_birth",
+              "field_type": "date",
+              "label": "Date of Birth",
+              "required": true,
+              "value": "July 8, 1965"
+            },
+            {
+              "field_name": "insurance_provider",
+              "field_type": "text_input",
+              "label": "Insurance Provider",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "policy_number",
+              "field_type": "text_input",
+              "label": "Policy Number",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "prescribing_physician",
+              "field_type": "text_input",
+              "label": "Prescribing Physician",
+              "required": true,
+              "value": "Dr. Patricia Wong, MD"
+            },
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication Name",
+              "required": true,
+              "value": "Ozempic (semaglutide)"
+            },
+            {
+              "field_name": "dosage",
+              "field_type": "text_input",
+              "label": "Dosage",
+              "required": true,
+              "value": "1mg injection"
+            },
+            {
+              "field_name": "frequency",
+              "field_type": "text_input",
+              "label": "Frequency",
+              "required": true,
+              "value": "once weekly"
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number_input",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "reason_for_request",
+              "field_type": "textarea",
+              "label": "Reason for Request",
+              "required": true,
+              "value": "Type 2 diabetes (ICD-10 code E11.9). Patient has tried Metformin and glipizide with insufficient blood sugar control and side effects.  A1C is 9.2 and fasting glucose is 180."
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    },
+    "2": {
+      "section_id": 2,
+      "chunk_indices": [
+        2
+      ],
+      "chunks": [
+        {
+          "chunk_id": 2,
+          "text": "Please complete this entire form and fax it to: 866-940-7328. If you have questions, please call 800-310-6826.\nThis form may contain multiple pages. Please complete all pages to avoid a delay in our decision.\nAllow at least 24 hours for review.",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 2,
+        "form_structure": {
+          "section_id": 2,
+          "section_type": "instructions",
+          "fields": [
+            {
+              "field_name": "fax_number",
+              "field_type": "text_display",
+              "label": "Fax Number",
+              "value": "866-940-7328"
+            },
+            {
+              "field_name": "phone_number",
+              "field_type": "text_display",
+              "label": "Phone Number",
+              "value": "800-310-6826"
+            },
+            {
+              "field_name": "multi_page_notice",
+              "field_type": "text_display",
+              "label": "Multi-Page Notice",
+              "value": "This form may contain multiple pages. Please complete all pages to avoid a delay in our decision."
+            },
+            {
+              "field_name": "review_time",
+              "field_type": "text_display",
+              "label": "Review Time",
+              "value": "Allow at least 24 hours for review."
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 2,
+          "section_type": "instructions",
+          "fields": [
+            {
+              "field_name": "fax_number",
+              "field_type": "text_display",
+              "label": "Fax Number",
+              "value": null
+            },
+            {
+              "field_name": "phone_number",
+              "field_type": "text_display",
+              "label": "Phone Number",
+              "value": null
+            },
+            {
+              "field_name": "multi_page_notice",
+              "field_type": "text_display",
+              "label": "Multi-Page Notice",
+              "value": "This form may contain multiple pages. Please complete all pages to avoid a delay in our decision."
+            },
+            {
+              "field_name": "review_time",
+              "field_type": "text_display",
+              "label": "Review Time",
+              "value": "Allow at least 24 hours for review."
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_2",
+        "processing_complete": true
+      }
+    },
+    "3": {
+      "section_id": 3,
+      "chunk_indices": [
+        3
+      ],
+      "chunks": [
+        {
+          "chunk_id": 3,
+          "text": "Member Name:  \nProvider Name:  \n\nMember ID:  \nNPI #:  \nSpecialty:  \n\nDate Of Birth:  \nOffice Phone:  \nOffice Fax:  \n\nStreet Address:  \nOffice Street Address:  \n\nCity:  \nState:  \nZIP Code:  \nCity:  \nState:  \nZIP Code:  \n\nPhone:  \nAllergies:  \n\nIs the requested medication: [ ] New or   [ ] Continuation of Therapy? If continuation, list start date: ________________\n\nIs this patient currently hospitalized?   [ ] Yes   [ ] No   If recently discharged, list discharge date: ________________\n\nIs this member pregnant?   [ ] Yes   [ ] No   If yes, what is this member\u2019s due date? ________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 3,
+        "form_structure": {
+          "section_id": 3,
+          "section_type": "unknown",
+          "fields": [],
+          "error": "Structure creation failed"
+        },
+        "filled_form": {
+          "section_id": 3,
+          "section_type": "unknown",
+          "fields": [
+            {
+              "field_id": "patient_name",
+              "field_type": "text",
+              "value": "Linda Sue Patterson"
+            },
+            {
+              "field_id": "patient_dob",
+              "field_type": "date",
+              "value": "July 8, 1965"
+            },
+            {
+              "field_id": "patient_insurance_id",
+              "field_type": "text",
+              "value": "ABC123456789"
+            },
+            {
+              "field_id": "patient_drug_allergies",
+              "field_type": "text",
+              "value": "penicillin, sulfa drugs"
+            },
+            {
+              "field_id": "patient_pregnant",
+              "field_type": "checkbox",
+              "value": false
+            },
+            {
+              "field_id": "patient_hospitalized",
+              "field_type": "checkbox",
+              "value": false
+            },
+            {
+              "field_id": "provider_name",
+              "field_type": "text",
+              "value": "Dr. Patricia Wong, MD"
+            },
+            {
+              "field_id": "provider_specialty",
+              "field_type": "text",
+              "value": "endocrinology"
+            },
+            {
+              "field_id": "provider_npi",
+              "field_type": "text",
+              "value": "2345678901"
+            },
+            {
+              "field_id": "provider_phone",
+              "field_type": "text",
+              "value": "555-123-4567"
+            },
+            {
+              "field_id": "provider_address",
+              "field_type": "text",
+              "value": "Endocrinology Specialists, 567 Medical Drive, Suite 200"
+            },
+            {
+              "field_id": "medication_request_type",
+              "field_type": "text",
+              "value": "new"
+            },
+            {
+              "field_id": "medication_name",
+              "field_type": "text",
+              "value": "Ozempic (semaglutide 1mg injection)"
+            },
+            {
+              "field_id": "medication_dosage",
+              "field_type": "text",
+              "value": "1mg injection, once weekly subcutaneous injection"
+            },
+            {
+              "field_id": "medication_duration",
+              "field_type": "text",
+              "value": "90 days"
+            },
+            {
+              "field_id": "primary_diagnosis",
+              "field_type": "text",
+              "value": "Type 2 diabetes"
+            },
+            {
+              "field_id": "icd10_code",
+              "field_type": "text",
+              "value": "E11.9"
+            },
+            {
+              "field_id": "prior_therapy",
+              "field_type": "text",
+              "value": "Metformin, glipizide"
+            },
+            {
+              "field_id": "prior_therapy_reason_for_change",
+              "field_type": "text",
+              "value": "Metformin: blood sugar still too high even on the maximum dose. Glipizide: caused low blood sugar episodes."
+            },
+            {
+              "field_id": "contraindications",
+              "field_type": "text",
+              "value": null
+            },
+            {
+              "field_id": "lab_results",
+              "field_type": "text",
+              "value": "A1C: 9.2, Fasting glucose: 180"
+            }
+          ],
+          "error": null
+        },
+        "thread_id": "ThreadPoolExecutor-3_2",
+        "processing_complete": true
+      }
+    },
+    "4": {
+      "section_id": 4,
+      "chunk_indices": [
+        4
+      ],
+      "chunks": [
+        {
+          "chunk_id": 4,
+          "text": "Medication Information\n\nMedication: \nStrength: \n\nDirections for use: \nQuantity: \n\nMedication Administered: [ ] Self-Administered    [ ] Physician\u2019s Office    [ ] Other: ____________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 4,
+        "form_structure": {
+          "section_id": 4,
+          "section_type": "medication_information",
+          "fields": [
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_strength",
+              "field_type": "text_input",
+              "label": "Strength",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "directions_for_use",
+              "field_type": "text_area",
+              "label": "Directions for use",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_administered",
+              "field_type": "radio_button",
+              "label": "Medication Administered",
+              "required": true,
+              "options": [
+                {
+                  "value": "self_administered",
+                  "label": "Self-Administered"
+                },
+                {
+                  "value": "physician_office",
+                  "label": "Physician's Office"
+                },
+                {
+                  "value": "other",
+                  "label": "Other"
+                }
+              ],
+              "value": null
+            },
+            {
+              "field_name": "medication_administered_other",
+              "field_type": "text_input",
+              "label": "Other (Please specify)",
+              "required": false,
+              "value": null,
+              "conditional": {
+                "field": "medication_administered",
+                "value": "other"
+              }
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 4,
+          "section_type": "medication_information",
+          "fields": [
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication",
+              "required": true,
+              "value": "Ozempic"
+            },
+            {
+              "field_name": "medication_strength",
+              "field_type": "text_input",
+              "label": "Strength",
+              "required": true,
+              "value": "1mg injection"
+            },
+            {
+              "field_name": "directions_for_use",
+              "field_type": "text_area",
+              "label": "Directions for use",
+              "required": true,
+              "value": "once weekly subcutaneous injection"
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_administered",
+              "field_type": "radio_button",
+              "label": "Medication Administered",
+              "required": true,
+              "options": [
+                {
+                  "value": "self_administered",
+                  "label": "Self-Administered"
+                },
+                {
+                  "value": "physician_office",
+                  "label": "Physician's Office"
+                },
+                {
+                  "value": "other",
+                  "label": "Other"
+                }
+              ],
+              "value": "self_administered"
+            },
+            {
+              "field_name": "medication_administered_other",
+              "field_type": "text_input",
+              "label": "Other (Please specify)",
+              "required": false,
+              "value": null,
+              "conditional": {
+                "field": "medication_administered",
+                "value": "other"
+              }
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    "5": {
+      "section_id": 5,
+      "chunk_indices": [
+        5
+      ],
+      "chunks": [
+        {
+          "chunk_id": 5,
+          "text": "Clinical Information\n\nWhat is the patient\u2019s diagnosis for the medication being requested? _____________________________________________\n___________________________________________________________________________________________________________\nICD-10 Code(s): ______________________________________\n\nPlease refer to the patient\u2019s PDL at www.uhcprovider.com for a list of preferred alternatives\n\nWhat medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)\n\n___________________________________________________________________________________________________________\n___________________________________________________________________________________________________________\n\nWhat medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)\n\n___________________________________________________________________________________________________________\n___________________________________________________________________________________________________________\n\nAre there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)\n\n___________________________________________________________________________________________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 5,
+        "form_structure": {
+          "section_id": 5,
+          "section_type": "medical_history",
+          "fields": [
+            {
+              "field_name": "diagnosis",
+              "field_type": "textarea",
+              "label": "What is the patient\u2019s diagnosis for the medication being requested?",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "icd10_codes",
+              "field_type": "text_input",
+              "label": "ICD-10 Code(s):",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "failed_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "contraindicated_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supporting_lab_results",
+              "field_type": "textarea",
+              "label": "Are there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 5,
+          "section_type": "medical_history",
+          "fields": [
+            {
+              "field_name": "diagnosis",
+              "field_type": "textarea",
+              "label": "What is the patient\u2019s diagnosis for the medication being requested?",
+              "required": true,
+              "value": "Type 2 diabetes"
+            },
+            {
+              "field_name": "icd10_codes",
+              "field_type": "text_input",
+              "label": "ICD-10 Code(s):",
+              "required": true,
+              "value": "E11.9"
+            },
+            {
+              "field_name": "failed_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)",
+              "required": true,
+              "value": "Metformin (maximum dose): blood sugar still too high.\nglipizide: caused low blood sugar episodes."
+            },
+            {
+              "field_name": "contraindicated_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)",
+              "required": true,
+              "value": "Penicillin: causes a terrible rash.\nSulfa drugs: allergic."
+            },
+            {
+              "field_name": "supporting_lab_results",
+              "field_type": "textarea",
+              "label": "Are there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)",
+              "required": false,
+              "value": "A1C: 9.2\nFasting glucose: 180"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    },
+    "6": {
+      "section_id": 6,
+      "chunk_indices": [
+        6
+      ],
+      "chunks": [
+        {
+          "chunk_id": 6,
+          "text": "<table>\n  <tr>\n    <th colspan=\"1\" style=\"background-color:black; color:white; text-align:center;\">Additional information that may be important for this review</th>\n  </tr>\n  <tr>\n    <td style=\"height:80px;\"></td>\n  </tr>\n</table>",
+          "chunk_type": "ChunkType.table",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 6,
+        "form_structure": {
+          "section_id": 6,
+          "section_type": "additional_information",
+          "fields": [
+            {
+              "field_name": "additional_information",
+              "field_type": "textarea",
+              "label": "Additional information that may be important for this review",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 6,
+          "section_type": "additional_information",
+          "fields": [
+            {
+              "field_name": "additional_information",
+              "field_type": "textarea",
+              "label": "Additional information that may be important for this review",
+              "required": false,
+              "value": "Patient Name: Linda Sue Patterson\nDOB: July 8, 1965 (Age 59)\nInsurance ID: ABC123456789\nAllergies: Penicillin (rash), Sulfa drugs\nPregnant: No\nHospitalized: No (Outpatient)\n\nMedication Request: Ozempic (semaglutide 1mg injection), once weekly, subcutaneous, 90-day prescription\nReason for Request: Type 2 diabetes (ICD-10 code E11.9), uncontrolled blood sugar despite Metformin and glipizide. A1C 9.2, Fasting glucose 180.\nPrior Medications Tried: Metformin (maximum dose), glipizide (caused hypoglycemia)\nContraindications: None known, no family history of thyroid cancer.\nRecent Lab Work: Yes, last week (A1C 9.2, Fasting glucose 180)\n\nProvider: Dr. Patricia Wong, MD - Endocrinologist\nSpecialty: Endocrinology\nLocation: Endocrinology Specialists, 567 Medical Drive, Suite 200\nPhone: 555-123-4567\nNPI: 2345678901"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    "7": {
+      "section_id": 7,
+      "chunk_indices": [
+        7
+      ],
+      "chunks": [
+        {
+          "chunk_id": 7,
+          "text": "Provider Signature: ___________________________________________  Date: ________________________\n\nConfidentiality Notice:  This transmission contains confidential information belonging to the sender and UnitedHealthcare.  This information is intended only for the use of UnitedHealthcare.  If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution or action involving the contents of this document is prohibited. If you have received this telecopy in error, please notify the sender immediately.",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 7,
+        "form_structure": {
+          "section_id": 7,
+          "section_type": "provider_signature",
+          "fields": [
+            {
+              "field_name": "provider_signature",
+              "field_type": "signature",
+              "label": "Provider Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 7,
+          "section_type": "provider_signature",
+          "fields": [
+            {
+              "field_name": "provider_signature",
+              "field_type": "signature",
+              "label": "Provider Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": "January 15, 2025"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    }
+  },
+  "disjoint_sections": [
+    {
+      "section_id": 0,
+      "chunk_indices": [
+        0
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "text": "logo: UnitedHealthcare Community Plan\n\nCompany Name & Tagline : \n  \u2022 The logo displays the company name \"UnitedHealthcare\" in blue serif font.\n  \u2022 The tagline \"Community Plan\" appears below in smaller, gray sans-serif font.\n\nGraphic Elements : \n  \u2022 To the left of the text, there is a stylized shield or ribbon icon with blue and gray vertical stripes.\n\nLayout & Dimensions : \n  \u2022 The icon is positioned to the left of the text.\n  \u2022 \"UnitedHealthcare\" is on the top line, with \"Community Plan\" right-aligned below it.\n\nAnalysis : \n  \u2022 The logo uses blue and gray to convey professionalism and trust, with the shield/ribbon suggesting protection or support.",
+          "chunk_type": "ChunkType.figure",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 0,
+        "form_structure": {
+          "section_id": 0,
+          "section_type": "header",
+          "fields": [
+            {
+              "field_name": "logo_image",
+              "field_type": "image",
+              "label": "Logo Image",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "company_name",
+              "field_type": "text",
+              "label": "Company Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "tagline",
+              "field_type": "text",
+              "label": "Tagline",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_image",
+              "field_type": "image",
+              "label": "Icon Image",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_position",
+              "field_type": "text",
+              "label": "Icon Position",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_font",
+              "field_type": "text",
+              "label": "Company Name Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_font",
+              "field_type": "text",
+              "label": "Tagline Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_color",
+              "field_type": "color",
+              "label": "Company Name Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_color",
+              "field_type": "color",
+              "label": "Tagline Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_color",
+              "field_type": "color",
+              "label": "Icon Color(s)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 0,
+          "section_type": "header",
+          "fields": [
+            {
+              "field_name": "logo_image",
+              "field_type": "image",
+              "label": "Logo Image",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "company_name",
+              "field_type": "text",
+              "label": "Company Name",
+              "required": true,
+              "value": "Endocrinology Specialists"
+            },
+            {
+              "field_name": "tagline",
+              "field_type": "text",
+              "label": "Tagline",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_image",
+              "field_type": "image",
+              "label": "Icon Image",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_position",
+              "field_type": "text",
+              "label": "Icon Position",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_font",
+              "field_type": "text",
+              "label": "Company Name Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_font",
+              "field_type": "text",
+              "label": "Tagline Font",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "company_name_color",
+              "field_type": "color",
+              "label": "Company Name Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "tagline_color",
+              "field_type": "color",
+              "label": "Tagline Color",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "icon_color",
+              "field_type": "color",
+              "label": "Icon Color(s)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 1,
+      "chunk_indices": [
+        1
+      ],
+      "chunks": [
+        {
+          "chunk_id": 1,
+          "text": "Prior Authorization Request Form",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 1,
+        "form_structure": {
+          "section_id": 1,
+          "section_type": "prior_authorization",
+          "fields": [
+            {
+              "field_name": "request_date",
+              "field_type": "date",
+              "label": "Request Date",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "patient_id",
+              "field_type": "text_input",
+              "label": "Patient ID",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date_of_birth",
+              "field_type": "date",
+              "label": "Date of Birth",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "insurance_provider",
+              "field_type": "text_input",
+              "label": "Insurance Provider",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "policy_number",
+              "field_type": "text_input",
+              "label": "Policy Number",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "prescribing_physician",
+              "field_type": "text_input",
+              "label": "Prescribing Physician",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication Name",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "dosage",
+              "field_type": "text_input",
+              "label": "Dosage",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "frequency",
+              "field_type": "text_input",
+              "label": "Frequency",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number_input",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "reason_for_request",
+              "field_type": "textarea",
+              "label": "Reason for Request",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 1,
+          "section_type": "prior_authorization",
+          "fields": [
+            {
+              "field_name": "request_date",
+              "field_type": "date",
+              "label": "Request Date",
+              "required": true,
+              "value": "January 15, 2025"
+            },
+            {
+              "field_name": "patient_name",
+              "field_type": "text_input",
+              "label": "Patient Name",
+              "required": true,
+              "value": "Linda Sue Patterson"
+            },
+            {
+              "field_name": "patient_id",
+              "field_type": "text_input",
+              "label": "Patient ID",
+              "required": true,
+              "value": "ABC123456789"
+            },
+            {
+              "field_name": "date_of_birth",
+              "field_type": "date",
+              "label": "Date of Birth",
+              "required": true,
+              "value": "July 8, 1965"
+            },
+            {
+              "field_name": "insurance_provider",
+              "field_type": "text_input",
+              "label": "Insurance Provider",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "policy_number",
+              "field_type": "text_input",
+              "label": "Policy Number",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "prescribing_physician",
+              "field_type": "text_input",
+              "label": "Prescribing Physician",
+              "required": true,
+              "value": "Dr. Patricia Wong, MD"
+            },
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication Name",
+              "required": true,
+              "value": "Ozempic (semaglutide)"
+            },
+            {
+              "field_name": "dosage",
+              "field_type": "text_input",
+              "label": "Dosage",
+              "required": true,
+              "value": "1mg injection"
+            },
+            {
+              "field_name": "frequency",
+              "field_type": "text_input",
+              "label": "Frequency",
+              "required": true,
+              "value": "once weekly"
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number_input",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "reason_for_request",
+              "field_type": "textarea",
+              "label": "Reason for Request",
+              "required": true,
+              "value": "Type 2 diabetes (ICD-10 code E11.9). Patient has tried Metformin and glipizide with insufficient blood sugar control and side effects.  A1C is 9.2 and fasting glucose is 180."
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 2,
+      "chunk_indices": [
+        2
+      ],
+      "chunks": [
+        {
+          "chunk_id": 2,
+          "text": "Please complete this entire form and fax it to: 866-940-7328. If you have questions, please call 800-310-6826.\nThis form may contain multiple pages. Please complete all pages to avoid a delay in our decision.\nAllow at least 24 hours for review.",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 2,
+        "form_structure": {
+          "section_id": 2,
+          "section_type": "instructions",
+          "fields": [
+            {
+              "field_name": "fax_number",
+              "field_type": "text_display",
+              "label": "Fax Number",
+              "value": "866-940-7328"
+            },
+            {
+              "field_name": "phone_number",
+              "field_type": "text_display",
+              "label": "Phone Number",
+              "value": "800-310-6826"
+            },
+            {
+              "field_name": "multi_page_notice",
+              "field_type": "text_display",
+              "label": "Multi-Page Notice",
+              "value": "This form may contain multiple pages. Please complete all pages to avoid a delay in our decision."
+            },
+            {
+              "field_name": "review_time",
+              "field_type": "text_display",
+              "label": "Review Time",
+              "value": "Allow at least 24 hours for review."
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 2,
+          "section_type": "instructions",
+          "fields": [
+            {
+              "field_name": "fax_number",
+              "field_type": "text_display",
+              "label": "Fax Number",
+              "value": null
+            },
+            {
+              "field_name": "phone_number",
+              "field_type": "text_display",
+              "label": "Phone Number",
+              "value": null
+            },
+            {
+              "field_name": "multi_page_notice",
+              "field_type": "text_display",
+              "label": "Multi-Page Notice",
+              "value": "This form may contain multiple pages. Please complete all pages to avoid a delay in our decision."
+            },
+            {
+              "field_name": "review_time",
+              "field_type": "text_display",
+              "label": "Review Time",
+              "value": "Allow at least 24 hours for review."
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_2",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 3,
+      "chunk_indices": [
+        3
+      ],
+      "chunks": [
+        {
+          "chunk_id": 3,
+          "text": "Member Name:  \nProvider Name:  \n\nMember ID:  \nNPI #:  \nSpecialty:  \n\nDate Of Birth:  \nOffice Phone:  \nOffice Fax:  \n\nStreet Address:  \nOffice Street Address:  \n\nCity:  \nState:  \nZIP Code:  \nCity:  \nState:  \nZIP Code:  \n\nPhone:  \nAllergies:  \n\nIs the requested medication: [ ] New or   [ ] Continuation of Therapy? If continuation, list start date: ________________\n\nIs this patient currently hospitalized?   [ ] Yes   [ ] No   If recently discharged, list discharge date: ________________\n\nIs this member pregnant?   [ ] Yes   [ ] No   If yes, what is this member\u2019s due date? ________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 3,
+        "form_structure": {
+          "section_id": 3,
+          "section_type": "unknown",
+          "fields": [],
+          "error": "Structure creation failed"
+        },
+        "filled_form": {
+          "section_id": 3,
+          "section_type": "unknown",
+          "fields": [
+            {
+              "field_id": "patient_name",
+              "field_type": "text",
+              "value": "Linda Sue Patterson"
+            },
+            {
+              "field_id": "patient_dob",
+              "field_type": "date",
+              "value": "July 8, 1965"
+            },
+            {
+              "field_id": "patient_insurance_id",
+              "field_type": "text",
+              "value": "ABC123456789"
+            },
+            {
+              "field_id": "patient_drug_allergies",
+              "field_type": "text",
+              "value": "penicillin, sulfa drugs"
+            },
+            {
+              "field_id": "patient_pregnant",
+              "field_type": "checkbox",
+              "value": false
+            },
+            {
+              "field_id": "patient_hospitalized",
+              "field_type": "checkbox",
+              "value": false
+            },
+            {
+              "field_id": "provider_name",
+              "field_type": "text",
+              "value": "Dr. Patricia Wong, MD"
+            },
+            {
+              "field_id": "provider_specialty",
+              "field_type": "text",
+              "value": "endocrinology"
+            },
+            {
+              "field_id": "provider_npi",
+              "field_type": "text",
+              "value": "2345678901"
+            },
+            {
+              "field_id": "provider_phone",
+              "field_type": "text",
+              "value": "555-123-4567"
+            },
+            {
+              "field_id": "provider_address",
+              "field_type": "text",
+              "value": "Endocrinology Specialists, 567 Medical Drive, Suite 200"
+            },
+            {
+              "field_id": "medication_request_type",
+              "field_type": "text",
+              "value": "new"
+            },
+            {
+              "field_id": "medication_name",
+              "field_type": "text",
+              "value": "Ozempic (semaglutide 1mg injection)"
+            },
+            {
+              "field_id": "medication_dosage",
+              "field_type": "text",
+              "value": "1mg injection, once weekly subcutaneous injection"
+            },
+            {
+              "field_id": "medication_duration",
+              "field_type": "text",
+              "value": "90 days"
+            },
+            {
+              "field_id": "primary_diagnosis",
+              "field_type": "text",
+              "value": "Type 2 diabetes"
+            },
+            {
+              "field_id": "icd10_code",
+              "field_type": "text",
+              "value": "E11.9"
+            },
+            {
+              "field_id": "prior_therapy",
+              "field_type": "text",
+              "value": "Metformin, glipizide"
+            },
+            {
+              "field_id": "prior_therapy_reason_for_change",
+              "field_type": "text",
+              "value": "Metformin: blood sugar still too high even on the maximum dose. Glipizide: caused low blood sugar episodes."
+            },
+            {
+              "field_id": "contraindications",
+              "field_type": "text",
+              "value": null
+            },
+            {
+              "field_id": "lab_results",
+              "field_type": "text",
+              "value": "A1C: 9.2, Fasting glucose: 180"
+            }
+          ],
+          "error": null
+        },
+        "thread_id": "ThreadPoolExecutor-3_2",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 4,
+      "chunk_indices": [
+        4
+      ],
+      "chunks": [
+        {
+          "chunk_id": 4,
+          "text": "Medication Information\n\nMedication: \nStrength: \n\nDirections for use: \nQuantity: \n\nMedication Administered: [ ] Self-Administered    [ ] Physician\u2019s Office    [ ] Other: ____________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 4,
+        "form_structure": {
+          "section_id": 4,
+          "section_type": "medication_information",
+          "fields": [
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_strength",
+              "field_type": "text_input",
+              "label": "Strength",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "directions_for_use",
+              "field_type": "text_area",
+              "label": "Directions for use",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_administered",
+              "field_type": "radio_button",
+              "label": "Medication Administered",
+              "required": true,
+              "options": [
+                {
+                  "value": "self_administered",
+                  "label": "Self-Administered"
+                },
+                {
+                  "value": "physician_office",
+                  "label": "Physician's Office"
+                },
+                {
+                  "value": "other",
+                  "label": "Other"
+                }
+              ],
+              "value": null
+            },
+            {
+              "field_name": "medication_administered_other",
+              "field_type": "text_input",
+              "label": "Other (Please specify)",
+              "required": false,
+              "value": null,
+              "conditional": {
+                "field": "medication_administered",
+                "value": "other"
+              }
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 4,
+          "section_type": "medication_information",
+          "fields": [
+            {
+              "field_name": "medication_name",
+              "field_type": "text_input",
+              "label": "Medication",
+              "required": true,
+              "value": "Ozempic"
+            },
+            {
+              "field_name": "medication_strength",
+              "field_type": "text_input",
+              "label": "Strength",
+              "required": true,
+              "value": "1mg injection"
+            },
+            {
+              "field_name": "directions_for_use",
+              "field_type": "text_area",
+              "label": "Directions for use",
+              "required": true,
+              "value": "once weekly subcutaneous injection"
+            },
+            {
+              "field_name": "quantity",
+              "field_type": "number",
+              "label": "Quantity",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "medication_administered",
+              "field_type": "radio_button",
+              "label": "Medication Administered",
+              "required": true,
+              "options": [
+                {
+                  "value": "self_administered",
+                  "label": "Self-Administered"
+                },
+                {
+                  "value": "physician_office",
+                  "label": "Physician's Office"
+                },
+                {
+                  "value": "other",
+                  "label": "Other"
+                }
+              ],
+              "value": "self_administered"
+            },
+            {
+              "field_name": "medication_administered_other",
+              "field_type": "text_input",
+              "label": "Other (Please specify)",
+              "required": false,
+              "value": null,
+              "conditional": {
+                "field": "medication_administered",
+                "value": "other"
+              }
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 5,
+      "chunk_indices": [
+        5
+      ],
+      "chunks": [
+        {
+          "chunk_id": 5,
+          "text": "Clinical Information\n\nWhat is the patient\u2019s diagnosis for the medication being requested? _____________________________________________\n___________________________________________________________________________________________________________\nICD-10 Code(s): ______________________________________\n\nPlease refer to the patient\u2019s PDL at www.uhcprovider.com for a list of preferred alternatives\n\nWhat medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)\n\n___________________________________________________________________________________________________________\n___________________________________________________________________________________________________________\n\nWhat medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)\n\n___________________________________________________________________________________________________________\n___________________________________________________________________________________________________________\n\nAre there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)\n\n___________________________________________________________________________________________________________",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 5,
+        "form_structure": {
+          "section_id": 5,
+          "section_type": "medical_history",
+          "fields": [
+            {
+              "field_name": "diagnosis",
+              "field_type": "textarea",
+              "label": "What is the patient\u2019s diagnosis for the medication being requested?",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "icd10_codes",
+              "field_type": "text_input",
+              "label": "ICD-10 Code(s):",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "failed_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "contraindicated_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "supporting_lab_results",
+              "field_type": "textarea",
+              "label": "Are there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 5,
+          "section_type": "medical_history",
+          "fields": [
+            {
+              "field_name": "diagnosis",
+              "field_type": "textarea",
+              "label": "What is the patient\u2019s diagnosis for the medication being requested?",
+              "required": true,
+              "value": "Type 2 diabetes"
+            },
+            {
+              "field_name": "icd10_codes",
+              "field_type": "text_input",
+              "label": "ICD-10 Code(s):",
+              "required": true,
+              "value": "E11.9"
+            },
+            {
+              "field_name": "failed_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a history of failure to? (Please specify ALL medication(s)/strengths tried, directions, length of trial, and reason for discontinuation of each medication)",
+              "required": true,
+              "value": "Metformin (maximum dose): blood sugar still too high.\nglipizide: caused low blood sugar episodes."
+            },
+            {
+              "field_name": "contraindicated_medications",
+              "field_type": "textarea",
+              "label": "What medication(s) does the patient have a contraindication or intolerance to? (Please specify ALL medication(s) with the associated contraindication to or specific issues resulting in intolerance to each medication)",
+              "required": true,
+              "value": "Penicillin: causes a terrible rash.\nSulfa drugs: allergic."
+            },
+            {
+              "field_name": "supporting_lab_results",
+              "field_type": "textarea",
+              "label": "Are there any supporting laboratory or test results related to the patient\u2019s diagnosis? (Please specify or provide documentation)",
+              "required": false,
+              "value": "A1C: 9.2\nFasting glucose: 180"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 6,
+      "chunk_indices": [
+        6
+      ],
+      "chunks": [
+        {
+          "chunk_id": 6,
+          "text": "<table>\n  <tr>\n    <th colspan=\"1\" style=\"background-color:black; color:white; text-align:center;\">Additional information that may be important for this review</th>\n  </tr>\n  <tr>\n    <td style=\"height:80px;\"></td>\n  </tr>\n</table>",
+          "chunk_type": "ChunkType.table",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 6,
+        "form_structure": {
+          "section_id": 6,
+          "section_type": "additional_information",
+          "fields": [
+            {
+              "field_name": "additional_information",
+              "field_type": "textarea",
+              "label": "Additional information that may be important for this review",
+              "required": false,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 6,
+          "section_type": "additional_information",
+          "fields": [
+            {
+              "field_name": "additional_information",
+              "field_type": "textarea",
+              "label": "Additional information that may be important for this review",
+              "required": false,
+              "value": "Patient Name: Linda Sue Patterson\nDOB: July 8, 1965 (Age 59)\nInsurance ID: ABC123456789\nAllergies: Penicillin (rash), Sulfa drugs\nPregnant: No\nHospitalized: No (Outpatient)\n\nMedication Request: Ozempic (semaglutide 1mg injection), once weekly, subcutaneous, 90-day prescription\nReason for Request: Type 2 diabetes (ICD-10 code E11.9), uncontrolled blood sugar despite Metformin and glipizide. A1C 9.2, Fasting glucose 180.\nPrior Medications Tried: Metformin (maximum dose), glipizide (caused hypoglycemia)\nContraindications: None known, no family history of thyroid cancer.\nRecent Lab Work: Yes, last week (A1C 9.2, Fasting glucose 180)\n\nProvider: Dr. Patricia Wong, MD - Endocrinologist\nSpecialty: Endocrinology\nLocation: Endocrinology Specialists, 567 Medical Drive, Suite 200\nPhone: 555-123-4567\nNPI: 2345678901"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_0",
+        "processing_complete": true
+      }
+    },
+    {
+      "section_id": 7,
+      "chunk_indices": [
+        7
+      ],
+      "chunks": [
+        {
+          "chunk_id": 7,
+          "text": "Provider Signature: ___________________________________________  Date: ________________________\n\nConfidentiality Notice:  This transmission contains confidential information belonging to the sender and UnitedHealthcare.  This information is intended only for the use of UnitedHealthcare.  If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution or action involving the contents of this document is prohibited. If you have received this telecopy in error, please notify the sender immediately.",
+          "chunk_type": "ChunkType.text",
+          "page": 0
+        }
+      ],
+      "kernel_output": {
+        "section_id": 7,
+        "form_structure": {
+          "section_id": 7,
+          "section_type": "provider_signature",
+          "fields": [
+            {
+              "field_name": "provider_signature",
+              "field_type": "signature",
+              "label": "Provider Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": null
+            }
+          ]
+        },
+        "filled_form": {
+          "section_id": 7,
+          "section_type": "provider_signature",
+          "fields": [
+            {
+              "field_name": "provider_signature",
+              "field_type": "signature",
+              "label": "Provider Signature",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "date",
+              "field_type": "date",
+              "label": "Date",
+              "required": true,
+              "value": "January 15, 2025"
+            }
+          ]
+        },
+        "thread_id": "ThreadPoolExecutor-3_1",
+        "processing_complete": true
+      }
+    }
+  ],
+  "transcript": "\nPRIOR AUTHORIZATION REQUEST CONSULTATION\nDate: January 15, 2025\nLocation: Endocrinology Specialists\nProvider: Dr. Patricia Wong, MD - Endocrinologist\nNurse: Lisa Chen, RN\n\nNURSE: Good morning, Mrs. Patterson. Dr. Wong wants to prescribe a new medication for your diabetes, but we need to complete a prior authorization request with your insurance.\n\nNURSE: Let me confirm your information first. Your name is Linda Sue Patterson?\nPATIENT: Yes, that's correct.\n\nNURSE: Date of birth is July 8, 1965?\nPATIENT: Yes, I'm 59 years old.\n\nNURSE: Your insurance member ID is ABC123456789?\nPATIENT: Let me check my card... yes, that's right.\n\nNURSE: Do you have any known drug allergies?\nPATIENT: Yes, I'm allergic to penicillin - it gives me a terrible rash. I'm also allergic to sulfa drugs.\n\nNURSE: Are you currently pregnant?\nPATIENT: No, definitely not.\n\nNURSE: Are you currently hospitalized?\nPATIENT: No, I'm here as an outpatient.\n\nNURSE: Dr. Wong's information - she's at Endocrinology Specialists, 567 Medical Drive, Suite 200, phone 555-123-4567, NPI 2345678901. Her specialty is endocrinology.\nPATIENT: Yes, she's been my endocrinologist for two years.\n\nNURSE: This is a new medication request, not a continuation of something you're already taking?\nPATIENT: That's right, this would be new for me.\n\nNURSE: The medication Dr. Wong wants to prescribe is Ozempic - that's semaglutide 1mg injection, once weekly subcutaneous injection. You would inject it yourself at home.\nPATIENT: She explained that it's a once-a-week shot that should help my diabetes and possibly help me lose some weight.\n\nNURSE: How long would the prescription be for?\nPATIENT: Dr. Wong said we'd try it for 90 days initially to see how I respond.\n\nNURSE: Your primary diagnosis is Type 2 diabetes, ICD-10 code E11.9?\nPATIENT: Yes, I've had diabetes for about 6 years now.\n\nNURSE: Have you tried other diabetes medications that didn't work well?\nPATIENT: Yes, I started with Metformin, but my blood sugar is still too high even on the maximum dose. We tried adding glipizide, but it made me have low blood sugar episodes. Dr. Wong said we need something stronger.\n\nNURSE: Any contraindications or reasons you shouldn't take this medication?\nPATIENT: Dr. Wong said I'm a good candidate. No family history of thyroid cancer or anything like that.\n\nNURSE: Have you had recent lab work?\nPATIENT: Yes, last week. My A1C was 9.2, which Dr. Wong said is too high. My fasting glucose was 180.\n\nNURSE: We'll submit this request today. Insurance typically responds within 72 hours.\nPATIENT: I really hope they approve it. I need to get my diabetes under better control.\n",
+  "processing_timestamp": "{\"timestamp\": \"2025-01-15T10:00:00Z\"}"
+}
