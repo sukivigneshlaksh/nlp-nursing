@@ -1,0 +1,281 @@
+{
+  "form_name": "Simple_Form",
+  "pdf_path": "../data/pdf/Simple_Form.pdf",
+  "structure": {
+    "form_name": "Medical History",
+    "sections": [
+      {
+        "section_name": "Patient Information",
+        "fields": [
+          {
+            "field_name": "name",
+            "label": "Name",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "age",
+            "label": "Age",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "date",
+            "label": "Date",
+            "field_type": "date",
+            "value": null
+          },
+          {
+            "field_name": "county_of_residence",
+            "label": "County of Residence",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "major_medical_problems",
+            "label": "List Major Medical Problems",
+            "field_type": "text_area",
+            "value": null
+          }
+        ]
+      },
+      {
+        "section_name": "Medical History",
+        "fields": [
+          {
+            "field_name": "current_doctor",
+            "label": "Current Doctor",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "current_medications",
+            "label": "Current Medications",
+            "field_type": "array",
+            "value": [
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "section_name": "Hospitalizations",
+        "fields": [
+          {
+            "field_name": "hospitalizations",
+            "label": "Hospitalizations (Recent to Earliest)",
+            "field_type": "array",
+            "value": [
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              },
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              },
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "section_name": "Surgeries",
+        "fields": [
+          {
+            "field_name": "surgeries",
+            "label": "Surgeries (Recent to Earliest)",
+            "field_type": "array",
+            "value": [
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fill_error": "Failed to fill form"
+  },
+  "filled_form": {
+    "form_name": "Medical History",
+    "sections": [
+      {
+        "section_name": "Patient Information",
+        "fields": [
+          {
+            "field_name": "name",
+            "label": "Name",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "age",
+            "label": "Age",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "date",
+            "label": "Date",
+            "field_type": "date",
+            "value": null
+          },
+          {
+            "field_name": "county_of_residence",
+            "label": "County of Residence",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "major_medical_problems",
+            "label": "List Major Medical Problems",
+            "field_type": "text_area",
+            "value": null
+          }
+        ]
+      },
+      {
+        "section_name": "Medical History",
+        "fields": [
+          {
+            "field_name": "current_doctor",
+            "label": "Current Doctor",
+            "field_type": "text_input",
+            "value": null
+          },
+          {
+            "field_name": "current_medications",
+            "label": "Current Medications",
+            "field_type": "array",
+            "value": [
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              },
+              {
+                "medication": null,
+                "purpose": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "section_name": "Hospitalizations",
+        "fields": [
+          {
+            "field_name": "hospitalizations",
+            "label": "Hospitalizations (Recent to Earliest)",
+            "field_type": "array",
+            "value": [
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              },
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              },
+              {
+                "hospital": null,
+                "date": null,
+                "reason": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "section_name": "Surgeries",
+        "fields": [
+          {
+            "field_name": "surgeries",
+            "label": "Surgeries (Recent to Earliest)",
+            "field_type": "array",
+            "value": [
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              },
+              {
+                "surgery": null,
+                "date": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fill_error": "Failed to fill form"
+  },
+  "transcript": "\nMEDICAL HISTORY INTAKE INTERVIEW\nDate: January 15, 2025\nLocation: Community Health Center\nProvider: Sarah Martinez, RN\n\nNURSE: Good morning! I'm Sarah, and I'll be completing your medical history form today. Let's start with some basic information.\n\nNURSE: What's your full name?\nPATIENT: Maria Elena Rodriguez\n\nNURSE: And how old are you, Maria?\nPATIENT: I'm 62 years old.\n\nNURSE: What county do you currently live in?\nPATIENT: I live in Orange County.\n\nNURSE: Can you tell me about any major medical problems or conditions you have?\nPATIENT: Well, I have diabetes - Type 2. I've had it for about 8 years now. I also have high blood pressure, and my doctor says I have high cholesterol. Oh, and I had a small heart attack about three years ago.\n\nNURSE: I'm sorry to hear about that. Who is your current primary care doctor?\nPATIENT: Dr. James Wilson at Orange County Family Practice. He's been my doctor for the past five years.\n\nNURSE: What medications are you currently taking?\nPATIENT: I take quite a few. There's Metformin for my diabetes - I take that twice a day. For my blood pressure, I take Lisinopril in the morning. I also take Atorvastatin for my cholesterol, and my cardiologist has me on Aspirin and Metoprolol since my heart attack.\n\nNURSE: Have you been hospitalized recently?\nPATIENT: Yes, unfortunately. I was at St. Mary's Hospital last September - September 23rd - because my blood sugar got really high and I was dehydrated. Before that, I was hospitalized in March 2022 for my heart attack at Orange County Medical Center.\n\nNURSE: Have you had any surgeries?\nPATIENT: I've had a few. Most recently, I had gallbladder surgery in June 2023 - that was June 15th, I remember because it was right before Father's Day. Before that, I had a hysterectomy back in 2018, I think it was in April. And when I was much younger, I had my appendix out - that was way back in 1995.\n\nNURSE: Thank you for all that information, Maria. This will help us provide you with the best care possible.\n"
+}

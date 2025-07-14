@@ -298,7 +298,10 @@ def process_single_pdf(pdf_path, form_name, transcript):
     """Process a single PDF and return results"""
     print(f"Processing {form_name}...")
     
-    pickle_path = f"{form_name}_chunks.pkl"
+    # Create cache directory for PKL files
+    cache_dir = Path("cache")
+    cache_dir.mkdir(exist_ok=True)
+    pickle_path = cache_dir / f"{form_name}_chunks.pkl"
     
     # Step 1: Extract chunks
     if os.path.exists(pickle_path):
@@ -367,8 +370,10 @@ def process_single_pdf(pdf_path, form_name, transcript):
         "processing_timestamp": json.dumps({"timestamp": "2025-01-15T10:00:00Z"})
     }
     
-    # Save to JSON file with kernel outputs
-    json_filename = f"{form_name}_processed.json"
+    # Save to JSON file with kernel outputs in outputs/agentic directory
+    outputs_dir = Path("outputs/agentic")
+    outputs_dir.mkdir(parents=True, exist_ok=True)
+    json_filename = outputs_dir / f"{form_name}_processed.json"
     with open(json_filename, "w") as f:
         json.dump(result, f, indent=2)
     

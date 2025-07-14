@@ -21,7 +21,7 @@
         },
         {
           "chunk_id": 1,
-          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________________\n\nCOUNTY OF RESIDENCE:______________________________________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:______________________________________________________________________________\n\n__________________________________________________________________________________________________________\n\n__________________________________________________________________________________________________________\n\nMEDICAL HISTORY:     CURRENT DOCTOR:_______________________________________________________________________",
+          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________\n\nCOUNTY OF RESIDENCE:___________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:___________________________________________________\n\n______________________________________________________________________________\n\n______________________________________________________________________________\n\nMEDICAL HISTORY:    CURRENT DOCTOR:____________________________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         },
@@ -33,7 +33,7 @@
         },
         {
           "chunk_id": 4,
-          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: _______________________________  DATE: __________  REASON: _____________________________________________\n1._____________________________________________________________________________________________________________________\n2._____________________________________________________________________________________________________________________\n3._____________________________________________________________________________________________________________________\n\nSURGERIES:  (RECENT TO EARLIEST)\n\n1.__________________________________________________________  DATE: _______________________\n2.__________________________________________________________  DATE: _______________________\n3.__________________________________________________________  DATE: _______________________\n4.__________________________________________________________  DATE: _______________________",
+          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ______________________________________    ____________    _____________________________________________\n2. ______________________________________    ____________    _____________________________________________\n3. ______________________________________    ____________    _____________________________________________\n\nSURGERIES:  (RECENT TO EARLIEST)\n\n1. ______________________________________    ____________\n2. ______________________________________    ____________\n3. ______________________________________    ____________\n4. ______________________________________    ____________",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -45,14 +45,14 @@
           "section_type": "medical_history",
           "fields": [
             {
-              "field_name": "name",
+              "field_name": "patient_name",
               "field_type": "text_input",
               "label": "Name",
               "required": true,
               "value": null
             },
             {
-              "field_name": "age",
+              "field_name": "patient_age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -102,7 +102,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -125,7 +125,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -155,14 +155,14 @@
           "section_type": "medical_history",
           "fields": [
             {
-              "field_name": "name",
+              "field_name": "patient_name",
               "field_type": "text_input",
               "label": "Name",
               "required": true,
               "value": null
             },
             {
-              "field_name": "age",
+              "field_name": "patient_age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -212,7 +212,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -235,7 +235,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -298,9 +298,17 @@
               "value": null
             },
             {
-              "field_name": "presenting_problem",
-              "field_type": "text_area",
-              "label": "Presenting Problem",
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "options": [],
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
               "required": false,
               "value": null
             }
@@ -326,9 +334,17 @@
               "value": null
             },
             {
-              "field_name": "presenting_problem",
-              "field_type": "text_area",
-              "label": "Presenting Problem",
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "options": [],
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
               "required": false,
               "value": null
             }
@@ -358,7 +374,7 @@
         },
         {
           "chunk_id": 1,
-          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________________\n\nCOUNTY OF RESIDENCE:______________________________________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:______________________________________________________________________________\n\n__________________________________________________________________________________________________________\n\n__________________________________________________________________________________________________________\n\nMEDICAL HISTORY:     CURRENT DOCTOR:_______________________________________________________________________",
+          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________\n\nCOUNTY OF RESIDENCE:___________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:___________________________________________________\n\n______________________________________________________________________________\n\n______________________________________________________________________________\n\nMEDICAL HISTORY:    CURRENT DOCTOR:____________________________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         },
@@ -370,7 +386,7 @@
         },
         {
           "chunk_id": 4,
-          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: _______________________________  DATE: __________  REASON: _____________________________________________\n1._____________________________________________________________________________________________________________________\n2._____________________________________________________________________________________________________________________\n3._____________________________________________________________________________________________________________________\n\nSURGERIES:  (RECENT TO EARLIEST)\n\n1.__________________________________________________________  DATE: _______________________\n2.__________________________________________________________  DATE: _______________________\n3.__________________________________________________________  DATE: _______________________\n4.__________________________________________________________  DATE: _______________________",
+          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ______________________________________    ____________    _____________________________________________\n2. ______________________________________    ____________    _____________________________________________\n3. ______________________________________    ____________    _____________________________________________\n\nSURGERIES:  (RECENT TO EARLIEST)\n\n1. ______________________________________    ____________\n2. ______________________________________    ____________\n3. ______________________________________    ____________\n4. ______________________________________    ____________",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -382,14 +398,14 @@
           "section_type": "medical_history",
           "fields": [
             {
-              "field_name": "name",
+              "field_name": "patient_name",
               "field_type": "text_input",
               "label": "Name",
               "required": true,
               "value": null
             },
             {
-              "field_name": "age",
+              "field_name": "patient_age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -439,7 +455,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -462,7 +478,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -492,14 +508,14 @@
           "section_type": "medical_history",
           "fields": [
             {
-              "field_name": "name",
+              "field_name": "patient_name",
               "field_type": "text_input",
               "label": "Name",
               "required": true,
               "value": null
             },
             {
-              "field_name": "age",
+              "field_name": "patient_age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -549,7 +565,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -572,7 +588,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array",
+              "field_type": "array_of_objects",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -635,9 +651,17 @@
               "value": null
             },
             {
-              "field_name": "presenting_problem",
-              "field_type": "text_area",
-              "label": "Presenting Problem",
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "options": [],
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
               "required": false,
               "value": null
             }
@@ -663,9 +687,17 @@
               "value": null
             },
             {
-              "field_name": "presenting_problem",
-              "field_type": "text_area",
-              "label": "Presenting Problem",
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "options": [],
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
               "required": false,
               "value": null
             }
