@@ -21,7 +21,7 @@
         },
         {
           "chunk_id": 1,
-          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________\n\nCOUNTY OF RESIDENCE:___________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:___________________________________________________\n\n______________________________________________________________________________\n\n______________________________________________________________________________\n\nMEDICAL HISTORY:    CURRENT DOCTOR:____________________________________________",
+          "text": "NAME: ___________________________________________  AGE:_______  DATE:_____________________________________\n\nCOUNTY OF RESIDENCE:____________________________________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:_____________________________________________________________________________\n\n________________________________________________________________________________________________________\n\n________________________________________________________________________________________________________\n\nMEDICAL HISTORY:     CURRENT DOCTOR:__________________________________________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         },
@@ -33,7 +33,7 @@
         },
         {
           "chunk_id": 4,
-          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ________________________________________    ____________    _______________________________________________________\n2. ________________________________________    ____________    _______________________________________________________\n3. ________________________________________    ____________    _______________________________________________________\n\nSURGERIES:    (RECENT TO EARLIEST)    DATE:\n1. ___________________________________________    ________________________\n2. ___________________________________________    ________________________\n3. ___________________________________________    ________________________\n4. ___________________________________________    ________________________",
+          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ______________________________________    ____________    ________________________________________________________\n2. ______________________________________    ____________    ________________________________________________________\n3. ______________________________________    ____________    ________________________________________________________\n\nSURGERIES:    (RECENT TO EARLIEST)    DATE:\n1. ____________________________________________    ________________________\n2. ____________________________________________    ________________________\n3. ____________________________________________    ________________________\n4. ____________________________________________    ________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -52,7 +52,7 @@
               "value": null
             },
             {
-              "field_name": "patient_age",
+              "field_name": "age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -102,7 +102,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -125,7 +125,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -162,7 +162,7 @@
               "value": null
             },
             {
-              "field_name": "patient_age",
+              "field_name": "age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -212,7 +212,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -235,7 +235,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -260,7 +260,7 @@
           ],
           "fill_error": "Failed to fill form"
         },
-        "thread_id": "ThreadPoolExecutor-2_0",
+        "thread_id": "ThreadPoolExecutor-4_0",
         "processing_complete": true
       }
     },
@@ -272,7 +272,7 @@
       "chunks": [
         {
           "chunk_id": 3,
-          "text": "**PURPOSE**",
+          "text": "**PURPOSE**\n",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -281,13 +281,42 @@
         "section_id": 1,
         "form_structure": {
           "section_id": 1,
-          "section_type": "purpose_of_visit",
+          "section_type": "purpose",
           "fields": [
             {
-              "field_name": "purpose",
-              "field_type": "textarea",
+              "field_name": "purpose_of_visit",
+              "field_type": "text_area",
               "label": "Purpose of Visit",
               "required": true,
+              "value": null
+            },
+            {
+              "field_name": "chief_complaint",
+              "field_type": "text_area",
+              "label": "Chief Complaint",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "required": false,
+              "value": null,
+              "options": []
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "relevant_history",
+              "field_type": "text_area",
+              "label": "Relevant History",
+              "required": false,
               "value": null
             }
           ],
@@ -295,19 +324,48 @@
         },
         "filled_form": {
           "section_id": 1,
-          "section_type": "purpose_of_visit",
+          "section_type": "purpose",
           "fields": [
             {
-              "field_name": "purpose",
-              "field_type": "textarea",
+              "field_name": "purpose_of_visit",
+              "field_type": "text_area",
               "label": "Purpose of Visit",
               "required": true,
+              "value": null
+            },
+            {
+              "field_name": "chief_complaint",
+              "field_type": "text_area",
+              "label": "Chief Complaint",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "required": false,
+              "value": null,
+              "options": []
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "relevant_history",
+              "field_type": "text_area",
+              "label": "Relevant History",
+              "required": false,
               "value": null
             }
           ],
           "fill_error": "Failed to fill form"
         },
-        "thread_id": "ThreadPoolExecutor-2_1",
+        "thread_id": "ThreadPoolExecutor-4_1",
         "processing_complete": true
       }
     }
@@ -330,7 +388,7 @@
         },
         {
           "chunk_id": 1,
-          "text": "NAME: ___________________________________________  AGE:_______  DATE:______________________________\n\nCOUNTY OF RESIDENCE:___________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:___________________________________________________\n\n______________________________________________________________________________\n\n______________________________________________________________________________\n\nMEDICAL HISTORY:    CURRENT DOCTOR:____________________________________________",
+          "text": "NAME: ___________________________________________  AGE:_______  DATE:_____________________________________\n\nCOUNTY OF RESIDENCE:____________________________________________________________________________________\n\nLIST MAJOR MEDICAL PROBLEMS:_____________________________________________________________________________\n\n________________________________________________________________________________________________________\n\n________________________________________________________________________________________________________\n\nMEDICAL HISTORY:     CURRENT DOCTOR:__________________________________________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         },
@@ -342,7 +400,7 @@
         },
         {
           "chunk_id": 4,
-          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ________________________________________    ____________    _______________________________________________________\n2. ________________________________________    ____________    _______________________________________________________\n3. ________________________________________    ____________    _______________________________________________________\n\nSURGERIES:    (RECENT TO EARLIEST)    DATE:\n1. ___________________________________________    ________________________\n2. ___________________________________________    ________________________\n3. ___________________________________________    ________________________\n4. ___________________________________________    ________________________",
+          "text": "HOSPITALIZATIONS:  (RECENT TO EARLIEST)\n\nHOSPITAL: ________________________________    DATE: __________    REASON: _____________________________________________\n1. ______________________________________    ____________    ________________________________________________________\n2. ______________________________________    ____________    ________________________________________________________\n3. ______________________________________    ____________    ________________________________________________________\n\nSURGERIES:    (RECENT TO EARLIEST)    DATE:\n1. ____________________________________________    ________________________\n2. ____________________________________________    ________________________\n3. ____________________________________________    ________________________\n4. ____________________________________________    ________________________",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -361,7 +419,7 @@
               "value": null
             },
             {
-              "field_name": "patient_age",
+              "field_name": "age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -411,7 +469,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -434,7 +492,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -471,7 +529,7 @@
               "value": null
             },
             {
-              "field_name": "patient_age",
+              "field_name": "age",
               "field_type": "number",
               "label": "Age",
               "required": true,
@@ -521,7 +579,7 @@
             },
             {
               "field_name": "hospitalizations",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Hospitalizations (Recent to Earliest)",
               "required": true,
               "value": [
@@ -544,7 +602,7 @@
             },
             {
               "field_name": "surgeries",
-              "field_type": "array_of_objects",
+              "field_type": "array",
               "label": "Surgeries (Recent to Earliest)",
               "required": true,
               "value": [
@@ -569,7 +627,7 @@
           ],
           "fill_error": "Failed to fill form"
         },
-        "thread_id": "ThreadPoolExecutor-2_0",
+        "thread_id": "ThreadPoolExecutor-4_0",
         "processing_complete": true
       }
     },
@@ -581,7 +639,7 @@
       "chunks": [
         {
           "chunk_id": 3,
-          "text": "**PURPOSE**",
+          "text": "**PURPOSE**\n",
           "chunk_type": "ChunkType.text",
           "page": 0
         }
@@ -590,13 +648,42 @@
         "section_id": 1,
         "form_structure": {
           "section_id": 1,
-          "section_type": "purpose_of_visit",
+          "section_type": "purpose",
           "fields": [
             {
-              "field_name": "purpose",
-              "field_type": "textarea",
+              "field_name": "purpose_of_visit",
+              "field_type": "text_area",
               "label": "Purpose of Visit",
               "required": true,
+              "value": null
+            },
+            {
+              "field_name": "chief_complaint",
+              "field_type": "text_area",
+              "label": "Chief Complaint",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "required": false,
+              "value": null,
+              "options": []
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "relevant_history",
+              "field_type": "text_area",
+              "label": "Relevant History",
+              "required": false,
               "value": null
             }
           ],
@@ -604,19 +691,48 @@
         },
         "filled_form": {
           "section_id": 1,
-          "section_type": "purpose_of_visit",
+          "section_type": "purpose",
           "fields": [
             {
-              "field_name": "purpose",
-              "field_type": "textarea",
+              "field_name": "purpose_of_visit",
+              "field_type": "text_area",
               "label": "Purpose of Visit",
               "required": true,
+              "value": null
+            },
+            {
+              "field_name": "chief_complaint",
+              "field_type": "text_area",
+              "label": "Chief Complaint",
+              "required": true,
+              "value": null
+            },
+            {
+              "field_name": "presenting_symptoms",
+              "field_type": "checklist",
+              "label": "Presenting Symptoms",
+              "required": false,
+              "value": null,
+              "options": []
+            },
+            {
+              "field_name": "symptoms_duration",
+              "field_type": "text_input",
+              "label": "Duration of Symptoms",
+              "required": false,
+              "value": null
+            },
+            {
+              "field_name": "relevant_history",
+              "field_type": "text_area",
+              "label": "Relevant History",
+              "required": false,
               "value": null
             }
           ],
           "fill_error": "Failed to fill form"
         },
-        "thread_id": "ThreadPoolExecutor-2_1",
+        "thread_id": "ThreadPoolExecutor-4_1",
         "processing_complete": true
       }
     }

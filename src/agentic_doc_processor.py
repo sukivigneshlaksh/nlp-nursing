@@ -1,11 +1,3 @@
-"""
-Landing AI Document Extraction - Get chunks from PDF + Vertex AI disjoint analysis
-
-Setup:
-pip install agentic-doc
-export VISION_AGENT_API_KEY="your-api-key"
-"""
-
 import os
 import json
 import sys
@@ -248,13 +240,11 @@ def process_sections_concurrently(sections_hashmap, transcript, max_workers=3):
 
 def find_disjoint_sections(chunks):
     """Use Vertex AI to identify disjoint sections from chunks"""
-    
-    # Prepare chunk data for analysis - pass full text instead of truncated
     chunks_text = []
     for i, chunk in enumerate(chunks):
-        
-        chunks_text.append(f"Chunk {i}: {chunk.text}")  # Remove [:200]... truncation
+        chunks_text.append(f"Chunk {i}: {chunk.text}")
     
+    # combine with new line
     prompt = f"""
     Analyze these document chunks and identify DISJOINT sections that can be processed independently.
     
@@ -413,7 +403,6 @@ def process_single_pdf(pdf_path, form_name, transcript):
 
 
 if __name__ == "__main__":
-    # Import transcripts
     from form_transcripts import SIMPLE_FORM_TRANSCRIPT, CMS_FORM_TRANSCRIPT, UHC_FORM_TRANSCRIPT, WELLNESS_FORM_TRANSCRIPT
     
     # Define PDFs and their corresponding transcripts
