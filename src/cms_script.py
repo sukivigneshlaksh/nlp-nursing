@@ -20,7 +20,7 @@ client = genai.Client(
 
 # Create the prompt specifically for OASIS-E1 form extraction
 prompt = """
-Extract data from this OASIS-E1 (Outcome and Assessment Information Set) home health assessment form and format as JSON.
+Extract data from this form and format as JSON.
 
 Please extract the following key information sections and populate them as available:
 
@@ -32,10 +32,10 @@ Instructions:
 """
 
 # Add this to read a PDF file:
-with open("../data/pdf/Oasis_Form.pdf", "rb") as f:
+with open("../data/pdf/CMS_Form.pdf", "rb") as f:
     pdf_data = f.read()
 
-print("Extracting OASIS-E1 Form Data:")
+print("Extracting Form Data:")
 response = client.models.generate_content(
     model="gemini-2.5-flash",
     contents=[
@@ -46,6 +46,9 @@ response = client.models.generate_content(
         )
     ]
 )
+
+with open("../outputs/cms_output.json", "w") as f:
+    f.write(response.text)
 
 print("Extracted data: \n")
 print(response.text)
