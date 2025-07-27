@@ -1,0 +1,30 @@
+Long form is catalogue of questions and can create forms from the long form
+
+See if oasis is within the long form -> what questions to pull from long form?
+
+#1. See if oasis is in long form 
+
+2. See if we can pull some questions from larger form into custom oasis (oasis + extra questions). 
+
+Meditech 
+- This will be done above
+
+
+streaming
+- suki asr integration
+- if not whisper online model
+
+gaurdrails
+    - 
+
+validation
+    -  
+
+evaluation
+    - 
+
+Things to do today
+- Create a plan
+    - 
+- Incorporate whisper audio integrations
+    - 

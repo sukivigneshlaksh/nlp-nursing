@@ -1,1 +1,5 @@
 .env
+.vscode/
+outputs/
+src/__pycache__
+
