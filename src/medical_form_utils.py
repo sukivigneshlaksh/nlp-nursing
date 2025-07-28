@@ -28,11 +28,33 @@ def clean_ai_response(text):
         text = text.split('\n', 1)[1].rsplit('\n', 1)[0]
     return text
 
-def extract_with_ai(transcript, form_type):
-    """Extract medical data from transcript using AI."""
-    prompt = f"""Extract medical data from this transcript for a {form_type} form. Return JSON only:
+def extract_with_citations(transcript, template, form_type):
+    """Extract medical data directly into template structure with citations."""
+    prompt = f"""Fill this {form_type} form template using ONLY information explicitly stated in the transcript.
 
-{transcript}"""
+TEMPLATE STRUCTURE:
+{json.dumps(template, indent=2)}
+
+TRANSCRIPT:
+{transcript}
+
+CRITICAL RULES:
+- Only extract information explicitly mentioned in the conversation
+- If not mentioned in transcript → leave field empty/null
+- If uncertain → leave field empty/null
+- For each filled field, provide the exact quote from transcript that supports it
+
+Return JSON in this format:
+{{
+    "filled_form": {{ /* same structure as template with extracted values */ }},
+    "citations": {{
+        "field.path": {{
+            "value": "extracted value",
+            "source_quote": "exact text from transcript",
+            "confidence": 8
+        }}
+    }}
+}}"""
     
     response = client.models.generate_content(model="gemini-2.5-flash", contents=[prompt])
     text = clean_ai_response(response.text)
@@ -40,7 +62,7 @@ def extract_with_ai(transcript, form_type):
 
 def fill_form(template, extracted_data):
     """Fill form template with extracted data using AI."""
-    prompt = f"""Fill this empty form template with the extracted data. Keep the exact structure and only fill empty fields.
+    prompt = f"""Fill this empty form template with the extracted data. Keep the exact structure and only fill empty fields. DON'T INCLUDE ANYTHING NOT FOUND IN THE DATA.
 
     Template: {json.dumps(template)}
 
@@ -90,3 +112,59 @@ def get_field_values(obj, prefix=""):
 def format_field_name(field_name):
     """Clean up field names for display."""
     return field_name.replace("_", " ").replace(".", " → ").title()
+
+def get_basic_metrics(extracted_data):
+    """Calculate basic metrics without LLM."""
+    field_values = get_field_values(extracted_data)
+    total_fields = len(field_values)
+    filled_fields = len([v for v in field_values.values() if v and str(v).strip()])
+    coverage_percentage = (filled_fields / total_fields * 100) if total_fields > 0 else 0
+    
+    return {
+        "total_fields": total_fields,
+        "filled_fields": filled_fields,
+        "coverage_percentage": round(coverage_percentage, 1),
+        "empty_fields": total_fields - filled_fields
+    }
+
+def evaluate_citations(citation_data):
+    """
+    Evaluate extraction quality using existing citation data.
+    
+    Args:
+        citation_data: Dict with 'filled_form' and 'citations' from extract_with_citations()
+        
+    Returns:
+        Dict with metrics and field analysis
+    """
+    filled_form = citation_data.get("filled_form", {})
+    citations = citation_data.get("citations", {})
+    
+    basic_metrics = get_basic_metrics(filled_form)
+    
+    # Convert citations to field analysis format
+    field_analysis = {}
+    confidence_scores = []
+    
+    for field_path, citation_info in citations.items():
+        confidence = citation_info.get("confidence", 0)
+        confidence_scores.append(confidence)
+        
+        field_analysis[field_path] = {
+            "confidence": confidence,
+            "source_quote": citation_info.get("source_quote", "No citation provided"),
+            "issues": "Low confidence" if confidence < 6 else "none"
+        }
+    
+    # Calculate overall quality
+    avg_confidence = sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0
+    overall_quality = round(avg_confidence)
+    
+    return {
+        "metrics": {
+            **basic_metrics,
+            "overall_quality": overall_quality,
+            "average_confidence": round(avg_confidence, 1)
+        },
+        "field_analysis": field_analysis
+    }
