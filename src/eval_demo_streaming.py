@@ -27,12 +27,25 @@ st.subheader("Audio Input")
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    duration = st.slider("Recording Duration (seconds)", 5, 30, 10)
-    if st.button("Record Audio"):
-        with st.spinner("Recording..."):
-            transcript = st.session_state.whisper_streamer.record_and_transcribe(duration)
-            st.session_state.recorded_transcript = transcript
+    # Initialize recording state
+    if 'is_recording' not in st.session_state:
+        st.session_state.is_recording = False
+    
+    if not st.session_state.is_recording:
+        if st.button("Start Recording"):
+            st.session_state.is_recording = True
+            st.session_state.whisper_streamer.start_recording()
+            st.rerun()
+    else:
+        if st.button("Stop Recording"):
+            st.session_state.is_recording = False
+            with st.spinner("Processing audio..."):
+                transcript = st.session_state.whisper_streamer.stop_recording()
+                st.session_state.recorded_transcript = transcript
             st.success("Recording complete!")
+            st.rerun()
+        
+        st.info("🎤 Recording in progress...")
 
 with col2:
     # Load sample transcript as default

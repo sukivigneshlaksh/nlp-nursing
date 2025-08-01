@@ -8,6 +8,9 @@ class SimpleWhisperStreamer:
     def __init__(self):
         self.model = whisper.load_model("base")
         self.audio = pyaudio.PyAudio()
+        self.stream = None
+        self.frames = []
+        self.is_recording = False
         
     def record_and_transcribe(self, duration=5):
         """Record audio for specified duration and return transcription."""
@@ -47,7 +50,62 @@ class SimpleWhisperStreamer:
             if temp_file and os.path.exists(temp_file.name):
                 os.unlink(temp_file.name)
     
+    def start_recording(self):
+        """Start recording audio."""
+        if self.is_recording:
+            return
+        
+        self.frames = []
+        self.stream = self.audio.open(
+            format=pyaudio.paInt16,
+            channels=1,
+            rate=16000,
+            input=True,
+            frames_per_buffer=1024,
+            stream_callback=self._audio_callback
+        )
+        self.stream.start_stream()
+        self.is_recording = True
+        print("Recording started...")
+    
+    def _audio_callback(self, in_data, frame_count, time_info, status):
+        """Callback function to collect audio data."""
+        if self.is_recording:
+            self.frames.append(in_data)
+        return (None, pyaudio.paContinue)
+    
+    def stop_recording(self):
+        """Stop recording and return transcription."""
+        if not self.is_recording or not self.stream:
+            return ""
+        
+        # Stop recording
+        self.stream.stop_stream()
+        self.stream.close()
+        self.is_recording = False
+        
+        # Save as temporary WAV file and transcribe
+        temp_file = None
+        try:
+            with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_file:
+                with wave.open(temp_file.name, 'wb') as wf:
+                    wf.setnchannels(1)
+                    wf.setsampwidth(2)
+                    wf.setframerate(16000)
+                    wf.writeframes(b''.join(self.frames))
+                
+                # Transcribe with Whisper
+                result = self.model.transcribe(temp_file.name, fp16=False)
+                return result['text'].strip()
+        finally:
+            # Clean up temp file
+            if temp_file and os.path.exists(temp_file.name):
+                os.unlink(temp_file.name)
+
     def cleanup(self):
+        if self.is_recording and self.stream:
+            self.stream.stop_stream()
+            self.stream.close()
         self.audio.terminate()
 
 if __name__ == "__main__":
