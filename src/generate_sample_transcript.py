@@ -1,20 +1,7 @@
 import json
 import os
 import argparse
-from google import genai
-from google.genai.types import HttpOptions
-import vertexai
-
-# Setup Vertex AI
-PROJECT_ID = "suki-dev"
-LOCATION = "us-central1"
-vertexai.init(project=PROJECT_ID, location=LOCATION)
-client = genai.Client(vertexai=True, project=PROJECT_ID, location=LOCATION, http_options=HttpOptions(api_version="v1"))
-
-def load_json(file_path):
-    """Load JSON template from file"""
-    with open(file_path, 'r') as f:
-        return json.load(f)
+from mono_utils import load_json, generate_with_ai
 
 def generate_conversation(form_structure):
     """Generate medical conversation based on form structure"""
@@ -30,8 +17,7 @@ def generate_conversation(form_structure):
     DO NOT INCLUDE ANYTHING EXCEPT THE NURSE, PATIENT CONVERSATION.
     """
 
-    response = client.models.generate_content(model="gemini-2.5-flash", contents=[prompt])
-    return response.text.strip()
+    return generate_with_ai(prompt)
 
 def main():
     parser = argparse.ArgumentParser(description='Generate sample transcript from form JSON')

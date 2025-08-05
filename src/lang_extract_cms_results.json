@@ -1,0 +1,157 @@
+{
+  "form_type": "CMS",
+  "extracted_entities": [
+    {
+      "type": "patient_name",
+      "text": "John David Smith",
+      "source_position": {
+        "start": 216,
+        "end": 232
+      },
+      "attributes": {}
+    },
+    {
+      "type": "date_of_birth",
+      "text": "May 15th, 1968",
+      "source_position": {
+        "start": 298,
+        "end": 312
+      },
+      "attributes": {}
+    },
+    {
+      "type": "address",
+      "text": "123 Maple Street, Anytown, California, zip code 90210",
+      "source_position": {
+        "start": 380,
+        "end": 433
+      },
+      "attributes": {}
+    },
+    {
+      "type": "phone",
+      "text": "(555) 123-4567",
+      "source_position": {
+        "start": 500,
+        "end": 514
+      },
+      "attributes": {}
+    },
+    {
+      "type": "insurance_id",
+      "text": "1A2B-3C4D-5E6F",
+      "source_position": {
+        "start": 644,
+        "end": 658
+      },
+      "attributes": {}
+    },
+    {
+      "type": "height",
+      "text": "70 inches",
+      "source_position": {
+        "start": 815,
+        "end": 824
+      },
+      "attributes": {}
+    },
+    {
+      "type": "weight",
+      "text": "220 pounds",
+      "source_position": {
+        "start": 884,
+        "end": 894
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "obstructive sleep apnea",
+      "source_position": {
+        "start": 983,
+        "end": 1006
+      },
+      "attributes": {}
+    },
+    {
+      "type": "evaluation_date",
+      "text": "October 26th, 2023",
+      "source_position": {
+        "start": 1173,
+        "end": 1191
+      },
+      "attributes": {}
+    },
+    {
+      "type": "study_date",
+      "text": "September 20th, 2023",
+      "source_position": {
+        "start": 1394,
+        "end": 1414
+      },
+      "attributes": {}
+    },
+    {
+      "type": "vital_measurement",
+      "text": "28.5",
+      "source_position": {
+        "start": 1720,
+        "end": 1724
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "excessive daytime sleepiness",
+      "source_position": {
+        "start": 1834,
+        "end": 1862
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "high blood pressure, also known as hypertension",
+      "source_position": {
+        "start": 1896,
+        "end": 1943
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "excessive daytime sleepiness",
+      "source_position": {
+        "start": 2109,
+        "end": 2137
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "hypertension",
+      "source_position": {
+        "start": 2142,
+        "end": 2154
+      },
+      "attributes": {}
+    },
+    {
+      "type": "condition",
+      "text": "sleep apnea",
+      "source_position": {
+        "start": 2224,
+        "end": 2235
+      },
+      "attributes": {}
+    }
+  ],
+  "mapped_fields": {
+    "patient_name": "John David Smith",
+    "dob": "May 15th, 1968",
+    "address": "123 Maple Street, Anytown, California, zip code 90210",
+    "telephone": "(555) 123-4567",
+    "hicn": "1A2B-3C4D-5E6F"
+  },
+  "processing_timestamp": "2024-01-01T00:00:00Z"
+}

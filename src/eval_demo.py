@@ -1,9 +1,8 @@
 import streamlit as st
 import json
-from medical_form_utils import (
+from mono_utils import (
     load_template, extract_with_citations, 
-    load_sample_transcript, get_field_values, format_field_name,
-    evaluate_citations, get_basic_metrics
+    load_transcript, get_field_values, format_field_name
 )
 
 # Main UI
@@ -18,22 +17,47 @@ form_type = st.radio("Choose Form:", ["CMS", "OASIS"])
 normalized_form_type = "CMS" if form_type == "CMS" else "OASIS"
 
 # Load and display transcript
-sample_transcript = load_sample_transcript(normalized_form_type)
+sample_transcript = load_transcript(normalized_form_type)
 transcript = st.text_area("Medical Transcript:", value=sample_transcript, height=300)
+
+def evaluate_citations(citation_data):
+    """Simple evaluation function"""
+    filled_form = citation_data.get("filled_form", {})
+    citations = citation_data.get("citations", {})
+    
+    field_values = get_field_values(filled_form)
+    total_fields = len(field_values)
+    filled_fields = len([v for v in field_values.values() if v and str(v).strip()])
+    coverage_percentage = (filled_fields / total_fields * 100) if total_fields > 0 else 0
+    
+    confidence_scores = [c.get("confidence", 0) for c in citations.values()]
+    avg_confidence = sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0
+    
+    return {
+        "metrics": {
+            "total_fields": total_fields,
+            "filled_fields": filled_fields,
+            "coverage_percentage": round(coverage_percentage, 1),
+            "empty_fields": total_fields - filled_fields,
+            "overall_quality": round(avg_confidence),
+            "average_confidence": round(avg_confidence, 1)
+        },
+        "field_analysis": {
+            field_path: {
+                "confidence": citation_info.get("confidence", 0),
+                "source_quote": citation_info.get("source_quote", "No citation"),
+                "issues": "Low confidence" if citation_info.get("confidence", 0) < 6 else "none"
+            } for field_path, citation_info in citations.items()
+        }
+    }
 
 # Process button
 if st.button("Extract Data & Evaluate"):
     template = cms_template if form_type == "CMS" else oasis_template
     
     with st.spinner("Processing..."):
-        # Single call: extract directly into template with citations
         citation_data = extract_with_citations(transcript, template, form_type)
-        print("Citation data:", citation_data)
-        
-        # Extract components
         filled = citation_data.get("filled_form", {})
-        
-        # Evaluate using existing citation data
         evaluation = evaluate_citations(citation_data)
     
     # Display metrics at the top

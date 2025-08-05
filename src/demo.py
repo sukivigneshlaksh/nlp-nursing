@@ -1,8 +1,8 @@
 import streamlit as st
 import json
-from medical_form_utils import (
-    load_template, extract_with_ai, fill_form, 
-    load_sample_transcript, get_field_values, format_field_name
+from mono_utils import (
+    load_template, extract_with_citations, 
+    load_transcript, get_field_values, format_field_name
 )
 
 # Main UI
@@ -17,7 +17,7 @@ form_type = st.radio("Choose Form:", ["CMS", "OASIS"])
 normalized_form_type = "CMS" if form_type == "CMS" else "OASIS"
 
 # Load and display transcript
-sample_transcript = load_sample_transcript(normalized_form_type)
+sample_transcript = load_transcript(normalized_form_type)
 transcript = st.text_area("Medical Transcript:", value=sample_transcript, height=300)
 
 # Process button
@@ -25,8 +25,8 @@ if st.button("Extract Data"):
     template = cms_template if form_type == "CMS" else oasis_template
     
     with st.spinner("Processing..."):
-        extracted = extract_with_ai(transcript, form_type)
-        filled = fill_form(template, extracted)
+        result = extract_with_citations(transcript, template, form_type)
+        filled = result.get("filled_form", {})
     
     # Compare filled vs empty
     original_fields = get_field_values(template)
