@@ -46,16 +46,16 @@ def load_json(file_path: str) -> Dict[str, Any]:
 def load_template(form_type: str = "CMS") -> Dict[str, Any]:
     """Load form template"""
     paths = {
-        "CMS": "../outputs/cms_output.json",
-        "OASIS": "../outputs/oasis_output_short.json"
+        "CMS": "outputs/cms_output.json",
+        "OASIS": "outputs/oasis_output_short.json"
     }
     return load_json(paths.get(form_type, paths["CMS"]))
 
 def load_transcript(form_type: str = "CMS") -> str:
     """Load sample transcript"""
     paths = {
-        "CMS": "../outputs/sample_scripts/cms_sample_transcript.txt",
-        "OASIS": "../outputs/sample_scripts/oasis_short_sample_transcript.txt"
+        "CMS": "outputs/sample_scripts/cms_sample_transcript.txt",
+        "OASIS": "outputs/sample_scripts/oasis_short_sample_transcript.txt"
     }
     
     try:
